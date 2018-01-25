@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Pepper",
+    "description": "A dark, coarse, smoky and grainy spice.",
+    "imageURL": null,
+    "isInPantry": false,
+    "isOnList": true
+  },
+  {
+    "title": "Salt",
+    "description": "A sharp, white mineral from sea or rock.",
+    "imageURL": null,
+    "isInPantry": true,
+    "isOnList": false
+  }
+]
