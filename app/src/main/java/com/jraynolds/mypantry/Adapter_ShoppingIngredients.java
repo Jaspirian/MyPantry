@@ -71,7 +71,7 @@ public class Adapter_ShoppingIngredients extends RecyclerView.Adapter<Adapter_Sh
     }
 
     public void updateIngredients() {
-        ingredients = Globals.getIngredients(null, true,false);
+        ingredients = Globals.getIngredients(null, false, true,false);
         notifyDataSetChanged();
     }
 

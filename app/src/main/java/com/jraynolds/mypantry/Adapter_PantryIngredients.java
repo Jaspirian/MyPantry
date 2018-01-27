@@ -67,7 +67,7 @@ public class Adapter_PantryIngredients extends RecyclerView.Adapter<Adapter_Pant
     }
 
     public void updateIngredients() {
-        ingredients = Globals.getIngredients(null, false,true);
+        ingredients = Globals.getIngredients(null, false, false,true);
         notifyDataSetChanged();
     }
 

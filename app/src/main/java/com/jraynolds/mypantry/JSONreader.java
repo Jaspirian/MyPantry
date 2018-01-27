@@ -4,12 +4,18 @@ import android.content.Context;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Writer;
 import java.util.ArrayList;
 
 /**
@@ -24,36 +30,43 @@ public class JSONreader {
         this.context = context;
     }
 
-    private String JSONtoString(String filename) {
-        try {
-            Log.d("JSON", context.toString());
-            Log.d("JSON", context.getAssets().toString());
-            Log.d("JSON", filename + ".json");
-            InputStream is = context.getAssets().open(filename + ".json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            return new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
+    public String inputToString(InputStream is) throws IOException {
+        Log.d("filejson 34", "file found");
+        int size = is.available();
+        byte[] buffer = new byte[size];
+        is.read(buffer);
+        is.close();
+        Log.d("filejson 39", new String(buffer, "UTF-8"));
+        return new String(buffer, "UTF-8");
     }
 
-    public ArrayList<Ingredient> JSONtoIngredientArrayList(String filename) {
+    public ArrayList<Ingredient> stringToIngredients(String s) {
         ArrayList<Ingredient> ingredients = null;
-        String json = JSONtoString(filename);
         Gson gson = new Gson();
-        ingredients = gson.fromJson(json, new TypeToken<ArrayList<Ingredient>>(){}.getType());
+        ingredients = gson.fromJson(s, new TypeToken<ArrayList<Ingredient>>(){}.getType());
         return ingredients;
     }
 
-    public ArrayList<Recipe> JSONtoRecipeArrayList(String filename) {
-        ArrayList<Recipe> recipes = null;
-        String json = JSONtoString(filename);
+    public void saveToJSON(ArrayList<Ingredient> arr, String filename) {
+
+        Log.d("filejson 52", arr.toString());
         Gson gson = new Gson();
-        recipes = gson.fromJson(json, new TypeToken<ArrayList<Recipe>>(){}.getType());
-        return recipes;
+        String json = gson.toJson(arr);
+        Log.d("filejson 55", "saving");
+        try {
+            FileWriter writer = new FileWriter(new File(filename));
+            writer.write(json);
+            writer.close();
+            Log.d("filejson 60", "saved");
+        } catch (IOException e) {
+            Log.d("filejson 62", "error");
+            e.printStackTrace();
+        }
+
+        try {
+            Log.d("filejson 67", inputToString(context.openFileInput("ingredients_local" + ".json")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

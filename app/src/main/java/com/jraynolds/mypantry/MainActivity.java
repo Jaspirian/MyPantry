@@ -1,6 +1,9 @@
 package com.jraynolds.mypantry;
 
 import android.app.Dialog;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,12 +16,16 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -68,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 dialog.setTitle("Add Ingredient");
 
                 final EditText title = dialog.findViewById(R.id.text_title);
+                final TextView isAvailable = dialog.findViewById(R.id.text_titleAvailable);
+
                 final EditText description = dialog.findViewById(R.id.text_description);
                 //image
                 final CheckBox inPantry = dialog.findViewById(R.id.check_inPantry);
@@ -81,13 +90,40 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-                Button add = dialog.findViewById(R.id.button_add);
+                final Button add = dialog.findViewById(R.id.button_add);
+                add.setEnabled(false);
                 add.setOnClickListener(new View.OnClickListener() {
 
                     @Override
                     public void onClick(View view) {
                         Globals.addIngredient(title.getText().toString(), description.getText().toString(), null, inPantry.isChecked(), onList.isChecked());
                         dialog.dismiss();
+                    }
+                });
+
+                title.addTextChangedListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                        ArrayList<Ingredient> matches = Globals.getIngredients(title.getText().toString(), true, true, true);
+                        Log.d("titling", matches.toString());
+                        if(!matches.isEmpty()) {
+                            Log.d("titling", "already exists!");
+                            isAvailable.setText("Already used!");
+                            add.setEnabled(false);
+                        } else {
+                            isAvailable.setText("");
+                            add.setEnabled(true);
+                        }
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable editable) {
+
                     }
                 });
 
