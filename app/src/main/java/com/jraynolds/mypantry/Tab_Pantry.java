@@ -28,7 +28,7 @@ public class Tab_Pantry extends Fragment {
 
         RecyclerView recyclerView = rootView.findViewById(R.id.pantry_ingredients_recyclerview);
 
-        Adapter_PantryIngredients adapter = new Adapter_PantryIngredients();
+        Adapter_Ingredients adapter = new Adapter_Ingredients("pantry");
         Globals.setPantryAdapter(adapter);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);

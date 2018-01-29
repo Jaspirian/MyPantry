@@ -1,13 +1,8 @@
 package com.jraynolds.mypantry;
 
 import android.app.Dialog;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -78,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 final TextView isAvailable = dialog.findViewById(R.id.text_titleAvailable);
 
                 final EditText description = dialog.findViewById(R.id.text_description);
+                final EditText category = dialog.findViewById(R.id.text_category);
                 //image
                 final CheckBox inPantry = dialog.findViewById(R.id.check_inPantry);
                 final CheckBox onList = dialog.findViewById(R.id.check_onList);
@@ -96,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        Globals.addIngredient(title.getText().toString(), description.getText().toString(), null, inPantry.isChecked(), onList.isChecked());
+                        Globals.addIngredient(new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString(), inPantry.isChecked(), onList.isChecked()));
                         dialog.dismiss();
                     }
                 });
@@ -109,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                        ArrayList<Ingredient> matches = Globals.getIngredients(title.getText().toString(), true, true, true);
+                        ArrayList<Ingredient> matches = Globals.getIngredients(title.getText().toString(), true, "all");
                         Log.d("titling", matches.toString());
                         if(!matches.isEmpty()) {
                             Log.d("titling", "already exists!");
@@ -179,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch(position) {
                 case 0:
-                    return new Tab_Recipes();
+                    return new Tab_All();
                 case 1:
                     return new Tab_Pantry();
                 case 2:
@@ -199,11 +195,11 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch(position) {
                 case 0:
-                    return "Recipes";
+                    return "All";
                 case 1:
                     return "Pantry";
                 case 2:
-                    return "Shopping";
+                    return "Buying";
                 default:
                     return "How the heck did you get here?";
             }

@@ -50,6 +50,8 @@ public class JSONreader {
     public void saveToJSON(ArrayList<Ingredient> arr, String filename) {
 
         Log.d("filejson 52", arr.toString());
+        Log.d("filejson", arr.get(0).title.toString());
+        Log.d("filejson", arr.get(0).description.toString());
         Gson gson = new Gson();
         String json = gson.toJson(arr);
         Log.d("filejson 55", "saving");
