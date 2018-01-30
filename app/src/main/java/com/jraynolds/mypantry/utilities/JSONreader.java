@@ -1,21 +1,16 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.utilities;
 
 import android.content.Context;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-
-import org.json.JSONArray;
+import com.jraynolds.mypantry.objects.Ingredient;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Writer;
 import java.util.ArrayList;
 
 /**
@@ -50,8 +45,8 @@ public class JSONreader {
     public void saveToJSON(ArrayList<Ingredient> arr, String filename) {
 
         Log.d("filejson 52", arr.toString());
-        Log.d("filejson", arr.get(0).title.toString());
-        Log.d("filejson", arr.get(0).description.toString());
+        Log.d("filejson", arr.get(0).title);
+        Log.d("filejson", arr.get(0).description);
         Gson gson = new Gson();
         String json = gson.toJson(arr);
         Log.d("filejson 55", "saving");

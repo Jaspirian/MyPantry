@@ -1,17 +1,18 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.dialogs;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+
+import com.jraynolds.mypantry.R;
+import com.jraynolds.mypantry.main.Globals;
+import com.jraynolds.mypantry.objects.Ingredient;
 
 public class IngredientView extends AppCompatActivity {
 
@@ -59,7 +60,7 @@ public class IngredientView extends AppCompatActivity {
                     Log.d("saving", "same title.");
                     Globals.modifyIngredient(newIngredient);
                     finish();
-                } else if(Globals.getIngredients(newIngredient.title, true, "all").isEmpty()) {
+                } else if(Globals.getIngredients(newIngredient.title, true, null,"all").isEmpty()) {
                     Log.d("saving", "new title.");
                     Globals.removeIngredientByTitle(i.title);
                     Globals.addIngredient(newIngredient);

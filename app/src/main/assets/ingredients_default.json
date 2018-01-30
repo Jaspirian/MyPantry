@@ -3,6 +3,7 @@
     "title": "Pepper",
     "description": "A dark, coarse, smoky and grainy spice.",
     "imageURL": null,
+    "category": "Spice",
     "isInPantry": false,
     "isOnList": true
   },
@@ -10,7 +11,32 @@
     "title": "Salt",
     "description": "A sharp, white mineral from sea or rock.",
     "imageURL": null,
+    "category": "Spice",
     "isInPantry": true,
     "isOnList": false
+  },
+  {
+    "title": "Beef Broth",
+    "description": "A thick and hearty broth made from beef stock.",
+    "imageURL": null,
+    "category": "Bases",
+    "isInPantry": true,
+    "isOnList": true
+  },
+  {
+    "title": "Leek",
+    "description": "A large, thick-leafed member of the onion family.",
+    "imageURL": null,
+    "category": "Vegetable",
+    "isInPantry": true,
+    "isOnList": true
+  },
+  {
+    "title": "Carrot",
+    "description": "An orange, stiff, bright-tasting root vegetable.",
+    "imageURL": null,
+    "category": "Vegetable",
+    "isInPantry": true,
+    "isOnList": true
   }
 ]

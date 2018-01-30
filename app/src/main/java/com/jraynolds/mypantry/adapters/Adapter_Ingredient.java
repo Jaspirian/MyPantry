@@ -1,4 +1,4 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.adapters;
 
 /**
  * Created by Jasper on 1/24/2018.
@@ -15,14 +15,16 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import com.jraynolds.mypantry.dialogs.IngredientView;
+import com.jraynolds.mypantry.R;
+import com.jraynolds.mypantry.main.Globals;
+import com.jraynolds.mypantry.objects.Ingredient;
 
-public class Adapter_Ingredients extends RecyclerView.Adapter<Adapter_Ingredients.MyViewHolder> {
+import java.util.ArrayList;
+
+public class Adapter_Ingredient extends RecyclerView.Adapter<Adapter_Ingredient.MyViewHolder> {
 
     private ArrayList<Ingredient> ingredients = new ArrayList<>();
-    private final String searchString;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public final LinearLayout row;
@@ -41,15 +43,14 @@ public class Adapter_Ingredients extends RecyclerView.Adapter<Adapter_Ingredient
         }
     }
 
-    public Adapter_Ingredients(String searchString) {
-        this.searchString = searchString;
-        updateIngredients();
+    public Adapter_Ingredient(ArrayList<Ingredient> ingredients) {
+        this.ingredients = ingredients;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.template_ingredient, parent, false);
+                .inflate(R.layout.list_ingredient, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -82,17 +83,6 @@ public class Adapter_Ingredients extends RecyclerView.Adapter<Adapter_Ingredient
     @Override
     public int getItemCount() {
         return ingredients.size();
-    }
-
-    public void updateIngredients() {
-        ingredients = Globals.getIngredients(null, false, searchString);
-        Collections.sort(ingredients, new Comparator<Ingredient>() {
-            @Override
-            public int compare(Ingredient t1, Ingredient t2) {
-                return t1.title.compareToIgnoreCase(t2.title);
-            }
-        });
-        notifyDataSetChanged();
     }
 
     public class checkboxPantryClick implements View.OnClickListener {

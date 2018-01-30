@@ -1,4 +1,4 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.objects;
 
 import java.io.Serializable;
 

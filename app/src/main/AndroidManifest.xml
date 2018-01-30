@@ -3,7 +3,7 @@
     package="com.jraynolds.mypantry">
 
     <application
-        android:name=".Globals"
+        android:name=".main.Globals"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IngredientView" />
+        <activity android:name=".dialogs.IngredientView" />
     </application>
 
 </manifest>

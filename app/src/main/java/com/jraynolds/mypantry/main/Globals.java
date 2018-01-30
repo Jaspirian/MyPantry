@@ -1,8 +1,13 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.main;
 
 import android.app.Application;
 import android.content.Context;
 import android.util.Log;
+
+import com.jraynolds.mypantry.tabs.Tab_Ingredients;
+import com.jraynolds.mypantry.objects.Ingredient;
+import com.jraynolds.mypantry.objects.Recipe;
+import com.jraynolds.mypantry.utilities.JSONreader;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,13 +25,7 @@ public class Globals extends Application {
     private static ArrayList<Ingredient> localIngredients;
     private static ArrayList<Recipe> globalRecipes;
 
-    private static Tab_All recipesTab;
-    private static Tab_Pantry pantryTab;
-    private static Tab_Shopping shoppingTab;
-
-    private static Adapter_Ingredients allAdapter;
-    private static Adapter_Ingredients pantryAdapter;
-    private static Adapter_Ingredients shoppingAdapter;
+    private static Tab_Ingredients[] ingredientTabs;
 
 
     public void onCreate() {
@@ -100,43 +99,37 @@ public class Globals extends Application {
         //push to individual Json file
     }
 
-    public static ArrayList<Ingredient> getIngredients(String searchStr, boolean isExact, String include) {
+    public static ArrayList<Ingredient> getIngredients(String searchStr, boolean isExact, String category, String include) {
 
         ArrayList<Ingredient> subIngredients = new ArrayList<>();
 
         for(int i = 0; i<ingredients.size(); i++) {
             Ingredient ing = ingredients.get(i);
             if(include.equals("all") || (include.equals("pantry") && ing.isInPantry) || (include.equals("shopping") && ing.isOnList)) {
-                if(searchStr != null) {
-                    if(isExact && !ing.title.toLowerCase().equals(searchStr.toLowerCase())) {
-                        continue;
-                    } else if(!isExact && !ing.title.toLowerCase().contains(searchStr.toLowerCase())) {
-                        continue;
+                if(category == null || category.toLowerCase().equals(ing.category.toLowerCase())) {
+                    if (searchStr != null) {
+                        if (isExact && !ing.title.toLowerCase().equals(searchStr.toLowerCase())) {
+                            continue;
+                        } else if (!isExact && !ing.title.toLowerCase().contains(searchStr.toLowerCase())) {
+                            continue;
+                        }
                     }
+                    subIngredients.add(ing);
                 }
-                subIngredients.add(ing);
             }
         }
 
         return subIngredients;
     }
 
-    public static void setPantryAdapter(Adapter_Ingredients adapter) {
-        pantryAdapter = adapter;
-    }
-
-    public static void setShoppingAdapter(Adapter_Ingredients adapter) {
-        shoppingAdapter = adapter;
-    }
-
-    public static void setAllAdapter(Adapter_Ingredients adapter) {
-        allAdapter = adapter;
+    public static void setTabs(Tab_Ingredients[] arr) {
+        ingredientTabs = arr;
     }
 
     public static void updateLists() {
-        allAdapter.updateIngredients();
-        pantryAdapter.updateIngredients();
-        shoppingAdapter.updateIngredients();
+        for(int i=0; i<ingredientTabs.length; i++) {
+            ingredientTabs[i].update();
+        }
     }
 
     public static void modifyIngredient(Ingredient ingredient) {

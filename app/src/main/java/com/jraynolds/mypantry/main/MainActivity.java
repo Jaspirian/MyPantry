@@ -1,4 +1,4 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.main;
 
 import android.app.Dialog;
 import android.support.design.widget.TabLayout;
@@ -22,6 +22,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.jraynolds.mypantry.R;
+import com.jraynolds.mypantry.tabs.Tab_Ingredients;
+import com.jraynolds.mypantry.objects.Ingredient;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,10 +44,22 @@ public class MainActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private Tab_Ingredients[] ingredientsTabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ingredientsTabs = new Tab_Ingredients[3];
+        String[] searches = new String[]{"all", "pantry", "shopping"};
+        for(int i=0; i<3; i++) {
+            ingredientsTabs[i] = new Tab_Ingredients();
+            Bundle bundle = new Bundle();
+            bundle.putString("searchStr", searches[i]);
+            ingredientsTabs[i].setArguments(bundle);
+        }
+        Globals.setTabs(ingredientsTabs);
+
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -105,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                        ArrayList<Ingredient> matches = Globals.getIngredients(title.getText().toString(), true, "all");
+                        ArrayList<Ingredient> matches = Globals.getIngredients(title.getText().toString(), true, null,"all");
                         Log.d("titling", matches.toString());
                         if(!matches.isEmpty()) {
                             Log.d("titling", "already exists!");
@@ -173,16 +189,7 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            switch(position) {
-                case 0:
-                    return new Tab_All();
-                case 1:
-                    return new Tab_Pantry();
-                case 2:
-                    return new Tab_Shopping();
-                default:
-                    return null;
-            }
+            return ingredientsTabs[position];
         }
 
         @Override
