@@ -1,8 +1,9 @@
 package com.jraynolds.mypantry.dialogs;
 
+import android.content.res.AssetManager;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,6 +15,9 @@ import com.jraynolds.mypantry.R;
 import com.jraynolds.mypantry.main.Globals;
 import com.jraynolds.mypantry.objects.Ingredient;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class IngredientView extends AppCompatActivity {
 
     private Ingredient i;
@@ -21,56 +25,20 @@ public class IngredientView extends AppCompatActivity {
     private EditText title, description, category;
     private TextView uniqueTitle;
     private ImageButton image;
-//    private EditText recipes;
+    private EditText recipes;
     private CheckBox inPantry, onList;
     private Button save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.i = (Ingredient) getIntent().getExtras().get("Ingredient");
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_ingredient_view);
+        initializeVariables();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        title = findViewById(R.id.text_title);
-        uniqueTitle = findViewById(R.id.text_uniqueTitle);
-        uniqueTitle.setText("");
-        image = findViewById(R.id.image_picker);
-        description = findViewById(R.id.text_description);
-        category = findViewById(R.id.text_category);
-        //recipe
-        inPantry = findViewById(R.id.check_inPantry);
-        onList = findViewById(R.id.check_onList);
-        save = findViewById(R.id.button_save);
-
-        title.setText(i.title);
-        //image
-        description.setText(i.description);
-        category.setText(i.category);
-        inPantry.setChecked(i.isInPantry);
-        onList.setChecked(i.isOnList);
-
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Ingredient newIngredient = new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString(), inPantry.isChecked(), onList.isChecked());
-                Log.d("saving", newIngredient.description);
-                if(i.title.toLowerCase().equals(title.getText().toString().toLowerCase())) {
-                    Log.d("saving", "same title.");
-                    Globals.modifyIngredient(newIngredient);
-                    finish();
-                } else if(Globals.getIngredients(newIngredient.title, true, null,"all").isEmpty()) {
-                    Log.d("saving", "new title.");
-                    Globals.removeIngredientByTitle(i.title);
-                    Globals.addIngredient(newIngredient);
-                    finish();
-                } else {
-                    Log.d("saving", "unacceptable title.");
-                    uniqueTitle.setText("Please pick a unique title.");
-                }
-            }
-        });
+        setReadout(i);
     }
 
     @Override
@@ -83,6 +51,65 @@ public class IngredientView extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;
+    }
+
+    private void initializeVariables() {
+        i = (Ingredient) getIntent().getExtras().get("Ingredient");
+        title = findViewById(R.id.text_title);
+        uniqueTitle = findViewById(R.id.text_uniqueTitle);
+        uniqueTitle.setText("");
+        image = findViewById(R.id.imageButton);
+        description = findViewById(R.id.text_description);
+        category = findViewById(R.id.text_category);
+        //recipe
+        inPantry = findViewById(R.id.check_inPantry);
+        onList = findViewById(R.id.check_onList);
+        save = findViewById(R.id.button_save);
+    }
+
+    private void setReadout(final Ingredient i) {
+        title.setText(i.title);
+        description.setText(i.description);
+        category.setText(i.category);
+        if(i.imageUrl != null) {
+            AssetManager am = getApplicationContext().getAssets();
+            try {
+                InputStream is = am.open("images/" + i.imageUrl);
+                image.setImageBitmap(BitmapFactory.decodeStream(is));
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        inPantry.setChecked(i.isInPantry);
+        onList.setChecked(i.isOnList);
+
+        //recipes
+
+        save.setOnClickListener(new SaveListener(i));
+    }
+
+    public class SaveListener implements View.OnClickListener {
+        private final Ingredient i;
+
+        SaveListener(Ingredient i) {
+            this.i = i;
+        }
+
+        @Override
+        public void onClick(View view) {
+            Ingredient newIngredient = new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString(), inPantry.isChecked(), onList.isChecked());
+            if(i.title.toLowerCase().equals(title.getText().toString().toLowerCase())) {
+                Globals.modifyIngredient(newIngredient);
+                finish();
+            } else if(Globals.getIngredients(newIngredient.title, true, null,"all").isEmpty()) {
+                Globals.removeIngredientByTitle(i.title);
+                Globals.addIngredient(newIngredient);
+                finish();
+            } else {
+                uniqueTitle.setText(R.string.uniqueTitleWarning);
+            }
+        }
     }
 
 }

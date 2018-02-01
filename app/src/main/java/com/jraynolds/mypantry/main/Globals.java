@@ -127,9 +127,9 @@ public class Globals extends Application {
     }
 
     public static void updateLists() {
-        for(int i=0; i<ingredientTabs.length; i++) {
-            ingredientTabs[i].update();
-        }
+//        for(int i=0; i<ingredientTabs.length; i++) {
+//            ingredientTabs[i].update();
+//        }
     }
 
     public static void modifyIngredient(Ingredient ingredient) {
