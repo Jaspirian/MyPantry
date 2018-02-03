@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             bundle.putString("searchStr", searches[i]);
             ingredientsTabs[i].setArguments(bundle);
         }
-        Globals.setTabs(ingredientsTabs);
 
         setContentView(R.layout.activity_main);
 
@@ -140,8 +139,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 dialog.show();
-
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
 

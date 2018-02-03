@@ -31,7 +31,6 @@ dependencies {
 
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.google.code.gson:gson:2.8.2'
     compile 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
     compile 'com.thoughtbot:expandablerecyclerview:1.3'
 }
