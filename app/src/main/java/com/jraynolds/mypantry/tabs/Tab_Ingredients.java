@@ -27,6 +27,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
@@ -45,7 +46,6 @@ public class Tab_Ingredients extends Fragment {
         Log.d("calling", searchStr + ": tab created!");
         super.onCreate(savedInstanceState);
         searchStr = this.getArguments().getString("searchStr");
-        Globals.addTab(searchStr, this);
     }
 
     @Override
@@ -54,47 +54,12 @@ public class Tab_Ingredients extends Fragment {
         Log.d("calling", searchStr + ": tab view created!");
         View rootView = inflater.inflate(R.layout.fragment_all, container, false);
 
-        ExpandableListView expandableListView = (ExpandableListView) rootView.findViewById(R.id.all_ingredients_listView);
-        final HashMap<String, List<Ingredient>> expandableListDetail = ExpandableListDataPump.getData(searchStr);
+        ExpandableListView expandableListView = rootView.findViewById(R.id.all_ingredients_listView);
+        final LinkedHashMap<String, List<Ingredient>> expandableListDetail = ExpandableListDataPump.getData(searchStr);
         final List<String> expandableListTitle = new ArrayList<>(expandableListDetail.keySet());
         ExpandableListAdapter expandableListAdapter = new CustomExpandableListAdapter(this.getContext(), expandableListTitle, expandableListDetail);
+        Globals.addTab(searchStr, expandableListAdapter);
         expandableListView.setAdapter(expandableListAdapter);
-        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-
-            @Override
-            public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getContext(),
-                        expandableListTitle.get(groupPosition) + " List Expanded.",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-
-            @Override
-            public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getContext(),
-                        expandableListTitle.get(groupPosition) + " List Collapsed.",
-                        Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-                Toast.makeText(
-                        getContext(),
-                        expandableListTitle.get(groupPosition)
-                                + " -> "
-                                + expandableListDetail.get(
-                                expandableListTitle.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT
-                ).show();
-                return false;
-            }
-        });
 
         return rootView;
     }

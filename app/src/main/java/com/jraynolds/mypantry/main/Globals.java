@@ -3,7 +3,9 @@ package com.jraynolds.mypantry.main;
 import android.app.Application;
 import android.content.Context;
 import android.util.Log;
+import android.widget.ExpandableListAdapter;
 
+import com.jraynolds.mypantry.CustomExpandableListAdapter;
 import com.jraynolds.mypantry.adapters.Adapter_Expandable;
 import com.jraynolds.mypantry.objects.Ingredient;
 import com.jraynolds.mypantry.objects.Recipe;
@@ -27,7 +29,7 @@ public class Globals extends Application {
     private static ArrayList<Ingredient> localIngredients;
     private static ArrayList<Recipe> globalRecipes;
 
-    public static HashMap<String, Tab_Ingredients> ingredientTabs;
+    public static HashMap<String, ExpandableListAdapter> tabAdapters;
 
 
     public void onCreate() {
@@ -35,7 +37,7 @@ public class Globals extends Application {
         context = this;
         ingredients = loadIngredients();
         globalRecipes = loadRecipes();
-        ingredientTabs = new HashMap<>();
+        tabAdapters = new HashMap<>();
     }
 
     private ArrayList<Ingredient> loadIngredients() {
@@ -125,8 +127,8 @@ public class Globals extends Application {
         return subIngredients;
     }
 
-    public static void addTab(String s, Tab_Ingredients tab) {
-        ingredientTabs.put(s, tab);
+    public static void addTab(String s, ExpandableListAdapter adapter) {
+        tabAdapters.put(s, adapter);
     }
 
     public static void updateLists(String tab) {

@@ -16,11 +16,16 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jraynolds.mypantry.main.Globals;
 import com.jraynolds.mypantry.objects.Ingredient;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
@@ -31,12 +36,60 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private List<String> expandableListTitle;
-    private HashMap<String, List<Ingredient>> expandableListDetail;
+    private LinkedHashMap<String, List<Ingredient>> expandableListDetail;
 
-    public CustomExpandableListAdapter(Context context, List<String> expandableListTitle, HashMap<String, List<Ingredient>> expandableListDetail) {
+    public CustomExpandableListAdapter(Context context, List<String> expandableListTitle, LinkedHashMap<String, List<Ingredient>> expandableListDetail) {
         this.context = context;
         this.expandableListTitle = expandableListTitle;
         this.expandableListDetail = expandableListDetail;
+    }
+
+    public void sortIngredients(List<Ingredient> list) {
+        Collections.sort(list, new Comparator<Ingredient>() {
+            @Override
+            public int compare(Ingredient t1, Ingredient t2) {
+                return t1.title.compareToIgnoreCase(t2.title);
+            }
+        });
+    }
+
+    public void addIngredient(Ingredient i) {
+        String category = i.category;
+        List<Ingredient> list = this.expandableListDetail.get(category);
+        if(list != null) {
+            list.add(i);
+            sortIngredients(list);
+        } else {
+            list = new ArrayList<>();
+            list.add(i);
+        }
+        expandableListDetail.put(category, list);
+
+        for(int j=0; j<expandableListDetail.size(); j++) {
+            for(int k=0; k<expandableListDetail.get(j).size(); k++) {
+                Log.d("Adding", "Category " + expandableListDetail.get(j) + ", Ingredient " + expandableListDetail.get(j).get(k).title);
+            }
+        }
+
+        this.notifyDataSetChanged();
+    }
+
+    public void removeIngredient(Ingredient i) {
+        String category = i.category;
+        List<Ingredient> list = this.expandableListDetail.get(category);
+        list.remove(i);
+        expandableListDetail.put(category, list);
+        if(list.isEmpty()) {
+            this.expandableListDetail.remove(category);
+        }
+
+        for(int j=0; j<expandableListDetail.size(); j++) {
+            for(int k=0; k<expandableListDetail.get(j).size(); k++) {
+                Log.d("Removing", "Category " + expandableListDetail.get(j) + ", Ingredient " + expandableListDetail.get(j).get(k).title);
+            }
+        }
+
+        this.notifyDataSetChanged();
     }
 
     @Override
@@ -50,12 +103,12 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public Object getGroup(int position) {
+    public String getGroup(int position) {
         return this.expandableListTitle.get(position);
     }
 
     @Override
-    public Object getChild(int position, int expandedPosition) {
+    public Ingredient getChild(int position, int expandedPosition) {
         return this.expandableListDetail.get(this.expandableListTitle.get(position)).get(expandedPosition);
     }
 
@@ -112,7 +165,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         if(ingredient.imageUrl != null) {
             AssetManager am = context.getAssets();
             try {
-                Resources res = context.getResources();
                 InputStream is = am.open("images/" + ingredient.imageUrl);
                 Bitmap b = BitmapFactory.decodeStream(is);
                 Log.d("image", ingredient.title);
@@ -141,16 +193,12 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         @Override
         public void onClick(View view) {
             i.isInPantry = !i.isInPantry;
-//            Log.d("aaaa", Globals.ingredientTabs.get("pantry").toString());
-//            Log.d("aaaa", Integer.toString(Globals.ingredientTabs.get("pantry").categories.size()));
-//            if(i.isInPantry) {
-//                Log.d("aaaa", "adding");
-//                Globals.ingredientTabs.get("pantry").addIngredient(i);
-//            } else {
-//                Log.d("aaaa", "subtracting");
-//                Globals.ingredientTabs.get("pantry").removeIngredient(i);
-//            }
-//            Log.d("aaaa", Integer.toString(Globals.ingredientTabs.get("pantry").categories.size()));
+            CustomExpandableListAdapter adapter = (CustomExpandableListAdapter) Globals.tabAdapters.get("pantry");
+            if(i.isInPantry) {
+                adapter.addIngredient(i);
+            } else {
+                adapter.removeIngredient(i);
+            }
         }
     }
 
@@ -164,11 +212,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         @Override
         public void onClick(View view) {
             i.isOnList = !i.isOnList;
-//            if(i.isOnList) {
-//                Globals.ingredientTabs.get("shopping").addIngredient(i);
-//            } else {
-//                Globals.ingredientTabs.get("shopping").removeIngredient(i);
-//            }
         }
     }
 }

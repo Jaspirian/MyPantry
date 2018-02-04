@@ -1,13 +1,13 @@
 package com.jraynolds.mypantry;
 
 import com.jraynolds.mypantry.main.Globals;
-import com.jraynolds.mypantry.objects.Category;
 import com.jraynolds.mypantry.objects.Ingredient;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ExpandableListDataPump {
 
-    public static HashMap<String, List<Ingredient>> getData(String location) {
+    public static LinkedHashMap<String, List<Ingredient>> getData(String location) {
         HashMap<String, List<Ingredient>> categories = new HashMap<>();
 
         List<Ingredient> ingredients = Globals.getIngredients(null, false, null, location);
@@ -34,8 +34,8 @@ public class ExpandableListDataPump {
         });
     }
 
-    public static HashMap<String, List<Ingredient>> splitCategories(List<Ingredient> ingredients) {
-        HashMap<String, List<Ingredient>> categories = new HashMap<>();
+    public static LinkedHashMap<String, List<Ingredient>> splitCategories(List<Ingredient> ingredients) {
+        LinkedHashMap<String, List<Ingredient>> categories = new LinkedHashMap<>();
 
         //populate categories
         List<String> categoryNames = new ArrayList<>();
