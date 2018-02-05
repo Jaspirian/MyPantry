@@ -20,7 +20,7 @@ import java.io.InputStream;
 
 public class IngredientView extends AppCompatActivity {
 
-    private Ingredient i;
+    private final Ingredient i = (Ingredient) getIntent().getExtras().get("Ingredient");
 
     private EditText title, description, category;
     private TextView uniqueTitle;
@@ -54,7 +54,6 @@ public class IngredientView extends AppCompatActivity {
     }
 
     private void initializeVariables() {
-        i = (Ingredient) getIntent().getExtras().get("Ingredient");
         title = findViewById(R.id.text_title);
         uniqueTitle = findViewById(R.id.text_uniqueTitle);
         uniqueTitle.setText("");
@@ -81,8 +80,8 @@ public class IngredientView extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        inPantry.setChecked(i.isInPantry);
-        onList.setChecked(i.isOnList);
+        inPantry.setChecked(i.isInPantry(getApplicationContext()));
+        onList.setChecked(i.isOnList(getApplicationContext()));
 
         //recipes
 
@@ -98,13 +97,13 @@ public class IngredientView extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            Ingredient newIngredient = new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString(), inPantry.isChecked(), onList.isChecked());
+            Ingredient newIngredient = new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString());
             if(i.title.toLowerCase().equals(title.getText().toString().toLowerCase())) {
                 Globals.modifyIngredient(newIngredient);
                 finish();
             } else if(Globals.getIngredients(newIngredient.title, true, null,"all").isEmpty()) {
                 Globals.removeIngredientByTitle(i.title);
-                Globals.addIngredient(newIngredient);
+                Globals.addIngredient(newIngredient, inPantry.isChecked(), onList.isChecked());
                 finish();
             } else {
                 uniqueTitle.setText(R.string.uniqueTitleWarning);

@@ -1,5 +1,7 @@
 package com.jraynolds.mypantry;
 
+import android.util.Log;
+
 import com.jraynolds.mypantry.main.Globals;
 import com.jraynolds.mypantry.objects.Ingredient;
 
@@ -9,6 +11,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 /**
  * Created by Jasper on 2/3/2018.
@@ -16,10 +19,10 @@ import java.util.List;
 
 public class ExpandableListDataPump {
 
-    public static LinkedHashMap<String, List<Ingredient>> getData(String location) {
-        HashMap<String, List<Ingredient>> categories = new HashMap<>();
-
+    public static TreeMap<String, List<Ingredient>> getData(String location) {
         List<Ingredient> ingredients = Globals.getIngredients(null, false, null, location);
+
+        Log.d("ingredientsSearch", location + " = " + ingredients.toString());
 
         return splitCategories(ingredients);
 
@@ -34,8 +37,8 @@ public class ExpandableListDataPump {
         });
     }
 
-    public static LinkedHashMap<String, List<Ingredient>> splitCategories(List<Ingredient> ingredients) {
-        LinkedHashMap<String, List<Ingredient>> categories = new LinkedHashMap<>();
+    public static TreeMap<String, List<Ingredient>> splitCategories(List<Ingredient> ingredients) {
+        TreeMap<String, List<Ingredient>> categories = new TreeMap<>();
 
         //populate categories
         List<String> categoryNames = new ArrayList<>();

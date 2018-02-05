@@ -3,1107 +3,791 @@
     "title" : "Bok Choy",
     "description" : "Bok Choy is used in many dishes due to its crisp texture, sweet flavor and nutritional value. It is also known as white cabbage.",
     "imageUrl" : "bok_choy.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Snake Beans",
     "description" : "Snake beans are long and slender green pods with a sweet flavour and crunchy texture. Snake beans have a similar texture to that of green beans, but are slightly lighter green in colour.",
     "imageUrl" : "snake_beans.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Sorrel Leaves",
     "description" : "Sorrel is a leafy green vegetable that is native to Europe. It has a sharp, lemony taste.",
     "imageUrl" : "sorrel_leaves.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Rocket Leaves",
     "description" : "Rocket leaves or popularly known as arugula or salad rocket is nutritious green-leafy vegetable. The young tender leaves carry a bitter peppery flavor that makes it mostly a salad vegetable.",
     "imageUrl" : "rocket_leaves.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Drumstick",
     "description" : "Drum stick or horseradish tree is a tall slender plant grown for it greens, flowers and nutritious pods. It is a very commonly used vegetable in Indian household.",
     "imageUrl" : "drumstick.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Cherry Tomatoes",
     "description" : "Cherry tomatoes are a smaller variety of the garden tomatoes, which are comparatively sweeter than the larger fruits.",
     "imageUrl" : "cherry_tomatoes.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Kaffir Lime",
     "description" : "Kaffir lime is a rough bumpy green citrus fruit originating from Southeast Asia. The leaves also feature in many recipes because of their aromatic properties.",
     "imageUrl" : "kaffir_lime.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Plantain",
     "description" : "Hindi title: Vaayaka They belong to the banana family but are firmer and not consumed raw.",
     "imageUrl" : "plantain.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Turnip",
     "description" : "A white bulb taproot vegetable. The leaves and the root have a pungent bitterly taste, similar to raw cabbages and radishes.",
     "imageUrl" : "turnip.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Sweet Potatoes",
     "description" : "In China, sweet potatoes, typically of the yellow variety, are baked in a large iron drum, and sold as street-food during winter.",
     "imageUrl" : "sweet_potatoes.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Round Gourd",
     "description" : "A mall round gourd, also called baby pumpkin, is a vegetable grown for its immature fruit.",
     "imageUrl" : "round_gourd.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Ridge Gourd",
     "description" : "A long vegetable with a dark green ridged skin and a white spongy flesh with soft seeds.",
     "imageUrl" : "ridge_gourd.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Pimiento",
     "description" : "These look like smaller versions of red capsicums or bell peppers. These are also called as cherry peppers.",
     "imageUrl" : "pimiento.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Spinach",
     "description" : "You can either make a vegetable dish out of it or use it to make burgers, sandwiches and rolls. It may be used in salads.",
     "imageUrl" : "spinach.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Onion",
     "description" : "Onions are available in yellow, red or purple and white color. They are mostly used as a compulsory additive to many savory dishes.",
     "imageUrl" : "onion.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Mustard Leaves",
     "description" : "Mustard leaves is a popular winter vegetable. They are broad dark green leaves with a flat surface.",
     "imageUrl" : "mustard_leaves.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Mushroom",
     "description" : "Mushrooms are fleshy, edible fungi that are a low-calorie food and a good source of Vitamin B.",
     "imageUrl" : "mushroom.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Radish",
     "description" : "The radish is a root vegetable native to the Europeans. They are white in color and are mainly used in salads but can be cooked or steamed as well.",
     "imageUrl" : "radish.png",
-    "category" : "Vegetables",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Vegetables"
   }, {
     "title" : "Coriander Powder",
     "description" : "Grounded from coriander seeds, coriander powder is an essential condiment in the Indian cuisine. It has a pleasing aroma and savour.",
     "imageUrl" : "coriander_powder.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Chives",
     "description" : "Belonging to the family of onions, Chives are their smallest member. The tiny bulbs have long, thin and hollow green leaves.",
     "imageUrl" : "chives.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Galangal",
     "description" : "Galangal is a herb like ginger that belongs to the rhizome family. Also known as Thai or blue ginger, it has many medicinal and culinary properties.",
     "imageUrl" : "galangal.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Tulsi",
     "description" : "Tulsi is a green leaf herb with excellent aromatic properties.",
     "imageUrl" : "tulsi.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Sage",
     "description" : "Sage is a herb that is native to the Mediterranean. It has gray-green leaves that have a pungent smell and a minty taste. It is mostly used for seasoning.",
     "imageUrl" : "sage.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Rosemary",
     "description" : "Rosemary is an herb that is used in food for flavoring purpose or for fragrance. Native to the Mediterranean, Rosemary has needle shaped leaves that are highly aromatic.",
     "imageUrl" : "rosemary.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Yellow Chilies",
     "description" : "Yellow chili peppers offer a sweet pepper flavor and a heat that can vary from very mild to moderately hot.",
     "imageUrl" : "yellow_chilies.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Oregano",
     "description" : "Oregano is an aromatic herb that is native to northern Europe. It is known for its aromatic and medicinal properties since ancient times.",
     "imageUrl" : "oregano.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Nasturtium",
     "description" : "Nasturtium is a plant whose leaves and flower both are edible. Fresh and bright nasturtium leaves and flowers have a pepper-like flavor and are nice to use in salads.",
     "imageUrl" : "nasturtium.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Salt",
     "description" : "Salt is unrefined sodium chloride, an essential ingredient while cooking food worldwide.",
     "imageUrl" : "salt.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Mustard Powder",
     "description" : "A popular condiment for various dishes like pickles and chutney, salad dressing and meat flavoring due to its pungent flavor.",
     "imageUrl" : "mustard_powder.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Paprika",
     "description" : "Used mainly to add color to the dishes as it has very mild flavor. It is a deep red coarse powder.",
     "imageUrl" : "paprika.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Mint Leaves",
     "description" : "Mint is a type of herb with a refreshing flavor. It has a sweet flavor with a cool after taste.",
     "imageUrl" : "mint_leaves.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Marjoram",
     "description" : "An herb from a sage like plant, Marjoram is commonly used a cooking spice.",
     "imageUrl" : "marjoram.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Lemongrass",
     "description" : "Lemon grass is a tall perennial grass. It tastes somewhat like ginger with a citrus kick.",
     "imageUrl" : "lemongrass.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Red Chili",
     "description" : "Dried red pepper may be used whole or powdered. It is really spicy and the intense heat is concentrated in the seeds. Fresh red chillies are milder.",
     "imageUrl" : "red_chili.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Saffron",
     "description" : "A unique flavored spice, made from the dried stamens of the crocus flower. It is used as a seasoning in many Asian cuisines.",
     "imageUrl" : "saffron.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Dried Fenugreek Leaves",
     "description" : "Fenugreek leaves are an ancient spice used for flavoring various dishes. The leaves have a bitter taste, but when added to the recipe, titillate the taste buds.",
     "imageUrl" : "dried_fenugreek_leaves.png",
-    "category" : "Spices and Herbs",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Spices and Herbs"
   }, {
     "title" : "Amaranth",
     "description" : "Amaranth is a tall, bushy plant whose seeds are edible. Similar to quinoa, amaranth belongs to the family of beets, chard, spinach and other weeds.",
     "imageUrl" : "amaranth.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Flour",
     "description" : "Flour, also known as all-purpose or refined flour, is made from wheat grains after removing the brown covering.",
     "imageUrl" : "flour.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Oats",
     "description" : "A type of cereal grain grown for its seed. Most of its taste comes from the roasting process after it has been harvested and cleaned.",
     "imageUrl" : "oats.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Brown Rice",
     "description" : "Brown rice is a variety of ricethat is un-milled or partly milled and is considered as a whole grain.",
     "imageUrl" : "brown_rice.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Barnyard Millet",
     "description" : "These are tiny, white, round grains belonging to the millet family. It is sticky once it is cooked and stays a bit soggy.",
     "imageUrl" : "barnyard_millet.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Tapioca",
     "description" : "Tapioca is a starch extracted from the cassava plant. They are soft, spongy and chewy in taste.",
     "imageUrl" : "tapioca.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Buckwheat",
     "description" : "Buckwheat grain is the dried and de-husked seed of the plant. It has a nutty flavor which means that it can be consumed raw or simply roasted.",
     "imageUrl" : "buckwheat.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Kidney Beans",
     "description" : "These beans are reddish brown in color and have a kidney like shape. They have a very strong taste and are used in both hot and cold recipes.",
     "imageUrl" : "kidney_beans.png",
-    "category" : "Cereals and Pulses",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Cereals and Pulses"
   }, {
     "title" : "Beef",
     "description" : "Meat from cows is known as 'Beef'. Beef meat can be cut into steak, roasts or short ribs.",
     "imageUrl" : "beef.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Turkey",
     "description" : "Turkey is often used as a substitute for chicken. Turkey is often preferred over beef as it has lower calorie content.",
     "imageUrl" : "turkey.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Pork",
     "description" : "Pork is the culinary title for the meat obtained from a domestic pig. It is available in different cuts like tenderloin, loin chops, bacon etc.",
     "imageUrl" : "pork.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Partridge",
     "description" : "The native grey partridge is a small bird which is usually pale and highly flavored. Red-legged partridge is a bigger bird with much milder flavor.",
     "imageUrl" : "partridge.png",
-    "category" : "Meat",
-    "isInPantry" : true,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Meat Stock",
     "description" : "Meat stock is nothing more than meat flavored broth but can provide character to many dishes since it comes loaded with flavor.",
     "imageUrl" : "meat_stock.png",
-    "category" : "Meat",
-    "isInPantry" : true,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Keema",
     "description" : "Hindi title: Keema Also called as minced meat, it is simply meat that has passed through a mincing machine to obtain smaller and finer meat pieces. This meat is popularly used in a wide variety of like burgers, pie fillings and pasta sauces. The most commonly grounded meat is beef, though meat of pork, lamb and poultry is also minced. In South Asia, lamb and goat meat is minced to make Keema, a traditional meat dish. It is also made from almost any meat, cooked by frying or stewing. Keema is often used as a filling for samosas and naans. These days veg keema is also available in restaurants made with onion, tomato, peas and ginger. The final taste of keema differs depending on the way it is prepared. Some people usually make a mixture of minced vegetable or soya mince with onion, tomato, peas without meat and call it veg keema. But typically, Keema is minced mutton curry that can be made with almost any meat .It can be either stewed or fried. It is either consumed as it is or used as a stuffing. It is very easy to make as it can be made in one pan and takes very less time. Nutritional Value A cup of keema provides 26 percent of daily value of calories and also has dietary fiber that helps lower cholesterol. But it does contain saturated fats that might raise the levels of LDL cholesterol. It also contains sodium. Since a high sodium diet contributes to high blood pressure, consumption of only small amount of keema is advised. Keema is also a source of vitamins and minerals like vitamin A, that is good for vision and potassium that helps regulate blood pressure. Since, there are many ways of preparing keema, its consumption must be altered accordingly. Â ",
     "imageUrl" : "keema.png",
-    "category" : "Meat",
-    "isInPantry" : true,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Mutton Liver",
     "description" : "Hindi title: Kaleji Kaleji or Mutton liver is an organ meat that is very high in nutritional value. It can be fried, boiled, baked or broiled into various savory dishes. Its use is not very common in the US. In fact organ meat was not consumed for a very long time in many parts of the world because it was considered to be bad in taste and looks. But in the recent years as recipes started to pass around to different countries, its consumption increased. Nutritional Value The liver is considered to be the most nutritious part of the lamb. It is very rich in proteins, iron and Vitamin. Iron helps oxygen transportation in the body and keeps the hemoglobin at a healthy level. A proper immune system functioning depends on the iron present in the body. Proteins are very good energy source. Vitamin A, strengthens the mucus membranes, lining of the eyes, urinal, intestinal tracts, and helps fight infection in the body. It is important for healthy eyes and is a powerful antioxidant that fights against free radicals. But it is essential to note that lamb liver is a little high in fat content. People who are watching their cholesterol levels should avoid its consumption. Note: 1. It is very important not to overcook mutton liver as it becomes tough and rubbery. 2. Consumption of mutton liver is not suggested to pregnant ladies as it contains high amount of retinol, a type of vitamin A that can harm the unborn baby.",
     "imageUrl" : "mutton_liver.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : true
+    "category" : "Meat"
   }, {
     "title" : "Ham",
     "description" : "Ham is the cured and smoked hind leg of an animal usually a pig though chicken ham is also available. All hams are mostly fully cooked or preserved in salt and sugar, but fresh ham is also available. The meat is rosy pink in color. Ham is either cured with salt or with nitrate. The one that is cured with nitrate can be stored for a longer time. Ham in general can be stored for up to a week in the refrigerator. Availability and Usage Ham is easily available in the markets. It can be used to make salads, snacks and many main course dishes. It is famously used in the US for preparation of holiday feast. Note: A nutritional drawback of ham is that it has a lot of sodium content. While buying ham from the market, look out for low sodium ham. Nutritional Value 1. Ham is cured with brine that is a combination of salt and water. This prevents the growth of unhealthy bacteria. 2. It is rich in protein and keeps you full for a longer time. 3. Low sodium ham can help you lose weight. 4. Ham is a rich source of Vitamins B6 and B12 and is good for a healthy heart and nervous system, reducing the risk of heart diseases and depression and stress respectively. Did you know? Though called as Hamburger, it doesnâ€™t have ham meat. The top vegetable served alongside ham is kernel corn.",
     "imageUrl" : "ham.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : true
+    "category" : "Meat"
   }, {
     "title" : "Kidney Meat",
     "description" : "Hindi title: Gurda There are many Asian dishes that are made from the kidneys of goat, beef, etc. Each animalâ€™s kidney is prepared in a different way in different cultures, each having a distinctive flavor. Most often, kidneys of beef and pork are eaten with more interest. Organ meats are considered to have a distinct strong flavor. There has been a lot of speculation if consuming organ meat is really healthy. While many tend to love the taste, there are also an equal number of meat lovers who dislike the strong flavor. Kidney meat contain more concentrated source of the nutrients, minerals and other elements. Nutritional Value 1. It is a very good source of Vitamin A and so is very good for vision. 2. It is also a good source of iron and vitamin B that helps A, iron and Vitamin B that help against free radicals and metabolize food into energy. Though the vitamins in kidney meat differs depending on the animal that it is from, we can say that Vitamin B-12 is the most abundant. 3. Kidney meat is also good for maintaining cardiovascular health. 4. It is a high quality protein because it contains all the amino acids that are essential for the body. Did you know? During the ancient times, kidney meat was only served for the upper sections of the society.",
     "imageUrl" : "kidney_meat.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : true
+    "category" : "Meat"
   }, {
     "title" : "Crab",
     "description" : "Hindi title: Kekara A crab is terrestrial and aquatic dwelling crustacean that is usually found in coastal waters. It is related to the family of lobster, crayfish and shrimp. It has a long projecting tail that is entirely hidden under the thorax region. The major portion of the crabâ€™s body is covered under its thick exoskeleton. Crabs are known to adapt to any living condition. They can survive in deep oceans, fresh water or crawl on the land. There are more than 4000 species of crabs on this planet. Crab is a delicacy for all meat lovers for the sweetness and softness of meat. There is however a distinct variation in the meat of a male crab and female crab. While some species of crabs are eaten as a whole, few species are consumed for their claws and legs. Crab claws have a sweet and dense meat white like lobster meat. Male crabs are usually thought to have larger claws and more white meat; while the female crabs sometimes have coral. Its liver is considered a delicacy. Types The most commonly consumed crab varieties are: Blue Crab: Blue-green colored, it is also called beautiful swimmer. These species are more prolific on the East coast of the US. The crab however turns reddish while being cooked. Dungeness Crab: This crab is found in the coastal waters of Alaska and Mexico. It is easily found during the winter months. The crab is popular for its succulent and sweet pink flesh. Horseshoe Crab: titled after its appearance, this type traces back its roots some 500 million years ago. The meat is edible, though the ratio of its shell to meat is considerably small. King Crab: This giant crab also called as Alaskan king crab weighs about 25 pounds. Despite its large size, only one-fourth meat of the crab is edible. Only the male crabs are sought out to eat. The meat is taken from its legs and claws. Nutritional Value 1. Being a rich source of fatty acids, crabs are essential for lowering blood pressure and minimizing the risk of cardiovascular diseases. 2. Crabs provide adequate amounts of protein required for the human body. 3. Potassium content in the crab helps the growth of healthy cells. 4. Unlike majority of seafood, crabs have a relatively low amount of mercury. 5. Selenium, a mineral found in crab is a known remedy for tumors and cancer. Did you know? The crabâ€™s teeth are in their stomach. Most crabs have ten legs. Average life span of a crab is 8 to 13 years.",
     "imageUrl" : "crab.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Chicken Stock",
     "description" : "Hindi title: à¤®à¥�à¤°à¥�à¤— à¤¶à¥‹à¤°à¤¬à¤¾ Stock forms an important base in soups and sauces. It is a light, clear, flavorful liquid. You can prepare it at home or buy stock cubes or bouillon cubes which dissolve in water. To prepare stock at home let chicken bones, vegetables, herbs etc simmer in water for about 3-4 hours. Avoid using salt as stock usually forms a base for other dishes. It should not be boiled but simmered gently. Once it cools down strain and use the liquid. Stocks can be refrigerated for about three-four days. Stock helps in enhancing the flavors of the dish. The flavor in the stock actually comes from the connective tissues of the bones that contains a type of protein called collagen. These proteins convert into gelatin on heating and thicken the liquid. Use cold water to start with as this makes the extraction of collagen from the bone tissues easier. The basic difference between chicken stock and chicken broth is that chicken stock is made out of bonier parts of the chicken whereas chicken broth is made out of meatier part of the chicken. Chicken stock can be kept in the refrigerator for about 2-3 days.",
     "imageUrl" : "chicken_stock.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Chicken Liver",
     "description" : "Hindi title: Murgh Kaleji Chicken liver is the most sought after meat. It is most popularly used in a mixture of ground meat and fat minced into a paste. It is a very rich source of iron. Because of the high content of vitamin A present in it, it is very beneficial for the eyes and helps cure anemia. It is low in fat and very high in vitamins and minerals. It is slightly higher in cholesterol and so is not advised for someone who is watching their cholesterol levels. It is very rich in proteins as well. One serving of chicken liver provides 100% of the daily recommended intake of riboflavin, a type of B vitamin. Organ meat is generally considered the healthiest. Its consumption is often avoided as organ meat does not look good to many people. Off late many innovative recipes to cook chicken liver have been circulating and its consumption has increased considerably. It is considered to be a delicacy.",
     "imageUrl" : "chicken_liver.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Chicken",
     "description" : "Hindi title: à¤šà¤¿à¤•à¤¨ Chicken is the most common poultry in the world, with America accounting for the maximum global per capita meat consumption. Good especially as it is lean white meat. Chicken is rich in proteins, potassium, calcium and contains no carbohydrates. Types Free Range Chicken: This is a term used for the way chickens are raised. In this method, chicken is left to roam freely for food. To ensure that your chicken is free range look at the pastured indication on the pack(may not be easy to find in India). Organic Chicken: This term is used for chickend that are fed only certified organic feed that cannot contain animal by products, genetically engineered seeds and are free from drugs.Even this kind of chicken is give outdoor access. Conventionally Raised Chicken - This term is used for chickens that are raised indoors in sheds and are grain fed.This type of chicken is often avoided as they are exposed to pesticides and drugs. Also it is believed that they have higher chances of carrying diseases. Grass Fed Chicken: Grass fed chickens are those birds which are fed a pasture diet than a grain based diet. They contain a lesser percentage of saturated fat and have a higher vitamin A content. They also contain the good fatty acids in a higher percentage. Nutritional Value 1.Chicken is very rich in proteins and so helps build muscles and maintain a healthy body weight. 2.It is rich in tryptophan, known to relieve stress. 3.High protein content also helps to strengthen the bones and eating chicken is specially very helpful when you are aging. 4.Chicken does contain cholesterol, but is also rich in Vitamin B3, also known as niacin that helps lower cholesterol(if consumed without butter or oil). 5.Having boiled chicken could help improve immunity, specifically against cold. 6.Chicken contains 44.7% daily value of Selenium and hence reduces the rick of developing arthritis later in life. 7.Chicken has lots of amino acids that help children grow taller and stronger. 8.Presence of Vitamin B6 ensures healthy metabolism. Did you know? There are more chickens on earth than there are humans. Alektorophobia is the fear of chickens.",
     "imageUrl" : "chicken.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Chops",
     "description" : "Hindi title: Chaamp A chop is referred to a thin boneless portion of meat cut from the ribs of the animal. A meat cut offered with a rib bone is called cutlet. The most commonly kinds of chops are pork and lamb. Meat chops are cooked in several ways depending on the kind of animal the meat is taken from. Pork chops are cooked by roasting, grilling or frying. Stuffed pork chops are also a delicacy. Pork chops are either available bone-less or bone-in. Pork chops are classified as shoulder and center-cut depending on the portion of the meat that is cut. Lamb chops are available in different cuts. There are loin chops that resemble T-bone steaks. This variety of chops has a good portion of meat. Rib chops have a bone surrounded by tender meat. Lamb chops are often cooked grilled or pan-broiled. Lamb chops are shoulder, rib, loin or kidney. Nutritional value 1. Lean portions of meat are good source of proteins and it doesnâ€™t contain any fat content. 2. Eating meat chops helps maintaining a healthy weight and prevents cardiovascular problems. Did you know? The idea of a meat chop started when London chophouses started cooking individual portions of meat.",
     "imageUrl" : "chops.png",
-    "category" : "Meat",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Meat"
   }, {
     "title" : "Gruyere Cheese",
     "description" : "Usage Gruyere cheese is commonly used for baking. It is a good melting cheese and therefore used for Fondues (a Swiss dish of melted cheese). It can be used in baked dishes, soups, casseroles, gratins etc. It can be grated over salads and pastas. It goes well with French onion soup. Gruyere can be stored for a month or more. Avoid Gruyere that has mould on the surface. Nutritional Value The nutritional value of Gruyere is similar to that of other hard cheeses. It is a good source of protein, phosphorus and calcium but it is very high in saturated fat.",
     "imageUrl" : "gruyere_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Gouda Cheese",
     "description" : "It is a yellow Dutch cheese made from cow's milk. The cheese is titled after the city of Gouda in the Netherlands. It is a semi-hard cheese popular for its rich, unique flavour and smooth texture. Gouda is made from pasteurized cow's milk but some varieties are also are made from sheep or goat's milk. The texture of gouda cheese varies from semi-hard to hard. Types The types of gouda cheese are - Boerenkaas- It is a traditional variety of gouda cheese produced from unpasteurized cow's milk. Overjarig- It is a full-flavoured, hard and salty cheese. Other types of gouda cheese includes Jong, Jong Belegen, Belegen, Extra Belegen and Oud. Younger Dutch gouda cheese can be identified by yellow, orange, or red wax rinds while the white mature cheese has black wax coverings. Younger goudas (aged between one and six months) taste creamier and have a yellow wax coating. Older one are saltier, more pungent in taste and harder in texture. Usage and Availability Young goudas go best with beer. A well- aged Gouda complements wines with deep, rich flavours. It can shredded, grated, sliced, cubed or melted. It may be used as a table cheese or a dessert cheese. Gouda is available in large wheels weighing between 10 and 25 pounds. Nutritional Value Gouda cheese is good source of protein, calcium and phosphorus. It is low in sugar but it is high in cholesterol and saturated fat.",
     "imageUrl" : "gouda_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Feta Cheese",
     "description" : "Feta is a type of Greek cheese. It has a very soft and creamy texture. It is mostly produced in blocks and is crumbly. Feta cheese is generally made from sheep or goat's milk. It tastes somewhat tangy. Since 2002, feta has become of protected origin and can be produced only in Greece. Usage It can be used as table cheese and also in other dishes and salads. It can be served raw, cooked or grilled. It can also be used as an appetizer or a side dish. It is one of the main ingredients in the Greek salad. Nutritional Value 1. It has a high content of saturated fats and sodium therefor should be consumed in moderation. 2. It is a good source of calcium and Vitamin B12. Did you know? Feta cheese is one of the world's oldest cheeses. Feta derives its title from an ancient Greek word, which means, 'slice'.",
     "imageUrl" : "feta_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Milk",
     "description" : "Milk is a dairy product derived from the mammary gland of mammals. Milk is used worldwide as food for humans. It is also converted into dairy products like cheese, butter, curd, cream etc. Modern industries use milk to produce casein, lactose, whey protein, powdered milk, condensed milk and other industrial products. People who are lactose intolerent use soy or almond milk.Lactose is a disaccharide sugar that is found in milk. Milk and milk products should be bought fresh. Milk should be stored in refrigerator below 40 degree Fahrenheit but it should never be stored near the door of the refrigerator where it is susceptible to warm air from the opening and closing the door. Milk for consumption is mostly derived from cows, goats, buffloes and sheeps. Nutritional Value 1. Drinking milk is a great way to prevent tooth decay as milk is known to reduce the level of acidity in the mouth. It also fights plaque formation and reduces the risk of cavities. 2. It is good for health as it delivers energy. 3. It is vital for building and maintaining tissues. 4. Vitamin B6 in milk helps in the formulation of red blood cells. 5. Calcium present in milk helps in building bones and teeth. 6. Milk also contains zinc that plays an important role in the immune system, and is good for the eyes. Did you know? The habit of drinking milk became popular in Afghanistan about 10, 000 years ago.",
     "imageUrl" : "milk.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Brie Cheese",
     "description" : "Brie is a type of French made with cow's milk. It is slightly pale in colour with a greyish tinge under the rind. The rind is a white mould and is edible. It derives its title from the region where it originated. It is a popular dessert cheese. It is very soft and melts quickly when warmed. It tastes fruity and creamy. Types There are two types of brie cheese : Brie de Meaux and Brie de Melun. There are many varieties of brie. Some of them are - plain brie, herbed varieties, double & triple brie etc. Nutritional Value 1. Brie cheese is a good source of protein. 2. It contain high saturated fat which may increase risk of heart diseases. 3. Brie cheese serves as a good source of vitamin B-12 and B2. 4. It contains phosphorus which is good for our bones and teeth. 5. It contains high levels of sodium, so should be consumed in moderation. Usage Brie cheese can be used either raw or melted over food. It is purchases as a full wheel (shown in the picture) or a segment of it. It should be refrigerated. In case you do not want to consume the rind, you can scoop out the soft center. Underipe brie is hard while the overripe ones are too soft. Once it turns ripe it should be consumed within a few days. It is important to know that the ripening process stops once it is sliced. Brie cheese goes best with champagne.",
     "imageUrl" : "brie_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Cream Cheese",
     "description" : "As the title suggests, this cheese has a soft creamy texture with a high fat content. Cream cheese is essentially made from un-skimmed cow milk and enriched with cream. It is an American favorite and considered by many as an American invention. Cream cheese is regarded as a fresh cheese, but must be consumed shortly after it is opened as it has a short shelf life. The taste is very mild, sweet and slightly tangy. There are many variations and flavors of cream cheese infused with herbs, chilies and even fruits. It is in the same family of milk products such as cream, milk, butter and yoghurt. Refrigerate it, tightly wrapped, for not more than a week. You should not freeze the cream cheese that would make hard and it will lose its flavor when thawed. Therefore it is recommended to use it at room temperature. Do not consume if you find any moulds over the cheese. Usage It is one of Americas most widely consumed cheeses. It is most often used as a spread over breads, bagels, crackers. It is also used as a dip, used to thicken sauces and in salads as well. It is used as a substitute for or along with butter at times while baking cakes or making cookies. It is a common substitute for olive oil or butter in mashed potatoes. It is the main ingredient in cheesecakes and is also used in light flaky crusts. It is a popular ingredient in most desserts. It is used as frosting for the ever so popular red velvet cake amongst other cakes, muffins or cupcakes. For frosting always use it at room temperature. It is an easy preparation and can be prepared at home as it is frugal and is ready within 24 hours. Milk is the basic ingredient required to make cream cheese. Nutritional Value It has a very high fat content due to which it is not preferred by many. It is lower in protein and calcium than other forms of cheese. Types Due to its high fat content, cream cheese is also made available in regular, light and fat-free versions for health conscious consumers. There are many flavours available and many people also opt to make their own flavors of cream cheese at home. Did you know? Early prototypes of cream cheese have been found in England as early as 1583. Â ",
     "imageUrl" : "cream_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Ricotta Cheese",
     "description" : "Ricotta is made from sheep, cow or goat milk whey that is left from the production of cheese. It is made by coagulating the proteins that remain after the casein has been used to make cheese. Notably, Italian ricotta is made from the whey of sheep, cow, goat, or buffalo milk. The American product is almost always made of cow's milk whey. Both types are low in fat and sodium but the Italian version is naturally sweet. The American variety is a little saltier and moister. It is often salted, baked or smoked to prolong its shelf life. It does not undergo a ripening or an ageing process to further develop the flavor and is therefore considered as a fresh cheese, but due to this it has a very short shelf life. It is soft and creamy and does not contain salt which gives it a very light and sweet flavor with a light fluffy texture. Ricotta can very easily be prepared at home as it only requires few ingredients; milk, vinegar, salt and cream. Usage Ricotta is used to make many Italian dishes and bakery products. It is used in pizzas, cheesecakes, lasagna, pasta and ravioli. Even a certain kind of mayonnaise is made from ricotta cheese. It is also used instead of paneer to make an Indian sweet called ras malai. Ricotta cheese is often used in sweet and savoury dishes. Most popularly used as a stuffing for ravioli and also used in certain pastries. It is used extensively in desserts like cheesecakes, cookies. Its texture allows it to alternate as a dip as well as a sauce. Ricotta cheese can be partnered well with berries, tangerines, sweet rolls, crusty breads, melons, bagels, chips and some light wines as well. Nutritional Value Ricotta cheese has vitamin A, riboflavin and vitamin B12. It also has calcium that helps build strong bones by retaining their strength and density. Ricotta cheese has more than 5 times the calcium found in regular cottage cheese. It contains omega fatty acids that are crucial to our health. But consuming too much of ricotta should be avoided because it is high in calories and fat, and could alter the cholesterol levels. Â ",
     "imageUrl" : "ricotta_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Parmesan Cheese",
     "description" : "Parmesan cheese is made from raw cow's milk. It is a hard granulated cheese that is cooked but not pressed. Parmesan cheese has a fruity nutty taste. The cheese is made only from those cows that are fed only on grass or hay. It is said to have originated in Italy. The only additive that is allowed in parmesan cheese is salt, which is absorbed by the cheese during the first 20 days of curing. Usage Parmesan cheese is usually grated over pasta, spaghetti and also stirred in soups and stews. Unlike other cheese varieties, parmesan cheese can simply be roasted and eaten as a snack. Nutritional Value It is a good source of calcium and phosphorous and is therefore good for healthy bones. It is comparatively low in calories and has a good taste so that a little amount of it can be added. This makes parmesan cheese a very good addition in the diet for people watching their weight. It is also low in lactose and so many people who are mildly lactose intolerant prefer this variety of cheese. Did you know? Parmesan cheese is an ancient title for what we now call as Parmigiano Reggiano cheese. Freezing parmesan cheese makes it lose its flavor.",
     "imageUrl" : "parmesan_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Blue Cheese",
     "description" : "Blue vein cheese, or blue cheese is a generic term given to the type of cheese produced from cow's milk, goat's milk or sheep's milk and ripened with the arbitration of the mould Penicillium. It is produced by the coagulation of milk and ageing of cheese. Blue cheese carries a distinct smell cultivated from the bacteria residing on the cheese. In many European countries, blue cheese is titled carrying the designation of its origin. It is believed that blue cheese originated when cheese was stored in moisture and temperature controlled caves. Instead of getting spoilt, the cheese developed a blue colour with a distinctive taste. The cheese is characterized by the blue, blue-gray or blue-green-mold spots throughout the body. The veins are created by spiking cheese with stainless steel rods letting the oxygen flow and favouring the growth of mould. Blue cheese has a sharp salty taste caused mainly due to the mould and bacteria settlement on the cheese. Usage Blue cheese can be used either raw or melted over foods. It tastes best when served alongside raisins, pears, walnuts and fruit breads. Crumbled cheese is used as a dressing, balancing bitter greens in salads. Nutritional Value 1. Blue cheese is a cheese variety with low calorie content. 2. The anti-inflammatory properties of blue cheese helps the arteries function properly. 3. It stimulates brain cells and improves memory. Did you know? The first blue cheese variety was discovered in AD 79.",
     "imageUrl" : "blue_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Cheddar Cheese",
     "description" : "titled after the village from it originated, cheddar cheese is hard and natural cheese made from cow's milk. Its texture and colour, however, depends on the processing the cheese undergoes. It usually ranges from mild to sharp flavor varying from natural white to pumpkin orange in colour. When too young, it has a smoother texture. It gets crumbly as it is processed. Though the natural yielding colour is white to pale-yellow, artificial dye are added to obtain different colours. Caerphilly is a variety of farmhouse cheese that is buttery and milky. It has creamy beige-to-yellow colour. It has a mild salty taste and easily digestible. Less dense than Cheddar, Cantal cheese has the tang of raw milk when young, and becomes tangy and buttery as time proceeds. Nutritional Value 1. Cheddar cheese has high concentrations of essential nutrients like protein and calcium. 2. Unlike the regular cheese, cheddar cheese also contains relatively high amount of saturated fats and calories. 3. Cheddar cheese provides excellent protection against tooth cavity. Did you know? A giant wheel of Cheddar cheese was gifted to Queen Victoria (1837-1901) as her wedding gift. Cheddar cheese is the most popularly sold cheese variety in the United States.",
     "imageUrl" : "cheddar_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Mascarpone Cheese",
     "description" : "Mascarpone Cheese is a cream cheese that is obtained by boiling milk and curdling by adding citric acid or lemon juice. It is often confused with ricotta or cottage cheese because the preparation process is similar. But mascarpone cheese is double or triple cream cheese and it imparts a sweeter taste. It is milky-white in color and is easy to spread. It is often found in Tiramisu or in a sweet stuffing for foods. It is known to have originated somewhere near Milan. Mascarpone cheese is an Italian cheese made from cream. It is white in color and can sometimes be used as a substitute of butter to thicken dishes. It is also known as curd cheese and is used to prepare various dishes, sauces and in desserts like Tiramisu. It is a spreadable cheese and is used as an ingredient in sponge cake, tarts, cupcakes and other desserts. It is very creamy and thick and can be flavored with ingredients like lemon juice, dried fruits or crushed nuts for a better flavor and texture. Nutritional Value 1. It contains Vitamin A which is essential for the body to strengthen the immune system and it also acts as an antioxidant. 2. The calcium in mascarpone cheese helps reduce the risk of developing kidney stones and to maintain healthy teeth and strong bones. 3. Since Mascarpone cheese is a rich source of Vitamin A and Calcium, it is good for pregnant women. 4. It also has a low risk of harboring bacteria because it is pasteurized. Note: Since mascarpone cheese is double or triple cream, it is very high in fat content. Did you know? Mascarpone cheese originated in the 16th or the early 17th century.",
     "imageUrl" : "mascarpone_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Cream",
     "description" : "Hindi title: à¤®à¤²à¤¾à¤ˆ Cream is made out of milk and is a dairy product. Cream is usually yellowish white in color. However cream from goat's or cow's milk is usually white in color. It is nothing but the milk fat that accumulates if milk is allowed to sit undisturbed for a while. Processed and packaged cream may have thickening agents like sodium bicarbonate, gelatine, alginic acid, etc. It is used in most desserts, soups, stews and sauces. Types of Cream Half and Half Cream: This type of cream is typically used in coffee and it has an average of 12% butterfat. It can be used for less butterfat cooking. Whipping Cream: It has an average of 30% butterfat. It is a heavy cream and used for filling and topping. Double Cream: It has an average of 48% butterfat. Double cream is the British title for whipping cream. Creme Fraiche: It is again a thickened cream which has a rich texture. It is used for dessert topping or in soups and it has an advantage of not curdling when boiled. Nutritional Value 1. Cream is a very good source of calcium that is required to boost bone health. 2. It also contains essential proteins that improve the immune system. 3. Phytonutrients such as phosphorus are in abundance in cream. They ensure proper metabolic functions of various organs. Did you know? One table spoon of cream contains around 10-30 milligrams of calcium. Chilled cream whips better than cream at room temperature.",
     "imageUrl" : "cream.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Provolone Cheese",
     "description" : "Provolone cheese is an Italian cheese which was originated in Southern Italy. It has a smoky flavor and is used in making cannelloni and ravioli. It can be made with cow or buffalo's milk. It is golden-yellow in color. One of its type is Provolone Dolce which is pale yellow to white in colour and is aged for 2-3 months. Another kind of provolone cheese is Provolone Piccante which has a sharper taste and is aged for more than 4 months. Mostly the flavour of provolone cheese varies depending on how and where its produced. But usually it has a semi hard texture. Nutritional Value Provolone cheese is a good source of calcium and protein but has a high content of sodium. Provolone cheese is usually served with red wines, homemade breads and can even be served with hot chutneys. It can be kept for 6-8 months if wrapped properly in a plastic and kept in a refrigerator.",
     "imageUrl" : "provolone_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Mozzarella Cheese",
     "description" : "Hindi title: à¤®à¥‹à¤œà¥‡à¤°à¥‡à¤²à¤¾ à¤šà¥€à¤œà¤¼ Mozzarella - the title is applied to a variety of cheese which are made using the 'pasta filata' method. This cheese is made by spinning and cutting and was originally prepared using buffalo milk, and later cow's milk. It is usually served the day after preparation for the fresh taste and often found in pizza and pasta dishes. It is an Italian cheese that is soft, stringy and somewhat elastic in nature. It is a semi soft cheese and white in color. Types of Mozzarella Mozzarella di bufala camapana: Milk of the Italian buffalo is used to make this traditional cheese in the South of Italy. Fior di latte: It uses the most common ingredient as used around the world, cow milk and is available fresh or partly dried. Treccia: Mozzarella cheese twisted to form a plait. Affumicata: Smoked and reduced moisture cheese. Pomodorini: Stuffed mozzarella, the newest trend on the block, often comes with a stuffing of olives, raw ham, tomatoes etc. The big question: Is mozzarella healthy? Mozzarella is stuffed with calcium and high in protein. It is also known to improve blood sugar levels and make moods merry. Along with helping tissue growth and repair, it is beneficial for muscular degeneration disorder. Mozzarella cheese comes in low fat and whole milk packaging, both of which are high on calories but low on carbohydrates. Did you know? Legend says that cheese curds accidentally falling into hot water in a cheese factory near Naples gave birth to mozzarella. That hint of sourness mozzarella leaves in the mouth is called 'pizza palette'.",
     "imageUrl" : "mozzarella_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Khoya",
     "description" : "Hindi title: à¤–à¥‹à¤¯à¤¾ Khoya is milk that is evaporated to a solid consistency by thickening it. It is often prepared at home, but is also available in the market. It is used to make both savory as well as sweet dishes and desserts. It has a slightly oily or granular texture, and a rich nutty flavor. It is prepared by boiling and reducing the milk to a semi-solid stage. Types and Usage There are different types of khoya depending on the use of ingredients and moisture content. Hard khoya, or batti khoya is the hardest and contains 50% moisture. It can be grated like cheese and is used mainly to make Indian sweets like burfis and ladoos. Granulated or daanedar khoya is made by curdling the milk before evaporating it. Its consistency is between batti and chikna khoya. It is most commonly known for making an Indian sweet called kalakand. Khoya is also added to Indian dishes like shahi paneer to thicken it and increase the taste. Nutritional Value 1. Most of its benefits are similar to that of milk. Like any other dairy product, khoya is very good for strengthening the bones and teeth as it rich in calcium. 2. Presence of riboflavin makes khoya an essential source of Vitamin B. Therefore it is good for a healthy immune system, energy production and maintenance of healthy hair and skin. 3. It is also a good source of vitamin D that helps optimize calcium metabolism and vitamin K that helps blood to clot normally, preventing type 2 diabetes, high blood pressure and heart attack.",
     "imageUrl" : "khoya.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Hung Curd",
     "description" : "Hung curd is nothing but yogurt drained of all its water. It can be made very easily at home. Tie some curd in a muslin cloth and leave it hanging for at least 3-4 hours or till all the water drains out. After this time period, pressure is applied to the bundle to squeeze out all the water and the hung curd is ready. It lasts for a long time without becoming sour. It is a common ingredient in a variety of Indian and Middle Eastern recipes. Usage: Shrikhand, an Indian dessert, is made using hung curd. It can also be mixed with blanched vegetables as an alternative to cheese dips. Mayonnaise and white sauce can also be substituted with hung curd. Health benefits: It regulates cholesterol and reduces high blood pressure. It is low in fat and rich in calcium.",
     "imageUrl" : "hung_curd.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Yogurt",
     "description" : "Hindi title: Dahi Yogurt is also known as dahi in India. It is a fermented milk product which is known for it's subtle taste and consistency. Yogurt (curd) is used during many auspicious occasions in India. It is sold sweetened and flavored and can be served with various kinds of fruit. A well-known accompaniment with Indian meals, curd is also used widely for marination of chicken and meat. Nutritional value 1. Yogurt is a very healthy fermented milk product as it is more easy to digest than milk. It improves our immunity and is a very good source of calcium. 2. It can also reduce the level of cholesterol in one's body. 3. A new research reveals that probiotics found in natural yogurt could help boost a person's mood because they affect brain function. 4. Yogurt enhances the production of hydrochloric acid in our stomach, which in turn improves our digestion, mineral and vitamin absorption. 5. Yogurt also protects women from vaginal and bladder infections. 6. Yogurt is rich in vitamin D and calcium. It helps prevent against diseases like osteoporosis. Uses Yogurt helps in balancing cholesterol levels. Yogurt used as face pack is very beneficial to the skin. It evens skin tone, lightens freckles, tightens skin pores and also cleanses skin. Yogurt is effective in soothing the pain caused by sunburn. It can be used as a healthy replacement to cream cheese in many recipes, like that of cheesecake and healthy piecrust. Did you know? Since 5500 years yogurt is being consumed in the world. In Punjab people usually have yogurt before exams as they believe that it will bring success to them. Yogurt is often used as a substitute for ice-cream as it contains lesser calories. How to make yogurt at home? You will need 2 1/2 cups milk 1 tsp yoghurt (as a starter) Method Boil the milk and transfer it into the container in which the yoghurt is to be set. A ceramic bowl is best. Cool the milk to a luke warm temperature-a drop of it on your wrist, should feel neither hot nor cold. The temperature of the milk is important. Beat the teaspoonful of yoghurt till smooth, add 2 Tbsp milk to it and mix well. Add this to the rest of the milk and stir with a spoon to mix well. Cover the container and keep in a draught-free place to set. Do not move the container while the yoghurt is setting. Once set, place the yoghurt in the refrigerator to chill before serving",
     "imageUrl" : "yogurt.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Cottage Cheese",
     "description" : "Hindi title: Paneer Made from curdling milk and straining the whey. Cottage cheese can be eaten raw or cooked. It has a moist texture. Store it in the cold part of the refrigerator for about 5-7 days. It is rich in calcium. Usage In India, it is a very common ingredient in recipes like matter paneer, paneer butter masala, palak paneer etc. It is also used to make sweets like rasgullas, rasmallai and sandesh. Nutritional Value 1.It is a source of calcium that is good for strengthening bones and teeth. 2.It also contains Vitamin D that helps to absorb calcium. 3.Being rich in calcium,it is very good for relief from joint pains. 4.It has a low calorie and high protein content and is therefore good for health conscious people. How to Buy In the market you will find soft as well as hard cottage cheese. Though the soft one is preferred by many, one must remember soft cottage cheese stays fresh for a lesser duration as compared to the hard one. Making Cottage Cheese at Home Many people prefer making cottage cheese at home rather than buying it from the market. To make it at home, milk is boiled for 5-7 minutes and after switching off the gas,lemon juice or citric acid is added to it. Once solid milk pieces and water start separating, it is kept for cooling(also called phata doodh in hindi). After half and hour, it is collected in a cloth (that can hold the paneer and also let remaining water out). Cottage cheese is then flattened with any heavy vessel in the kitchen (remember that the cloth is on). The cloth is then removed and the cottage cheese in cut into pieces. Point to note: People often take out cottage cheese in the cloth a little early and cool it under water. If there is a time constraint, you can do that but remember, donâ€™t try to squeeze the cloth as it will be extremely hot.",
     "imageUrl" : "cottage_cheese.png",
-    "category" : "Dairy Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Dairy Products"
   }, {
     "title" : "Cranberry",
     "description" : "Cranberries are a group of evergreen dwarf shrubs. The fruit is a berry which is larger than the leaves of the plant. The fruits are initially white, but they turn deep red when fully ripe. It has a somewhat acidic taste that adds to its sweetness. Usage Most of the cranberries produced are processed into making products like juice drinks, sauce and dried cranberries. Cranberries as fruit are cooked as cranberry sauce. Such preparations are traditionally served with roast turkey, which is a staple dish of the traditional English Christmas dinners, and is also prepared during Thanksgiving. Cranberries are also used in bakery goods, sorbets, ice creams, desserts etc. Cranberry wine is made in some of the regions of the United States and Canada where cranberries are grown. Fresh cranberries are available from October to December. Bright red berries should be chosen which are free from any wrinkles. Fresh berries can be stored in the refrigerator for several days. Shriveled or sticky berries should not be stored as they have a very short shelf life if kept at room temperature. Raw, fresh or dried cranberries can be eaten as snack. In India you can find the frozen or dried varieties in leading supermarkets. Nutritional Value 1. Cranberry juice is known to be effective in treating urinary tract infections because it inhibits bacteria from attaching to the bladder and urethra. 2. Cranberries have a very high antioxidant and phytonutrient capacity, which is known to prevent cholesterol from forming in the heart. 3. They are a great source of vitamin C and fiber. Did you know? The freshness of cranberries can be tested by bouncing them. Only the freshest and the ripest ones would bounce. Cranberries take three years to mature from planting to first harvest.",
     "imageUrl" : "cranberry.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Kiwi",
     "description" : "Kiwi fruit or kiwi berry is an edible berry that has a soft texture and a sweet flesh. The fibrous greenish-brown outer portion shields the bright green flesh. The center of the fruit has black tiny edible seeds. Kiwi fruit is now a commercial crop in countries like Italy, France, Greece and New Zealand. The creamy flesh tastes like a mixture of strawberries and bananas, yet has its own distinct tang. Types The most common kiwi species is Hayward kiwi, which is exceptionally large and has a superior flavor. The fruit has good keeping quality. It is a very popular kiwi variety in New Zealand. Other two popular kiwi varieties are Hardy kiwi and Silvervine kiwi that have a smooth-skin in the size of a cherry. The flesh of these fruit has a golden yellow-green shade. One can determine if the fruit is ready to savour by checking its ripened state. Immature fruits are hard while fully ripened fruits yield to gentle pressure. Nutritional Value 1. Kiwi fruit is rich in Vitamin C potassium and magnesium. It contains dietary fiber that reduces high cholesterol level. 2. The fruit is rich in antioxidants. 3. Having a kiwi fruit is said to improve eye sight. 4. A recent study states that eating kiwi fruit regularly aids better digestion. Kiwi fruit is rich in acintinidin, an enzyme that promotes proper functioning of the digestive system. Did you know? Kiwi fruit is more than 700 years old. Kiwi fruit was first grown in China, where it was known by the title â€˜Yang Tao.â€™",
     "imageUrl" : "kiwi.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Blueberries",
     "description" : "Blueberry, often regarded as Mother Natureâ€™s super antioxidant, ranks as the second favorite fruit in the world after strawberry. From sweet to tart and tangy, blueberries are grown in clusters and range in a size from a pea to a marble. The fruit turns from pale green to dark blue upon ripening. Types There are three commonly found varieties of blueberries. Highbush Blueberries: These are the commonly cultivated and popularly eaten variety of blueberries. This variety of berries is very popular in the U.S. As the title denotes, they can grow as high as 12 feet! Lowbush Blueberries: Also referred to as â€˜wild berriesâ€™, they grow less than two feet tall from the ground. The berries of this variety are relatively smaller in size. Rabbiteye Blueberries: Native to the southern U.S., this variety grows up to 20 feet in height. Usage Blueberries are eaten as a fruit or processed into jams, jellies, blueberry pies, etc. Blueberry jam is a very popular condiment made from blueberries, water, sugar and fruit pectin. In a few western countries, blueberry wine made from the flesh and skin of the berry is also available. Nutritional Value 1. Blueberries are a source of diverse micro nutrients that are required for the human body. 2. Most studies have suggested that blueberries influences blood pressure regulation. 3. The fruit is also low in fat containing only 80 calories. 4. Blueberries are packed with anthocyanins, which imparts it the deep purple color. These are great anti-inflammatories and antioxidants known to prevent cancer, heart diesases, ageing etc. 5. They are also a great source of Vitamin C and since our body cannot store or produce Vitamin C its ideal to chomp on foods loaded with it. Did you know? Blueberry is one of only natural foods that are blue in colour. Blueberries are the official berries of Nova Scotia, Canada.",
     "imageUrl" : "blueberries.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Mango",
     "description" : "Hindi title: à¤†à¤® One of the most popular fruits, Mango is known to be the 'King of Fruits' because of its rich and aromatic flavor. It is the national fruit of India and also of Pakistan. In India, the green leaves are used ritually as floral decorations. The outer cover maybe yellow, orange or green depending on the type. The inside flesh is soft yellow, pulpy and juicy with an inedible stone. It is a summer fruit native to the Indian subcontinent. Philippines, Alphonso, Langra, Chaunsa, Dasheri, Totapuri are the most popular varieties of mangoes. Usage Both sour and sweet mangoes are used in cuisine. Sour, unripe mangoes are made into pickles or eaten raw with salt chilli or soy sauce. They are also made into dal. In Andhra Pradesh, unripe mangoes along with mustard are made into a pickle called Avakaya. Sweet mangoes are eaten raw or are made into juices, smoothies, ice-creams or jellies. Nutritional Value Mango helps fight cancer, heart disease and eye problems. Mangoes have a high content of vitamin A and vitamin C which protects our body from oral cavity and lung cancer. Also it is a good source of vitamin E and vitamin B6 which prevents our body from various diseases and infection. Raw mangoes help combat heat strokes. Consuming these keeps you hydrated, quenches thirst and boosts energy. The dietary fiber content in the mangoes helps regulate the blood sugar levels. But owing to their sweetness, mangoes are not preferred for those who watch their waist line. Did you know? Mangoes were first grown in India 5,000 years ago. Legend says that Buddha sat under a mango tree meditating.",
     "imageUrl" : "mango.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Watermelon",
     "description" : "Hindi title: Tarbooz Belonging to the same family as cucumber, pumpkin and gourd, watermelon is actually a vegetable! It is, however, consumed as a fruit for it juicy flesh. Watermelon holds almost 92% water content and is considered an ideal health food. The red or pink flesh is secured by thick green rinds that are either spotted or striped. Watermelon can be oblong or spherical in shape. The ideal size of a watermelon can vary from a few pounds up to 90 pounds. Though the commonly found watermelon has a red or pink flesh, there are varieties that are red, orange, white or yellow. The colour of the flesh depends on the seeds and the hybrid. Over past few years, seedless watermelons are raging in the market. There has been controversy questioning the quality of such melons. Most common watermelon varieties are Jubilee, Royal Jubliee, Crimson sweet, Baby Doll and many more. It is essential to choose a watermelon that is symmetrical in shape without any bruises and cuts. Usage Watermelon is one of the most refreshing summer-time fruit. Due to its high water content, it provides for a sumptuous meal, quenching your thirst and satisfying your hunger. Watermelons are squeezed for their juice which is often served in most hotels as a welcome drink as it provides instant rejuvenation. Watermelons are commonly used in fruit salads. It is a perfect diet food as it is filling and non-fattening. Roasted watermelon seeds are widely consumed in Asia as a snack food. The rind of watermelon can be pickled and marinated as well. Nutritional Value 1. Watermelon is considered the thirst quenching fruit owing to its water content. 2. The melon is rich in potassium that controls blood pressure and regulates heartbeat. 3. Juicy watermelons contain some of the best antioxidants in the nature. 4. Watermelon can also help improve sleep. 5. Watermelons play the role of a detergent in cleaning the kidneys. 6. Watermelons are a good source of vitamins A & C and potassium. They help lowering inflammation that contributes to conditions like asthma, atherosclerosis, diabetes and arthritis. Did you know? Watermelon was first harvested in Egypt almost 5,000 years ago. In Vietnam, watermelon seeds are consumed on the Viettitlese New Yearâ€™s Day. Watermelon is the symbol of Turkish city, Diyarbakir. There are over 1,200 varieties of watermelons around the world.",
     "imageUrl" : "watermelon.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Tomato",
     "description" : "Hindi title: à¤Ÿà¤®à¤¾à¤Ÿà¤° Though botanically a fruit, Tomato is often regarded as a vegetable. Having originated from Mexico, this fruit belongs to the nightshade family. The English title Tomato is originated from a Spanish title Tomate. Tomatoes are a versatile fruit and greatly used in diverse meal courses in varied forms. The tomato belongs to the nightshade family. Tomatoes when unripe are green in colour and firm, as they ripen they change shade to red and become softer. Storing tomatoes in refrigerator harm the flavour of the fruit. Because of their acidic content, it is easy to preserve the fruit at home. Tomatoes are rich in lycopene which has health benefits. Usage Tomatoes are consumed in various ways including raw, as a sauce, in salads, soups, baked, fried and as a drink. Tomato juice is a popular ingredient in many alcoholic and non-alcoholic beverages. Unripe tomatoes can also be breaded or fried and make for a popular ingredient in salsa. Unripe tomatoes can also be pickled. Tomatoes are used to make ketchup or tomato sauce which is widely used across the world. Tomato ketchup is almost an indispensable part of any sandwich, burger, pizza and pasta. Nutritional Value They are rich in potassium and are cholesterol free. Tomatoes get their colour from a chemical called lycopene. They are in fact the richest source of lycopene which is known to have anti-cancer properties. Tomatoes help to unblock pores leaving your skin soft. This is due to the high amounts of vitamin C. these fruits also aid in vision improvement due to the high concentration of vitamin A. Did you know? China is leading producer of Tomato producing an estimate of 34 million tonnes. In 1500s, Europeans considered Tomato to be a poisonous fruit, suspicious of its bright red colour. When tomatoes were introduced in 1500's in Europe the Germans called it 'the apple of paradise' and the French called it the 'apple of love'. The heaviest tomato, so far, weighs at 3.51 kg. Tomatoes are the most widely used canned vegetable. There are over 10,000 varieties of tomatoes. Â ",
     "imageUrl" : "tomato.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Strawberry",
     "description" : "Hindi title: à¤¸à¥�à¤Ÿà¥�à¤°à¥‰à¤¬à¥‡à¤°à¥€ Widely appreciated for its distinctive aroma, fiery red color and juicy taste, strawberry is everybody's favorite fruit. They are red, juicy and have a conical shape. Strawberry's belong to the rose family and are essentially grown for the fruit. Strawberries come in various shapes, sizes and colors; some are even off-white or yellow in color. Though available all through the year, the best berries are available from April to June.",
     "imageUrl" : "strawberry.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Water Chestnut",
     "description" : "Hindi title: à¤¸à¤¿à¤‚à¤˜à¤¾à¥œà¤¾ It is not a nut but a floating aquatic plant that grows in marshes. It is commonly used in Chinese cooking. It is a seasonal fruit that is available only after the monsoon until the start of winter. Devil's pod, buffalo nut, water caltrop are some of its other titles. It is a knobby edible tuber with a reddish black skin and a white crunchy flesh. The baroquely shaped fruits resemble the head of a bull. Rinse before use and remove the flesh while being consumed. They have a sweet taste with a slight crunch, somewhat nutty. Because of their living characteristics, toxic content is formed in the seeds. The fruit is roasted to remove the toxins. While purchasing make sure you buys the ones that look firm and are wrinkle free. Unpeeled chestnuts can last up to a week. They should be stored in the refrigerator. Usage Roasted Singhara is consumed as a raw fruit, boiled or is grounded to powder and added as an ingredient in dishes. They are commonly used in Chinese and South East Asian cuisines. It is dried and made into flour in India. Boiled singharas are sold as a popular street food snack in India. Singhara fruit and its by-products like the juice and flour are used in cookery and medicine as well. They are frequently eaten raw or added to stir fries, stuffing and dumplings for texture and it's sweet flavor. Steamed, the skin takes on a blackened color and it tastes almost like a potato. Nutritional Value They are a good source of fiber and have a very low fat and sodium content but high calorie count. They are cholesterol and gluten free. They also have cooling and detoxifying properties. Water chestnuts are known to aid in curing jaundice. Juice extracted from the fruit helps ease problems caused by nausea and bad appetite. Singhara is considered the best home treatment for diabetes.It is a rich source of proteins, minerals and essential carbohydrates. Caution: Excess consumption of singhara can bloat the stomach and cause stomach pain. Â ",
     "imageUrl" : "water_chestnut.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Papaya",
     "description" : "Hindi title: à¤ªà¤ªà¥€à¤¤à¤¾ It is a tropical fruit that has a sweet taste, soft texture and are pear shaped. It is native to southern Mexico and Central America. The black seeds of papaya are actually edible and have a peppery taste. Young papaya contains papain and hence has been used as a meat tenderizer for centuries now.",
     "imageUrl" : "papaya.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Orange Rind",
     "description" : "Hindi title: à¤¸à¤‚à¤¤à¤°à¥‡ à¤•à¤¾ à¤›à¤¿à¤²à¤•à¤¾ Orange rind also called orange zest is the colored outer skin peeled from the fruit orange. Once it is peeled, it releases instant aroma around the surroundings. It is due to the essential oils that are in the zest. Orange rind shouldn't be confused to the underlying white portion of the peel. Â ",
     "imageUrl" : "orange_rind.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Orange",
     "description" : "It is mostly consumed directly as a fruit or made into orange juice. It can be added to fruit salads, or used to make desserts. The peel of the fruit, is used to sweet orange oil that is used for flavoring food, drinking and also for perfumes.",
     "imageUrl" : "orange.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Olives",
     "description" : "Hindi title: à¤œà¥ˆà¤¤à¥‚à¤¨ They are the fruits of the olive tree that have been cultivated for more than 5000 years in the Mediterranean. Its oldest cultivation is found to be in what is now Jordan. Olives are cultivated in autumn and winter for olive oil, fine wood, olive leaf and the fruit. They are either green or black in color though the color does not signify its maturity. They are mostly available bottled as they are naturally bitter and hence are cured with lyre, salt or brine. Usage Olives are widely used in Italian, Spanish and Greek cooking. It is mostly used as an additive to various recipes and salads. Olive oil that is extracted from the seed is used in cooking extensively as an alternative for regular oil .It is also applied on skin and hair for their good health. Olive leaves have been used as a medicine for a very long time to treat viral, bacteria and infection related problems. Nutritional Value 1. It contains monounsaturated fats that help lower blood pressure. 2. It is a very rich source of antioxidants like Vitamin E and minerals like selenium and zinc. It is particularly rich in a phytonutrient oleuropein and thus helps against the damaging free radicals released during metabolism. It also helps lower LDL cholesterol. 3. The phytonutrients that are present in olives have anti-inflammatory properties and help against inflammation related diseases like arthritis and cardiovascular diseases. 4. Due to its high antioxidant and anti-inflammatory properties, olives have proved to be very effective in protecting against cancer, specially stomach and breast cancer. 5. Olives are high fat food; therefore reduced consumption is suggested for people watching their fat intake. Did you know? Winners in the Olympic Games were crowned with wreaths of olive leaves, and, for centuries, the olive branch represented a symbol of peace.",
     "imageUrl" : "olives.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Pear",
     "description" : "Hindi title: à¤¨à¤¾à¤¶à¤ªà¤¾à¤¤à¥€ Belonging to the member of rose family, pear is a fruit that is juicy and can have a mildly acidic to sweet taste. It typically has a rounded body that tapers into a neck. Pears are available in different forms: fresh, dried, canned or in the form of juice. The fruit is available in variety of colors from green to brown. They are used majorly in desserts and are a good source of dietary fiber and vitamin C.",
     "imageUrl" : "pear.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Sultana",
     "description" : "Hindi title: à¤®à¥�à¤¨à¤•à¥�à¤•à¤¾ Native to Turkish origin, Sultanas are large white grapes to rich golden-brown colour. Sultanas are often confused for raisins and currants, as all are dried forms of grapes. What differentiates Sultana from the other two varieties is its tenderness and sweetness. They are golden in color and are more plump, sweet and juicy when compared to raisins. They are referred to as Golden raisins in some parts of the US. Sultanas are the dried fruit of seedless grapes coming in varied shapes from round to oval. They are a convenient low fat snack. Turkish sultanas are classified into numbers 8, 9, 10, 11 based on the colour of sultanas: type 8 is dark brown colour; type 9 has brownish tint; type 10 is light brown sultana and type 11 is light brown to golden colour sultanas. For their sweet and succulent nature, Sultanas are the best choice for biscuits, desserts and cakes. It is also a good condiment for baked goods. They are added to cookies, breads and muffins. Sultanas need to be stored in an airtight container to extend their freshness. They are available all-year round. Usage Aside from being consumed simply as a snack, they are also used to produce fruit juice and alcohol. Originally used to make wine, its primary use nowadays is for raisins. They are added to cakes and other desserts owing to the fact that they are seedless. The warm flavour also makes it a good addition to savoury dishes and various cereals. Often referred to as the 3-way grape, it is used as table grapes, raisins as well as for making wine. It is the most planted grape in California. It is used to add a rich flavour to many breakfast cereals. Often added to yoghurts, ice-creams and a variety of desserts. Nutritional Value 1. Sultanas are an excellent source of potassium, iron and vital nutrients. 2. The rich fibre content keeps the digestive tract healthy. 3. They are also beneficial for high blood pressure and anaemia. 4. They have a high calorie count and contain lots of minerals. Did you know? The American variety of sultana grape is called Thompson seedless raisins. Â ",
     "imageUrl" : "sultana.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Mulberry",
     "description" : "Hindi title: à¤¶à¤¹à¤¤à¥‚à¤¤ A fruit belonging to the berry family. The fruits turn pink to dark purple or black. It is about 2-3 cms long and has a sweet, tarty flavor. They get their color from a chemical called anthocyanins which is a great antioxidant. The ripe fruit is eaten raw or added in pies, teas and wine. It is similar to blackberry but with a very discrete flavor of its own. A newer less common variety also showcases white mulberries. Dried mulberries make a crunchy, delicious and nutritious snack and are often used in jams and sherbets. Nutritional Value Mulberries are high in a lot of nutrients such as vitamin C, iron, calcium, protein and dietary fiber. They also contain anti-oxidants known for anti-inflammatory properties. Mulberries also strengthen the immune system with their essential macronutrients. It cleanses the blood thereby improving the heart function. Did you know? These berries are great for treating ring worms. Silkworms only consume the leaves of the mulberry trees. Mulberries can be used as natural food colorants.",
     "imageUrl" : "mulberry.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Lychee",
     "description" : "Hindi title: à¤²à¥€à¤šà¥€ Lychee is a fruit which has an extremely juicy whitish pulp and is usually eaten fresh. It is very sweet and tarty in taste. The fruit is oval shaped. It has a very enticing floral fragrance. It is covered with a rough texture which is pink in color and is to be removed before being consumed. It is very popular in China and India. It has an inedible seed. The sweet flavour of the seed is lost when canned; hence its flavour is best relished when eaten fresh. In China, which is the largest producer of lychees, it is popularly known as a 'gift for a joyful life'. The lychee tree can grow up to 40 feet high. In India, lychees are available in plenty during the summer season. Usage Lychees are best tasted fresh. They are also added in fruit cups and desserts either peeled or pitted. Stuffed with cottage cheese, lychees are served as toppings in salads. When the fruit is eaten dried, it gets a smoky flavour. Nutritional Value They are a great source of Vitamin C, a vitamin which the body cannot produce naturally. It is also a good source of vitamin which helps the body to metabolize carbohydrates, fats and proteins. It is rich in minerals like copper and potassium which help to control the heart rate and blood pressure. Recent studies show that lychees have properties to protect against breast cancer. While purchasing go for the reddish pink one and avoid the brown ones which are over ripe. Did you know? Lychee tree can grow up to 40 feet high! Lychee seed is toxic in nature.",
     "imageUrl" : "lychee.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Lemon Juice",
     "description" : "Hindi title: à¤¨à¥€à¤‚à¤¬à¥‚ à¤•à¤¾ à¤°à¤¸ The juice extracted by crushing the pulp of lemon fruit. Lemon juice is most commonly used in a drink called lemonade which is made by using lemon juice, water and sugar. The juice is most widely used for various culinary and non-culinary purposes all over the world. The concentration of acidic content in the juice varies on variety of the fruit. Â ",
     "imageUrl" : "lemon_juice.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Lemon Rind",
     "description" : "Hindi title: à¤¨à¥€à¤‚à¤¬à¥‚ à¤•à¤¾ à¤›à¤¿à¤²à¤•à¤¾ Lemon rind is basically the peel of the lemon. The outer yellow part of the rind is used a lot for flavouring of cakes, tarts, salads. It is usually grated to add flavour to the food. The rind is also called the lemon zest if grated. It can also be used to deodorize garbage disposal and for cleaning microwaves and refrigerators. Health Benefits Lemon rind has a high nutritional value as it helps to reduce cholesterol levels and thus protects our heart. It balances the blood pressure and also helps to fight cancer. It makes our bones stronger and provides minerals like calcium and potassium. It improves the immunity of our body and helps in better digestion. Lemon rind contains nutrients that help to cure certain brain disorders like Parkinson's disease.",
     "imageUrl" : "lemon_rind.png",
-    "category" : "Fruits",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Fruits"
   }, {
     "title" : "Shrimp",
     "description" : "Hindi title: Jhinga Shrimps refer to certain species of Decapod Crustaceans. The term is used broadly and covers a variety of species. Shrimps are mainly characterized by semi-transparent bodies which are flattened from side to side with a flexible abdomen. They have a fan-like tail. Shrimps occur in all oceans, shallow as well as deep water along with freshwater lakes and streams. Shrimps vary in length from a few millimetres to more than 8 inches. They mainly feed on small plants and animals; some shrimps feed on carrion as well. Shrimps can be found feeding near the sea-floor on estuaries, coasts, rivers and lakes. There are thousands of species of shrimps. As they are adaptable, there are different species in different habitats. They are an important food source for big fish and even whales; they are an essential part of the food-chain. Usage Shrimps are used in various recipes across the world. Methods of preparation include baking, boiling, frying and grilling. It is popularly used as soup base in some Asian cuisines whereas shrimp curry is more popular in South Asia. In North-America, fried-shrimp is the most popular shrimp preparation. It is a necessary ingredient in the famous Spanish paella de marisco and Italian cacciucco. Fried Shrimps are a great addition to any salad, and are also relished when eaten along with fried rice. Nutritional Value 1. Shrimps are low in mercury and high in Omega-3s 2. Shrimps are a good source of calcium and iodine. 3. Shrimps are healthy for the circulatory system, as they are low in saturated fats. 4. They are a highly concentrated source of the antioxidant and anti-inflammatory nutrient called astaxanthin. 5. They are high in cholesterol. 6. A rich source of Selenium, which can easily be absorbed by the human body. 7. At 6 grams per ounce, it is an excellent source of protein. 8. It has a low calorie count. 9. This shellfish is a very good source of heart-healthy vitamin B12 and a good source of energy-promoting iron, phosphorus, and niacin. Caution: Shrimps are among the most common food allergens.",
     "imageUrl" : "shrimp.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Tuna Fish",
     "description" : "Tuna is a saltwater fish that belongs to the mackerel family. Tuna is popularly sold in canned form although fresh tuna is also available. Tuna is canned in edible oils, in brine, in water, and in various sauces. Unique because of their pink to dark red flesh, tuna is a carnivorous fish specie. Their meat has a flaky texture and rich flavor with high oil content. It has a unique taste, texture and versatility that make it popular around the world. The fish can be baked, grilled, steamed, fried or even minced for a recipe. Types Bluefin: Bluefin have a blue metallic color on top and silver white on the bottom. Yellowfin: Deriving its title from the yellow fins, their body is also blue with a silver white undertone. Other varieties include Albacore, Skipjack and Bonito. Usage Tune is used as a steak and in sandwiches and salads. Tuna can be seared, broiled, smoked, roasted, grilled, fried or stewed. It is also served raw in the form of sushi or sashimi. It dries very quickly, so should be cooked very briefly over a high heat; marinated before cooking; or simmered in a sauce. Due to its rich protein content and low calorie count, tuna is consumed excessively by athletes, sportsmen and bodybuilders. Nutritional Value 1. Tuna has a high content of good fatty acids, vitamin D and is a good source of low fat protein. Canned tuna may have a higher content of mercury and should not be consumed by pregnant women. 2. Like other fish, tuna is a rich source of omega-3 fatty acids that are extremely good for cardiovascular health. 3. The high levels of omega-3 essential fatty acids in tuna help protect against muscular degeneration of the eye and dry eye syndrome. 4. It also protects against cancer in the ovaries, pancreas, and every part of the digestive tract and also lowers the risk of leukemia. 5. Tuna is a good source of protein. 6. Selenium present in tuna acts as a powerful antioxidant. Tip: Tuna dry out fast and should be cooked for a short period of time on a high heat or marinated before cooking. Thicker steaks stay juicier. Researchers have found that consuming tuna that has a relatively higher natural fat content might help reduce the amount of mercury intake as compared to consuming tuna with a low fat content. How to buy and store When buying, choose tuna which have been trimmed neatly with a dark red flesh and meaty aroma. While most other fish are displayed on a bed of ice, fresh whole tuna will be displayed buried in ice. Tuna is best known in its canned form. It may be canned in oil, water or broth. Though tuna canned in oil is the moistest, it also has the highest calorie content. Tuna fish must be refrigerated at the lowest temperatures. In case you are carrying tuna fish with you on a day full of errands, be sure to keep an ice-box in the car. Shelf life of tuna can be extended by freezing it. Did you know? Tuna never rest and must always keep moving to get the oxygen required for their body. They are not cold blooded like most fish.",
     "imageUrl" : "tuna_fish.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Shellfish",
     "description" : "Shellfish are invertebrate aquatic animals that have a shell and are used as food. It includes various molluscs, crustaceans and echinoderms and is found in both fresh water and salt water. Types Squid: Eight arms and two long tentacles, there are many species of squid consumed. It may be sold as calamari. The ink is used as food coloring. Shrimp: With a narrow tapering body encased in a shell and a curled tail. The flesh turns pink and sweet on cooking. Lobster: Called the king of crustaceans, it has a white firmâ€™s meet which is sweet and succulent. Crayfish: They resemble small lobsters. Only the tail and claw are consumed. Crabs: Tough shell with a soft, flavorsome, sweet and succulent flesh characterize crabs, where the females are sweeter. Oysters: Oysters have a salty flavor and succulent texture. Mussels: They have shiny shells and tender, nutritious flesh. Cockles: Heart shaped small shells that have a morsel of flesh which can be consumed raw, steamed or boiled. Scallops: Delicate taste with a range of sizes, it has a round white firm flesh. Prawns: Prawns have sweet, firm, meaty flesh and are cooked in or out of their shells. Usage Shellfish dishes are present all across the world in almost all cuisines. It is an important source of protein. In Japanese cuisine, shellfish as well as their roe are used in different dishes. Sushi is prepared using both raw and cooked shellfish. Lobsters are famous in the U.S as a delicacy. It is mainly eaten across the American East Coast. In the Gulf States, shrimping is a famous and a very important industry. Raw oyster bars are also an indulgent feature of shellfish consumption. Oysters are opened, iced and served. The liquid inside the shell is called the liqueur. Nutritional Value Shellfish are a low fat high protein food and are a rich source of Choline and Omega 3 fatty acids. Shellfish are a good source of zinc, a mineral essential for growth and development, energy metabolism and immune function. It is a rich source of Vitamin B-12 which is a water-soluble vitamin necessary for health of nerve cells and red blood cells. Caution: Certain types of Shellfish can cause severe allergic reactions such as anaphylaxis in people. Shrimp, crab and lobster cause most shellfish allergies. To prevent a reaction, strict avoidance of shellfish and shellfish products is essential. Did you know? Despite the title shellfish, they are not a kind of fish.",
     "imageUrl" : "shellfish.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Shark",
     "description" : "Hindi title: à¤¶à¤¾à¤°à¥�à¤• Shark The huge water fish is fondly eaten for its fins. Shark is common seafood in many countries including Japan and Australia. Shark fish is eaten in fish and chips in parts of New Zealand and Australia. In many countries, shark meat is sold under the common title of fish. Sharks are often hunted for their fins. Fishermen hunt sharks chop off the fins and throw back the sharks back into the water. Raw fins are cleaned by safely removing the skin and denticles. They are then trimmed to any desired shape and bleached to achieve a desired colour. Shark fins by nature are flavourless. The soup is what adds to the taste. The fins are added for their texture. Not all sharks are edible. Most commonly consumed shark varieties are dogfishes, catsharks, sand sharks, makos, and smoothhounds. Mako fish is a delicacy for their meat is salmon-coloured having a very fine quality. Mako liver is used to prepare oil that is rich in vitamins. The skin of the shark is made into leather and the fins are added to shark fin soup. However, the meat can be eaten with its nutrient value only when cooked properly. The health of the meat strictly depends on the scavenging methods adopting while chopping the meat. Shark meat has a very short shelf life neither it can be preserved under refrigeration for too long. There has been an outrage to pass strict laws against finning of sharks due to the decline of shark species in the deep waters. Nutritional Value Eating shark is believed to boost sexual potency and beautify the skin quality. However, sharks are believed to contain highest toxics over all other fish species. Hence, it is not advisable to eat too much. Did you know? Sand sharks excrete their body waste through their skin pores that puts-off the taste of the meat. Shark liver is not edible as it contains very high amounts of mercury. Â ",
     "imageUrl" : "shark.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Hilsa",
     "description" : "A type of oily fish which is common in Bengali and Oriya cuisines. A very popular fish in Southeast Asia, it is the national fish of Bangladesh. It lays its eggs in large rivers despite being a sea fish and their young are caught while swimming back to the sea since they are the most delicious. The fish has a lot of tiny bones and needs to be de-boned. The shad fish is sometimes used as a substitute because it is not easily available everywhere. In West Bengal and parts of Assam, it has a religious value and is given as an offering to some gods. Usage Hilsa fish can be smoked, fried, steamed, baked, prepared with mustard and various condiments. It needs very litle oil for cooking since it has a high content of oil. It is also cooked wrapped in banana/plantain leaves. The intestine of this fish and the fish head is a delicacy and most often served with steamed rice and hot green chillies. Health Benefits Like other fish it is rich in essential fatty acids(omega 3 fatty acids) and helps develop healthy brain and nervous system.Some research has shown that hilsa fish could help lower cholesterol level. Did you know? A pair of hilsa are bought on auspicious days in Bengali families.",
     "imageUrl" : "hilsa.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Sardines",
     "description" : "Sardines are silvery, small, oily seawater fish that are soft-boned. They are at the bottom of the aquatic food chain and survive mainly on plankton. They are sold fresh and due to their high perishability, they are also commonly sold in canned form. Usage They can be prepared in a variety of ways: grilled, smoked and pickled are the most famous ways. It is also consumed as a curry or combined with greens for a salad. Seared fish can be served with pasta or smoked in a platter with accompaniments. Fish soups, stews, cutlets all have recipes that use sardines and the fish can also be consumed steamed. Types There are mainly 6 different species of Sardines all belonging to the Clupeidae family, but more than 20 varieties of are sold as Sardines across the world. Nutritional Value They have been found to reduce the occurrence of cardiovascular diseases. They have a low calorie count and are a rich source of vitamin B12 and vitamin D. They are one of the most concentrated sources of the omega-3 fatty acids EPA and DHA. Sardines are rich in minerals, especially Phosphorus which helps strengthening the bone matrix. The protein content in Sardines is very high which provides amino acids to the body. How to Buy For fresh sardines, look for ones that smell fresh, are firm to the touch and have bright eyes and shiny skin. How to Store Fresh Sardines are highly perishable but Canned Sardines will have a long storage life if stored in a cool area which is not exposed to excessive heat. Did You Know? Sardines get their title from the Mediterranean island of Sardinia, around which sardines were once abundant. Note: Discard smoked sardines that have a dry or brown edge or leaking moisture.",
     "imageUrl" : "sardines.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Salmon",
     "description" : "Salmon is a fresh water fish that is from the same family as trout. It has a pink-orange colored flesh. It is available as a whole, in steak or fillet form. It may be frozen, canned, dried or smoked. It is high in omega 3, vitamin D and proteins. Though farmed salmon is available all year round, wild salmon is only available from March until September. How to chose - Check that the flesh is firm. Organic salmon should be pale pink in colour. Farmed salmon should be quite a bright pink but not too dark as this indicates it has had colour added. Discard any fish that is grayish or fatty. Before cooking, ensure to scale the fish and check for fin bones, which must be plucked out How to store - Must be refrigerated in an airtight container and used within 24 hours. Salmon can be frozen for up to three months, but must be defrosted thoroughly before use. Poached salmon is very popular as along with being delicious it can also be served both hot and cold, it makes a great centerpiece for any festive occasion. Nutritional Value 1. Like any other fish, it is rich in omega-3 fatty acids that helps against cardiovascular problems and inflammation related diseases like heart attack, stroke, heart arrhythmia, high blood pressure, and arthritis. 2. Intake of omega-3 rich foods is associated with decreased risk of cognitive decline in older persons. 3. Salmon peptides provide anti-inflammatory benefits to the joint and are therefore good against joint pains. 4. It also protects against eye problems like macular degeneration and chronic dry eye. 5. Omega-3 rich fruits also protect the body from cancers like prostate colon, breast and prostrate cancer. 6. Salmon has a very high quantity of selenium that helps reduce the risk of joint inflammation and acts as an antioxidant as well. Interesting Fact: Fresh salmon will always have a fresh ocean smell not a fishy one.",
     "imageUrl" : "salmon.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Prawns",
     "description" : "Hindi title: à¤�à¥€à¤‚à¤—à¤¾ Prawns are shrimp-like seafood that are 3-5 cm in length. For those who love eating seafood, prawns are a treat. They are of two kinds, there are the smaller ones and the bigger ones that are called tiger Prawns or jumbo prawns. Though shrimp and prawns are addressed to the same of crustaceans, shrimps are the smaller ones. However, during the recent times, prawns are only signified as the freshwater beings while shrimps are the marine forms. Usage Like any other seafood, prawns can also be cooked in a varied number ways. They can be grilled, broiled, fried, or steamed. You can either cook them with the vein or without it based on personal choice and taste. Similarly it can be cooked with or without the shell. They are used to make savory dishes that form a part of the main course. Tip: frozen prawns take a lot of time to defrost and may not be as tasty as fresh prawns. Nutritional Value 1. Prawns are rich source of Selenium that prevents the growth of cancer cells in the body. 2. Like fish, they are also a rich source of Omega 3 Fatty acids which is very good for heart and help in reducing cholesterol level and prevents heart diseases. 3. They are also helpful for healthy boned and teeth because they are rich in calcium. 4. It contains vitamin E and so is very good for skin. And the presence of Vitamin B makes it a helpful food source for good memory and cardiac health. Did you know? In many parts of the world, sucking the brain part of the prawn is considered a delicacy.",
     "imageUrl" : "prawns.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Pomfret",
     "description" : "Pomfret originated from the Portugese word 'pampo'. A seawater fish with one single bone. Found in the Atlantic, Indian and Pacific oceans. Pomfrets have flat bodies and deeply forked tails. There are three types: silver, grey and black pomfrets. They are typically prepared whole after the inner organs of the fish have been removed. They are cooked fresh and are either fried or steamed. They do not have a strong odor and aftertaste that most of the saltwater fish have. Atlantic pomfret, also known as angel fish is the most popular among all types. It is a popular menu item in China and many Asian countries. Also, grey pomfret, silver pomfret and white pomfret are also widely consumed. Usage Pomfrets are usually prepared whole after removing the inner organs from the fishâ€™s body. The fish is at its best taste when they are cooked fresh. Nutritional Value 1. It is very low in calories and fat. 2. It is rich in protein which is why it helps reduce the risk of cardiovascular diseases and also helps to muscles. 3. It contains high amounts of omega 3 fatty acids that supply DHA, component for development of the brain. Tip : Cook pomfret by grilling or steaming rather than frying it, to gain maximum from its nutrients. Did you know? Grey pomfrets have more commercial demand than silver pomfret. Pomfret was earlier addressed as â€œPamfletâ€�, which was orginated from a Portuguese word â€œPampoâ€�.",
     "imageUrl" : "pomfret.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Perch",
     "description" : "Perch is a title of a fish of the genus Perca. Perch fish are usually long and rounded with rough scales. These fishes are carnivorous and usually feed on smaller fishes. They are freshwater fish. Types of Perch European Perch- This fish weighs not more than 6 pounds. It is found in Europe and Asia and is usually greenish in color. Balkhash Perch- It is very similar to European fish and is usually found in Kazakhstan. Yellow Perch- These are comparatively smaller than the European Perch. This fish has a delicate taste. They are found in United States and look very similar to the European Perch. Barramundi is a common variety of mild flavoured perch fish. It has a white flaxy flesh. Usage All peach varieties are eaten fondly for their tasty, firm meat. A yellow perch variety is famous North American seafood. It carries a mild sweet taste with a firm texture. It is also very adaptable to any kind of cuisine. It is usually marketed fresh or frozen. It is also best served with sandwiches, pastas, nuggets, wraps, etc. Barramundi perch is very popular in Thai and Goan cuisine. It is often served steamed with lime and garlic. It is also stir-fried with lemongrass. Nutritional Value Perch is a good source of protein and Selenium. It also contains vitamin B. This fish is low in saturate fats and is very high in cholesterol.",
     "imageUrl" : "perch.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Pearl spot",
     "description" : "Pearl spot fish, also popularly known as Karimeen or Chromide is considered a delicacy. The fish has an elliptical body with tiny shiny diamond spots all over its body. This variety of fish is one of the authentic dishes of the Kerala state. Karimeen, as called, it is commonly found in backwaters of Kerala. A fully grown pearl spot fish is about 40cm long weighing about two kgs. Usage Karimeen fish has good flavor and taste that titillates the taste buds. Karimeen fry or curry is very popular among the tourists who visit Kerala. The fish is fried, cooked in spicy coconut gravy or grilled in charcoal with spices. It is served on a banana leaf with seasonings and grilled. Prized for its delicious taste, nutrient value and high-demand, it is categorized as an â€˜upper-middle classâ€™ fish. Karimeen fry is one of the authentic dishes of Kerala state. Apart from the Kerala state, the fish curry is very famous in the regions of Bengal. Odisha and Konkani regions. Nutritional Value 1. It is a low in fat and high protein food. 2. The fish is rich in fatty acids that lower blood pressure and prevent heart strokes. 3. The fish also helps in improving the mental functions and minimizes the risk of Alzheimerâ€™s disease. Did you know? Karimeen is the state fish of Kerala. The fish feeds on algae, plants and water insects.",
     "imageUrl" : "pearl_spot.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Mussels",
     "description" : "Mussels are marine bivalves. Mussel is the common title used for a variety of clams, what differentiates them is their elongated shells. These beautiful sea creatures have a dark blue exterior and silver interior. Most mussels remain edible for only a day or two so be sure to check. Mussels measure two to three inches in length. While purchasing mussels chose the ones that are alive. Tap on the shell and check if it closes. If it doesn't, discard it. The are about 17 species of edible mussels. Usage Mussels are eaten in a different manner in different parts of the world. They are consumed with french fries in France, served with a white wine stock in Belgium and fried in batter in Netherlands. They can be boiled, smoked, steamed, roasted, fried in butter or barbecued. Health Benefits Mussels are known as power food and are a big factor in red blood cell formation. They are a good source of zinc and folate. These are great for your immune system and help boost your mental function. They are low in fat and cholesterol. Did you know? Freshwater mussels are used as hosts for freshwater pearls. Mussels are an aphrodisiac for males. The oldest mussel is more than 130 years old! Mussel meat is gender specific, female is orange/pink and male is white. Don't forget to yank off those whiskers before cooking!",
     "imageUrl" : "mussels.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Mullet",
     "description" : "Hindi title: Andaware Machchli Mullets are ray finned fish found around the world in tropical and coastal areas. There are more than 80 types of mullet. There are grey mullets, yellow-eyed mullets and red mullets. Most commercially harvested mullet species are striped and white mullet. Mullets have been a delicacy in the Mediterranean Europe since Roman times. The fish has a dark silvery textured skin with a strong flavour. It can be eaten either grilled or pan-fried. It is also best suitable for marinating. Nutritional Value Along with reducing blood pressure, it also aids joint health and is a definite mood lifter for a glum day. Like any other seafood, mullet is also high in calories. It also has good sodium content. Did you know? Mullet often jump out of the water in their large schools, thus the title jumping mullet. In many popular cultures, mullet is considered a vegetarian food.",
     "imageUrl" : "mullet.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Squids",
     "description" : "Squids belong to a class of mollusks known as Cephalopods. They are a very popular food in many diverse cuisines such as Chinese, English, Japanese, American, Italian and Spanish. The meat is firm and chewy having a sweet taste. Squid is popularly marketed as Calamari in many English-speaking countries. The body is highly adaptable for any kind of stuffing or can be cut into flat pieces. The ivory colored flesh becomes tender and light upon cooking. Usage Squid meat is consumed and cooked in varied ways in different cuisines. In Portugal, squid is grilled and eaten as a whole. In Chinese and Southeast Asian culinary, it is spiced heavily and used in stir fries and noodles. Squid cooked in its own ink is one of the best authentic dishes of Venice. Chopped meat pieces of squid go well with fish soup and paella. In the market, squid is sold as fresh or dried salted forms. Fried squid or Calamari is a popular Mediterranean dish. It is batter-coated; deep fried for less than two minutes and is served plain alongside salt and lemon. In North American cuisine, it is served as an appetizer and used as a dipping agent. Ham, rice or spinach offer a good stuffing for the meat. Squid can also be stewed with tomatoes. Squid ink is often used as a coloring agent for some kind of pastas. Steamed squid is often used in pastas. Squids are also consumed raw in sushi. Nutritional Value 1. Squid has a high nutritional content. It is rich in protein. 2. It is a good source of vitamins B12 and niacin. 3. Squid is high in phosphorus, zinc, selenium and copper. 4. Though it is rich in minerals, it must be eaten sparingly as it is high in cholesterol. 5. The meat contains fatty acids that lower blood pressure and boost the immune system. How to Buy Chose squids which have a milky white color underneath their outer mustered outer skin. Avoid those which have darkened. Caution: Fried squid has high sodium content. Not recommended for heart patients. Did you know? Squids have a 360 degree of vision. Owing to their appearance, squids are often mistaken for octopus. A squid has three hearts!",
     "imageUrl" : "squids.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Haddock",
     "description" : "Hindi title: Surmai A salt water fish that is a popular food and widely fished commercially for its demand in the market. It belongs to the cod family. It is very popular for its flaxy and clean texture. It is sold fresh, smoked, frozen, dried or canned. In many popular cuisines, haddock is substituted for Atlantic cod. Usage Haddock is one of the most popular fish that is used in preparing the famous British fish and chips. It has a clean white flesh and since it does not salt well, it is preserved by smoking or drying. Freshness of a haddock is determined by the way it holds together. Younger fillets are translucent, while the older ones turn chalky by time. Haddockâ€™s flesh has a slightly sweet taste and its smooth texture is very mouth appealing. The raw meat is white which turns whiter upon cooking. Nutritional Value 1. It is an excellent source of protein that is low fat and low calorie. 2. It is very rich in vitamin B content that is essential for a good metabolism. 3. Being rich in minerals, haddock is very helpful for good bone strength. 4. All fishes have some amount of mercury in them. Haddock relatively has lower levels of mercury and are therefore regarded safer.",
     "imageUrl" : "haddock.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Flounder",
     "description" : "Hindi title: Sole / Morrul Also known as fluke, it is a flat-fish found mostly in shallow waters which transforms from a normal fish to flat fish in adulthood. It is commonly found in the coastal areas of southern Gulf of Maine to Florida. There are many species of the flounder like sole or halibut which have their own distinct flavors. Usage The light-flavored white flaky meat is in high demand for its delicate flavor and texture. It is a delicacy when steamed, baked, poached, broiled or fried. The fish is generally available in fresh or frozen form. The flounder is used in fish soups, made into cutlets, stews or cold salads. They can also be found as sushi, sashimi, fried or baked fish. Flounder baked is often stuffed and served with Dijon mustard. Nutritional Value 1. Flounder meat has a high content of omega-3 fatty acid which helps curb heart diseases, and is a source of low fat protein. 2. It has a lot of essential nutrients like vitamin D, iron, zinc and calcium. Did you know? Flatfish have both eyes on one side of their body and the under body is white. The largest flounder weighed in 30 pounds when caught.",
     "imageUrl" : "flounder.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Fish Stock",
     "description" : "Hindi title: Machchli ka Shorba Flavored strained liquid made from fresh fish parts, water and seasoning is often termed as fish stock. The kind of animal meat used determines the variety of stock. The principal ingredients used while preparing stock are meat, bones, seasonings, herbs and spices. White fish varieties, cod, flounder or red snapper are commonly used for preparing stock. White fish meat is leaner compared to other varieties, making it the best choice for fish stock. The bones and head are often used, though fins are also added sometimes. Onions, carrots and celery are added as condiments in the stock. Black peppercorns and salt are the popularly added seasonings. For the liquid content, one can either use a combination of dry white wine and white wine vinegar with water or use butter or olive oil instead. Usage While preparing fish stock, the vegetables are sautÃ©ed in butter (or any liquid condiment) along with fish parts. After adding the other ingredients, the mixture is simmered and any foam that is formed on the surface of the liquid is skimmed off. After 45 minutes of simmering, the stock is sieved, usually by cheesecloth. Any remaining solids are separated from the liquid. Preparation of stock involves traditional cookery method - simmering. By recent interventions, pressure cooker is also employed for preparing the stock. Seasoning and spices added while preparing vary depending on the cuisine. Unlike chicken or beef stock, fish stock needn't be cooked for hours and it is usually homemade. A clear soup titled consommÃ© uses clarified fish stock. Traditional Japanese dish dashi is made using fish and kelp stock where the style of cooking makes a white milky broth with a rich feel. The stock can be used as soup, sauce or chowder or stored under refrigeration for two days. While it is stored in refrigeration, a layer of excess fat is formed on the top layer which needs to be skimmed off while cooking. Note: Fish stock shouldn't be cooked more than 45 minutes as over-cooking may hamper the flavor. Nutritional Value 1. Fish stock contains minerals that are easily absorbed by the body. 2. Stock prepared from fish head provide enough iodine and strengthens the thyroid gland. Did you know? Fish fumet is simply concentrated fish stock.",
     "imageUrl" : "fish_stock.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Fish",
     "description" : "Hindi title: Machchli A limbless cold-blooded vertebrate with gills and fins and living wholly in water, it is a very popular seafood consumed with great interest all over the world. Fish should be stored in the coldest part of the refrigerator. Ideally, it should be consumed the same day but can be stored the freezer for not more than 2-3 days. Types Saltwater fish: Also called sea fish, this type of fish spend most of their lives in oceans or salt lakes. Most commonly eaten salt water fish are tuna, cod, flounder, haddock, salmon and swordfish. In India, salmon, baby shark, mullet, malabar trevally, pomfret and eel are commonly consumed. Freshwater fish: This type of fish spends most of their lives in fresh water, river and lakes and is less saline than sea fish. Commonly consumed fresh water fish in India are sardines, catfish, red snapper and barracuda. Sea fish are said to be healthier than fresh water fish as they contain more omega 3. Herbivorous vs Carnivorous Fish Herbivorous fish are the ones that feed only on plant water whereas carnivorous or predatory fish feed on other fish and animals. Shell fish and catfish are examples of some herbivorous fish. Perch musky, walleye and salmon are common predatory fish, whereas Tuna and sharks are the predatory fish that are commonly consumed. A predatory fish - snakehead, also called channa or parachanna in Asia and Africa, is considered a valuable food though it is illegal in US because they have been recognized as an invasive species. White Fish vs Oily Fish In oily fish, the oil is distributed throughout the body and so it is said to be more nutritious than white fish. The amount of Omega-3, selenium, phosphorous, Vitamin b-12 is more in oily fish but white fish has less fat content and is therefore preferred by people watching their weight. Mullet, shark, snapper and cod are a few examples of white fish whereas anchovies, sardines, salmon, sardines, pilchards, mackerel and tuna are examples of oily fish. Nutritional Value Rich in omega-3 fatty acids, consuming fish helps in improving the brain and eye functions. It helps in the development of brain and nervous system and also lowers cholesterol, preventing heart diseases. Our body cannot produce omega fatty acids and fish is its best source. Fish oil can help prevent arthritis. Selenium in fish is known to have cancer fighting properties. Did you know? Fish is a primary source of animal protein in many developing countries. About 75 percent of the world fish catch is used for human consumption.",
     "imageUrl" : "fish.png",
-    "category" : "Seafood",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Seafood"
   }, {
     "title" : "Brown Sugar",
     "description" : "Brown sugar is a product of sucrose sugar. It is brown in color because of the presence of molasses in it. Often molasses are added to completely white sugar to make it brown. This is done to lessen the production cost of sugar. The first crystallization of sugarcane produces natural brown sugar. Types Natural brown sugar is available in three types - Turbinado, Muscovado and Demerara. Each type of natural brown sugar differs from another by the percentage of molasses present in it. Turbinado: this is made from the initial and first pressing of sugarcane. It contains natural molasses. It has natural caramel flavor. Muscovado: This brown sugar has a moist texture and strong molasses flavor. It is frequently used in marinades and barbeque dishes. Demerara: This brown sugar has a bit large grain and is pale amber in color. It has sweet toffee flavor. Uses Brown sugar is believed to sooth menstrual pains in women. It also serves as a good anti-aging treatment. Brown sugar is used extensively in baking. It adds more vibrant color to baked foods and also adds to their flavor. It is used for making marinades for the preparation of meat dishes. Brown sugar is also used in many barbecue sauce and chili recipes. It is commonly used in cookies to impart the dusky color. Nutritional Value Due to the presence of water, brown sugar has a little lower caloric value by mass than white sugar. Molasses present in brown sugar are a good source of calcium, potassium, iron and magnesium. Cooking Tips Brown sugar gets hardened if kept stored for a long time. To loosen it up keep a slice of apple or add a few drops of water in the sugar container. The hard sugar will loosen up overnight. Did you know? Due to its unique granulated shape it is very often used in making exfoliants in the cosmetics and body care industry. Â ",
     "imageUrl" : "brown_sugar.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Sugar Candy",
     "description" : "",
     "imageUrl" : "sugar_candy.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Icing Sugar",
     "description" : "Hindi title: Confectioner's Sugar Also known as confectioner's sugar, it is prepared by grinding white sugar into a very fine powder. Sometimes, it is blended with corn flour for a finer texture. Icing sugar is a handy ingredient used while making cakes and bakery products. It is used for icing and frosting over desserts. For its ability to easily dissolve in water, it comes handy while preparing juices, milkshakes or any cold beverages. During industrial food production, icing sugar is used where there is a need for quick dissolving sugar. Usage It is used as icing and frosting on cakes, pies, pastries and in drinks. Fondants for various cakes are made using icing sugar. One can easily prepare icing sugar at home by grinding normal granulated sugar. It is important to sieve the powdered sugar to avoid any lumps. Did you know? Snow powder or snow sugar is non-melting variety of confectionerâ€™s sugar. It is used for its retaining structure when dusted over cakes and pastries that involve refrigeration.",
     "imageUrl" : "icing_sugar.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Honey",
     "description" : "Hindi title: à¤¶à¤¹à¤¦ Honey is a thick, sticky and sweet tasting liquid that bees produce by taking the nectar from flowers. It is used in desserts, jams, beverages etc. It is a natural energy booster and immunity builder. As of 2010, China is the largest honey producer in the world. Types Although honey is preferred in its raw form, commercialy you can also find crystellized, pasteurized, filtered, strained, ultrasonicated, creamed, dried and comb honey. Usage It is either consumed directly because of its medicinal properties and sweet taste or mixed with tea, desserts, pancakes and many other recipes. But its uses are not just limited to the kitchen, honey has great significance in almost all religions. For example, in Hinduism it is poured over some dieties. It is consumed with apple during the Jewish new year. Health Benefits 1. Honey has a great capacity to inhibit growth of micro-organisms and is therefore an anti bacterial, anti viral and anti fungal. This is attributed to the presence of hydrogen peroxide. 2. It is considerred to be better than other sweetners for maintaining glycogen levels and so is good for improving athletic performance. 3. Honey is made up of mostly glucose and fructose that absorb water if applied on wounds. This inhibits the growth of bacteria and fungi and makes a very good healing agent. 4. Consumption of honey, increases polyphonic antioxidants in the blood and so it helps prevent heart diseases. 5. Research has shown that it is better to have honey rather than other drugs in case of cough and throat irritation. 6.Natural honey can help lower cholesterol level. Did you know? Honey has been used by humans for the past 8000 years, its oldest remains were found in Georgia.",
     "imageUrl" : "honey.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Jaggery",
     "description" : "Hindi title: à¤—à¥�à¤¡à¤¼ Unrefined sugar, found in solid or powdered form, used in desserts as a substitute for sugar. Its color varies from golden brown to dark brown. It is used in both sweet and savory dishes across India. It keeps your body warm and is great to ward off common cold and cough. Usage Jaggery is used as an ingredient in many Indian and Sri Lankan recipes. It is used very commonly in Gujarati cuisine. It is also used to make toffees, cakes and desserts. In earlier times, most Indians preferred to use jaggery instead of refined sugar. Even now its used commonly in rural households. In villages, the animals are fed with jaggery to boost energy, right after they give birth. It is also given to the cattle for a sweeter milk production. Health Benefits 1.Its best health benefit is that, it is a very good energy source. Sugar is a simple carbohydrate that absorbs in the bloodstream instantly and gives energy faster. Jaggery on the other hand is a complex carbohydrate that gives energy to the body gradually and for a longer time. 2.Jaggery does not alter the blood sugar level and is therefore preferred over refined sugar in case of diabetes. 3.Jaggery helps in controlling the body weight by reducing water retention. 4.Jaggery is a very good cleansing agent, that pulls our dust and unwanted particles from the body. It cleans the respiratory tracts, lungs, stomach intestines and food pipe. It is for this reason that the jaggery consumption is recommended to people working in heavily polluted areas like coal mines or paint factories. 5.It is also a good digestive agent if had after a heavy meal. 6.Jaggery is rich in iron and helps anemic patients. Did you know? When the use of cement was not common as a building material, jaggery mixed with lime, sand and clay was used to interlock bricks.",
     "imageUrl" : "jaggery.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Golden Syrup",
     "description" : "A thick liquid sweetener which is golden in color and honey like with a rich flavor, golden syrup is very popular in European desserts. It is made by refining sugar cane and used as an alternative to honey. Since it has a heavy sweet flavor, it should be used in lesser amounts. It can also be used in the place of corn syrup. Golden syrup is sometimes referred to as light treacle and can be used as maple syrup. It should always be stored at room temperature. Usage It is very popularly used in desserts, frosting, pancakes, jams, jellies, candy, cookies, rice crispies, caramel snacks, ice creams, sorbets etc. It is also used to make cakes, chocolates, fudges and treacle tarts. Health Benefits Due to its high sugar content, it is not advisable for people with diabetes, hypertension and other such conditions. An alternative to golden syrup made using sugar syrup and water is better for the diet.",
     "imageUrl" : "golden_syrup.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Sugar",
     "description" : "Golden castor sugar: Golden color warm sugar that is commonly used in sponged.",
     "imageUrl" : "sugar.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Castor Sugar",
     "description" : "Caster or Castor sugar is finely granulated white sugar. It is most commonly found in North America and Britain. This kind of sugar is used for icing, essentially for its quick dissolving property. It is made by dissolving and purifying raw sugar content in various chemicals. While undergoing many refining processes, it is made superfine easy enough to dissolve in any liquid. Castor sugar is either made from sugar cane or sugar beet. The sugar granules are so small that they fit through castor, a form of sieve. Hence it is called castor sugar. It is also popularly used in baking and mixing drinks. However, it is not so superfine sugar like the icing sugar or confectionersâ€™ sugar. The latter is more thoroughly powdered and has little starch content that keeps it away from clumping.",
     "imageUrl" : "castor_sugar.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Caramel",
     "description" : "A dark brown confectionery item produced using any type of sugar. It is a thick sweet liquid used as a flavoring, filling and topping for various recipes. The sugar and water mixture needs to be heated slowly to a high temperature until it breaks down and has the characteristic color and flavor. It is used for flavoring various desserts, candies or puddings. Types 1.Caramel Sauce: This type of caramel is made by heating caster sugar and water at a low temperature until the sugar dissolves and the molecules break making it goldenish brown in color.A beige to dark brown colored sticky, sweet, luscious liquid. 2.Caramel Candy: This type of caramel is a mixture of sugar,cream or milk and vanilla flavoring. The candy is soft and dense and is also known as milk or cream caramel. 3.Caramel Coloring: This type of caramel is the product of near total caramelization.It is often used in food coloring and in a very common beverage called coca cola but it has a bitter taste. Usage It is the main component in making a variety of recipes, titlely caramel candy, brittle, nougats, pralines, creme brulee, creme caramel and caramel apples. It is also used as a topping for ice creams, custards and caramel corn, filling for bonbons and flavoring puddings. A concentrated mixture known as caramel coloring is used as food coloring in beverages. Did you know? Caramel was created by Americans in the mid 1880's to create soft candies.",
     "imageUrl" : "caramel.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Cane Sugar",
     "description" : "Hindi title: à¤šà¥€à¤¨à¥€ Cane sugar is sugar extracted from sugar cane which is a tropical plant with a high content of sugar in it. The cane after undergoing many processes and filtration is finally used as a sweetener in beverages and desserts. Cane accounts for 80% of sugar produced. The rest is extracted from sugar beets. Extracting sugar from the cane has been in practice for over a hundred years from now. Cane sugar has always been a major element in the global market. To make the sugar cane a condiment accessible to other uses, the cane is refined and crystallized into sugar cubes or crystals. The raw sugar is also delivered for household purposes. It is more expensive than other form of sugar but it is more desirable because of its superior flavor. Did you know? 1 teaspoon of cane sugar has just 11 calories and no fat. It is believed that swallowing one teaspoon of sugar can control hiccups!",
     "imageUrl" : "cane_sugar.png",
-    "category" : "Sugar and Sugar Products",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Sugar and Sugar Products"
   }, {
     "title" : "Canola Oil",
     "description" : "Canola oil comes from the crushed seeds of the canola plant. Canola belongs to the Brassica family that cabbages, broccoli and cauliflower belong to. The oil is extracted from the seeds after harvesting in a facility. The oil is then refined and bottled. Canola oil has a pale golden colour, light texture, neutral taste and high heat tolerance. With the worldwide focus on healthy living increasing day by day, there is a consistent and reliable supply of canola oil all around the world. Cooking Tips Canola oil being light in texture and neutral in taste is ideal for just about everything. It is wonderful to use for salad dressing and sautÃ©ing. The characteristic of high heat tolerance in canola oil makes it perfect for anything, be it baking or stir-frying or deep-frying or grilling. Storing Tips Canola oil should be particularly stored in a cool and dark place. If exposed to light, canola oil's healthy fatty acid gets easily oxidised and it loses its nutritional value. Storing the oil in a dark glass container would be ideal but if that isn't available, wrap the container with a dark-coloured cloth or an aluminum foil. Another thing you must make sure is that it gets no exposure of air. Thus, canola oil has to be stored in an airtight container. It can be stored at room temperature. Nutritional Value Canola oil is very low on saturated fats making it one of the healthiest cooking oil. It contains the highest amount of plant sterols amongst all oils making it helpful in reducing heart diseases. Canola oil is high on calories but its calories come from the good fats. It is especially rich in mono-saturated fatty acids that help in lowering bad cholesterol and increasing good cholesterol. Canola oil also contains valuable amounts of vitamin E which is an anti-oxidant and is required to maintain the integrity of cell membrane of mucus membrane and skin by protecting it from harmful oxygen-free radicals. It has a high smoke point which makes it ideal for deep frying because it can be heated to a higher temperature thus retaining less oil in fried foods. Â ",
     "imageUrl" : "canola_oil.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Chia Seeds",
     "description" : "Chia is an edible seed that comes from the desert plant \"Salvia hispanica\", that belongs to the mint family and is popularly grown in Mexico. \"Chia\" means strength, and folklore has it that these cultures used the tiny black and white seeds as an energy booster. It was largely unknown until researcher Wayne Coates began studying chia as an alternative crop for farmers in northern Argentina about 29 years ago. His research found anecdotal evidence of chia's positive health effects like boosting energy, stabilizing blood sugar, digestive aid and lowering cholesterol. Today, it is considered as a super food. Usage Soaked chia seeds is the most common way to consume them. They can absorb a large amount of liquid. Sprinkle them over salads or rice dishes. For a gluten-free option, grounded chia seeds can be used to replace all-purpose flour for baking. Use them in cakes and cookies. Typically small ovals, chia seeds may be brown-black or white. Both are known to have a similar nutritional content. Nutritional Value 1. Good for diabetics: Chia seeds help in regulating blood sugar levels in the body and also fight insulin resistance. 2. Weight loss: They are a great source of dietary fiber. This makes it perfect as an energy food that helps in keeping you full for longer and supports weight loss. 3. Chia seeds are packed with omega-3 fatty acids. 4. A serving of chia seeds has 18 per cent of the recommended daily intake for calcium. Â ",
     "imageUrl" : "chia_seeds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Hazelnut",
     "description" : "Hazelnuts grow in clusters on the hazel tree. Also known as cobnut or filbert nut, it is grown primarily in Europe and the U.S. These are small rounded grape size nuts having a broad spherical base and a pointy top. They have a dark brown jacket covering and the inner kernel is edible. The nut has an off-white creamy colour and a mildly sweet taste whereas the thin dark brown skin is mildly bitter. Hazelnuts must be refrigerated in order to be stored. They have a high fat content like most nuts and will go stale if not properly refrigerated. Store in airtight containers and they should last for about 2-3 months. Turkey is known to be the largest producer of hazelnuts. Usage You could eat them raw too but hazelnuts are best consumed after roasting them for about 10-15 minutes at around 175*C until the skins begin to flake. Some like to remove the skin and consume. Hazelnuts are most popularly used to make flavoured chocolate pastes, most commonly found in Nutella and Feraro-Rochers. They are also used in confectionary to make praline. Hazelnut flavoured cold coffees, cappuccinos, milk shakes are very popular. Apart from these they are also used in cakes, chocolate truffles, frostings, muffins and ice-creams. The roasted nuts can be used in salad or stir fried to add some crunch. They may also be powdered and used for flavouring frostings or dressings. Hazelnut oil is strong in its flavour and may be used as cooking oil. About sixty percent of the nut contains oil. The oleic acid in the oil is known to decrease cholesterol. Be cautious while consuming as hazel nuts are one of the most common triggers of nut allergies. Nutritional Value Hazelnuts are rich in protein, unsaturated fats, and antioxidant phenolics. Moreover, they contain significant amounts of thiamine and B vitamins. Hazel nuts are known to lower blood pressure as they contain minerals like magnesium and potassium. Hazelnuts have a high content of oleic acids which effectively reduce blood pressure and prevent heart attacks and strokes. They help boost your memory as well. Both hazel nut and hazel nut oil are dense with Vitamin E which helps to maintain healthy heart muscles. Vitamin E is also great for the skin and prevents premature ageing. Did you know? Hazelnut trees can continue producing for 80 years. Â ",
     "imageUrl" : "hazelnut.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Pine Nuts",
     "description" : "The edible seeds taken from the pine trees. The oblong seeds are taken from several varieties of pine trees. The seeds are crunchy, sweet and very delicious. To amplify the flavour, the seeds are often toasted. Pine nuts have a tough brown-color coating. The Mexican pinion, the Italian pinion, the Colorado pinion and the Chinese pinion are two prominent pine species from which pine kernels are taken from. It is an intense harvesting process to collect the nuts. They are harvested by hand contributing to their expensive price tag. Usage Pine nuts have been under consumption since the Palaeolithic age. The seeds are popularly added as a crunchy salad topping. Though eaten raw, the seeds are usually roasted. When added to desserts, pine nuts bring out a wonderful texture and flavour to the recipe. Grounded pine nuts are used to make Italian pesto sauce. The seeds are also extensively used in meat, fish, vegetable dishes or baked into bread. Pine nut oil extracted from the seeds is also widely used in cooking. It is valued for its mild nutty flavour. The oil has a relatively low smoke point. Nutritional Value Pine nuts are rich in Vitamins A, C and D that help in sharper vision and stronger immunity. They are relatively high in monounsaturated fat promoting a healthy cardiovascular system. The seeds are also a good source of minerals like potassium, magnesium and iron. Note: Pine nuts can sometimes cause taste disturbance lasting from few days to a few weeks after ingestion. Though the exact cause is still unknown, the irritation would resolve in days without treatment. Did you know? Ancient Greeks and Romans believed pine nuts to be an aphrodisiac.",
     "imageUrl" : "pine_nuts.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Mustard Oil",
     "description" : "Hindi title: à¤¸à¤°à¤¸à¥‹à¤‚ à¤•à¤¾ à¤¤à¥‡à¤² Essentially, mustard oil is produced by heating the seeds and carries a distinctive pungent taste. It can either be a vegetable oil, essential oil made by distillation or soybean oil. Black mustard, white mustard and brown Indian mustard seeds can be used to procure the oil. Besides being a cooking oil, it is also used as a massage oil. It is bright yellow in color. It is much used as a cooking oil in Bengali cuisine. The pungent aroma transforms into a sweet flavor on cooking. Is mustard oil better suited for cooking? It has a low saturated fat content thus it is good for the heart. It also detoxify's the human body and prevents fungal growth. Mustard has a long list of medicinal properties. It helps in keeping the body warm. It helps relieve cold and cough ailments. Types Black mustard oil: Has a strong taste and a spicy odor until refined to a neutral taste. White mustard oil: Bitingly pungent taste. Â ",
     "imageUrl" : "mustard_oil.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Sunflower Seeds",
     "description" : "Hindi title: à¤¸à¥‚à¤°à¤œà¤®à¥�à¤–à¥€ à¤•à¥‡ à¤¬à¥€à¤œ Sunflower seeds are the fruit of the beautiful, bright yellow coloured sunflower. The seeds are emanated from the seed-studded center. The seeds are greyish-green or black embedded in tear-shaped grey or black shells. The seeds, being high in oil content are the main sources to produce sunflower oil. Shelled seeds have mild nutty taste, but tender texture. Sunflower seeds are classified into three varieties based on their levels of mono-unsaturated, saturated and polyunsaturated fat content: linoleic, high oleic and NuSun. The seeds are also classified by the pattern of their husks. Solid black colour husked seeds are called black oil sunflower seeds. The crops may be called as oilseed sunflower crops. Oilseed crops are usually used to extract the oil content. Striped sunflower seed are used to for food and are popularly called as confectionary sunflower seeds. Usage Most commonly consumed as a snack, sunflower seeds can also be used as garnishes or ingredients to be added in various recipes. Grayish green or black sunflower seeds have a nutty flavor, tender texture and high oil content. They are sold shelled or unshelled and can be eaten alone as a snack. They are also added to a variety of dishes for a unique taste, texture and its nutritional benefits. In-shell Sunflower seeds are used all across the world but are most popular in Mediterranean and Asian countries. They are most popularly consumed in roasted form and also packed in various roasted flavours. Sunflower seeds are often added to breads and other baked goods. They are often used for feeding birds and pets. Nutritional Value 1. Sunflower seeds are a rich source of nutrients, fibers and healthy fats. 2. The seeds are an excellent source of Vitamin E, preventing cardiovascular diseases. 3. Phytosterol, a compound found in sunflower seeds reduce the cholesterol level. 4. The high magnesium content reduces asthma and prevents migraine headache. 5. Sunflower oil is high in Vitamin E and low in saturated fat content. It makes the oil an excellent option for heart patients. 6. It is good for the heart, nerves, muscles, blood vessels and has anti-inflammatory properties. 7. It also promotes good bone health and proper digestion. Tip: When buying unshelled sunflower seeds, make sure they aren't yellow or they may be rancid. Did you know? Sunflower was first grown by American Indians for food and oil. One sunflower can have up to 2000 seeds. Sunflowers are one of the fast growing plants. Instead of popcorn, sunflower seeds are a popular movie snack in Israel and Turkey. Â ",
     "imageUrl" : "sunflower_seeds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Sesame Oil",
     "description" : "Hindi title: à¤¤à¤¿à¤² à¤•à¤¾ à¤¤à¥‡à¤² Edible oil made using sesame seeds, it is used as cooking oil and to enhance flavor. The color of the oil varies from colorless to golden color to a dark brown made from roasted seeds. Colorless oil has fewer flavors than the dark brown oil as it is produced from raw seeds. Sesame oil is very popular in Asia and is one of the earliest known crop based oil. Usage Owing to its odorless and tastelessness, it is ideal for baking and as a salad oil. It is also used in the pickling process and for deep frying due to its high smoke point. Crumb coatings may also contain sesame oil. Sesame oil seeps into the skin easily and is hence popularly used as a body and hair massage oil in India. It provides nourishment to the skin and rejuvenates the body. In India it is also used for lighting up diyas [oil lamps]. The traditional Indian medical practice of Ayurveda uses sesame oil to pacify stress related symptoms. Nutritional Value 1. Sesame seeds contain Zinc which is an essential mineral for giving skin elasticity and repairing damaged tissues in the body. 2. It has high protein content. 3. Sesame oil helps in removing dental plaque and boosting oral health. 4. It contains magnesium that helps combat diabetes and lower blood pressure. 5. It contains an anti-inflammatory and antioxidant compound called sesamol and is therefore helpful against heart and inflammation related diseases. 6. Sesame seeds also contain and anti-cancer compound called phytate and there sesame oil is helpful in preventing cancers. 7. It is a big energy store and helps regulate cholesterol levels. It is a healthier choice for oil and can also work as a laxative. Sesame oil is a good source of vitamin E and rich in anti-oxidants. How to store Sesame oil must be refrigerated after opening in order to extend shelf life. On refrigerating, the oil may solidify a bit and become a little cloudy, but this does not affect the flavor of the oil. Once heated it returns to its original flavor and consistency. Â ",
     "imageUrl" : "sesame_oil.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Pistachio",
     "description" : "Hindi title: à¤ªà¤¿à¤¸à¥�à¤¤à¤¾ Pistachio is a member of the cashew family which is a small tree originally from Central Asia and the Middle East. Iran, United States and Turkey are the leading producers of pista. They are dry hard-shelled nuts used to make desserts like baklava, halwa, chocolates and ice creams. Its kernel can be eaten whole, either fresh or roasted and salted. In the US it is often used to make pistachio salad, which includes fresh pistachios or pistachio pudding, whipped cream, and canned fruit.",
     "imageUrl" : "pistachio.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Olive Oil",
     "description" : "Hindi title: à¤œà¥ˆà¤¤à¥‚à¤¨ à¤•à¤¾ à¤¤à¥‡à¤² This oil is obtained from olives. It can be used in multiple ways like in food or in cosmetics, soaps, pharmaceuticals etc.It is mostly used in Mediterranean countries.There are different types of olive oil with different flavor and quality. It has a very subtle aroma. It is a very versatile ingredient and is often used in cooking and is preferred more than other forms of oils as it has a lesser fat and butter content. The prices vary according to the quality. Olive oil is not only used for cooking but also for beautification. It is used for head and body massages and helps strengthening nails. Nutritional Value Olive oil reduces the risk of heart attack or a stroke and lowers blood cholesterol. It also helps to maintain a healthy blood sugar level and blood pressure and a prevents gastric cancer.It contains antioxidants such as vitamin E which helps to lead a long healthy life.It is very suitable for those people who suffer from diabetes and it also helps to reduce the level of obesity. Types 1.Virgin Olive Oil: This type of olive oil is free from acidity and is expressed as oleic acid with not more than 3 grams per 100 grams. These are obtained from the original fruit without any other treatment. 2.Ordinary Olive Oil- This type of olive oil is free from acidity and is used for frying or where flavor is not wanted. 3.Lampante Oil- This is not suitable for consumption and is commonly used in oil burning lamps. 4.Olive Oil: This oil is a mixture of virgin and refined production oil and it lacks a strong flavor. 5.Blended Olive Oil: This involves combining of different kinds of olive oil to form a desired flavor. It increases the shelf life. Sometimes olive oil is blended with other vegetable oils too. 6.Extra Virgin Olive Oil: This is the highest quality of olive oil. It is rich in antioxidant and is also known as the queen of olive oils.It is most commonly used in salads. 7.Pomace Olive Oil: This type of oil is very is very similar to pure olive oil. This oil is blended with virgin olive oil to impart some of the benefits of olive oil. This is very good for high heat cooking. 8.Refined Olive Oil: This type of oil is called so because it is obtained by refining olive oil. It is considered much inferior to other types of olive oil and is used mostly for cooking purpose and are not used in salads. 9.Light or Lite Olive Oil: This type of olive oil is a very low grade of olive oil. It is low in aroma and flavor and is most commonly used for cooking and baking. Usage Extra virgin olive oil: Salads Virgin olive oil: Sauteing, salad Pomace: Best for Indian cooking as it has a high smoking point as comapred to the other olive oil varieties. Interesting Facts Olives do not hold much oil when they are green in color but that's when they taste the best. However, when they turn black their taste is less intensive and at that time it contains more oil. The major difference between olive oil and other vegetable oil is its rich flavor. Contrary to what people might think, it does not get better with age i.e it is desirable only till 18th months and after that it should be thrown away.",
     "imageUrl" : "olive_oil.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Mustard Seeds",
     "description" : "Hindi title: à¤°à¤¾à¤ˆ à¤¯à¤¾ à¤¸à¤°à¤¸à¥‹à¤‚ Small round seeds of the mustard plant. Several varieties of mustard plants are used to get mustard seeds, around 40 different species exist but there are three main plants used. These seeds have a creamy texture, strong, pungent taste and a spicy flavor. Black mustard seeds are hotter than the white and are used widely in South Indian cuisine. Types Black mustard: produces black seed which is extremely pungent, volatile and expensive. Brown Indian mustard: produces brown seeds which has a nutty rather than fiery taste. White mustard: produces yellow seeds which are milder but preparation can inculcinate the fieriness of black seeds. Usage Seeds are used as a spice, can be roasted until they pop or simply consumed.They are used for the tadka or tempering of the dishes. Health Benefits These seeds have immense healing properties, consumption reduces rheumatoid arthritis symptoms, asthma and control diabetes. They act a remedy for migraine and indigestion. Did you know? It is believed in India that mustard seeds outside the house keep away evil spirits. The Mount Horab Mustard Museum in Wisconsin is dedicated to Mustard, containing 5,000 displays.",
     "imageUrl" : "mustard_seeds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Poppy Seeds",
     "description" : "Hindi title: à¤–à¤¸à¤–à¤¸ Tiny oil seeds from the opium poppy flower that has a nutty flavour. The seeds maybe used whole, ground or to extract poppy seed oil. The white poppy seeds are called potak or postu. Poppy seeds are small and kidney shaped. They are less than a millimeter in length and are used as a spice or for decoration of the dish. Usage Poppy seeds are considered very good toppings for breads and cakes. They also add creaminess to kormas. They are essentially added for thickness, texture and nutty flavour. Poppy seeds are an essential ingredient in the Bengali cuisine. The roots of the plant are used to extract oil, that is used a medicine. In European cuisine, Poppy seeds are added on pasta. Nutritional Value Poppy seeds are packed with minerals like iron, copper, calcium, potassium, manganese, zinc and magnesium. The seeds are rich in oleic acid, which helps to lower the LDL or \"bad cholesterol\" , thus promoting healthy heart functions. The seeds contain antioxidants that prevent diseases and promote good health. The outer coat is a good source of dietary fiber that helps in easing constipation. Did you know? Poppy seeds soaked in milk and made into a fine paste are used as a moisturizer. It unique nutty flavor comes from volatile oils that comprises 50% of its net weight.",
     "imageUrl" : "poppy_seeds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Sesame Seeds",
     "description" : "Black sesame seeds: The best to make oil from, the black variety also has higher medicinal value and flavor. They also have a nutty taste and are used in several dishes and as crispy garnish.",
     "imageUrl" : "sesame_seeds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Peanuts",
     "description" : "Hindi title: à¤®à¥‚à¤‚à¤—à¤«à¤²à¥€ Peanuts, also known as groundnuts are a nutritious legume found all over the world. They are said to have originated in South America. They can be used for direct consumption, in food preparations, for deriving oil, making peanut flour or in the preparation of peanut butter. They contribute in improving the mental functions and blood flow. Â ",
     "imageUrl" : "peanuts.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Chironji",
     "description" : "Hindi title: à¤šà¤¿à¤°à¥Œà¤‚à¤œà¥€ Charoli or Chironji is an Indian medicinal plant used as a spice and added in desserts. It is also called melon seed and has a taste similar to almonds. The seed is lentil-sized and slightly flattened. Though it can be eaten raw, the edible seed contains light acidic flavour, and is consumed both raw and fried. However, fried seeds are more tasteful. The chironji plant is commonly found in the regions of India, Nepal and Burma. Very commonly Chironji is added in sweet dishes like Kheer, kulfi and rice puddings. Chironji oil is often treated as a substitute for almond oil during traditional medicinal practices. It is also often used to provide from itching and can also be used as a face cleanser. Apart from the seed, various other parts of the plant are also very beneficial in several ways. The gum exuded from the bark is employed to cure diarrhoea. The roots and leaves are battered and consumed with buttermilk. Leaves from the plant are also used to treat various skin diseases. Charoli seeds are also used in Ayurveda and unani medicine. Nutritional Value 1. The seeds help to improve eyesight and provide essential energy to the body. 2. Charoli seeds have a cooling effect removing the heat from the body. Did you know? Chironji trees grow more than 50 metres tall.",
     "imageUrl" : "chironji.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Cashew Nuts",
     "description" : "",
     "imageUrl" : "cashew_nuts.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Blanched Almonds",
     "description" : "Hindi title: à¤­à¥€à¤—à¥‡ à¤¬à¤¾à¤¦à¤¾à¤® Blanching almonds is a method used to remove the skin of the almonds, called for in many recipes. It is done by immersing almonds in boiling water for a minute or two before transferring them to cold water. Once cool, drain the water from the almonds and let them dry. This makes the skin shriveled and it comes off with minimal pressure and maximum ease. Don't let the almonds sit in hot water too long or they won't remain crispy. Usage Blanched almonds are used in various recipes such as macaroons, marzipan, almond flour, almond butter and rice preparations. They are a tasty delight roasted or may be used for garnishing. It's paste is also used as a thickening agent.",
     "imageUrl" : "blanched_almonds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Almonds",
     "description" : "Hindi title: à¤¬à¤¾à¤¦à¤¾à¤® Known as badaam in hindi, almond is a dried fruit that is very nutritious. It is used in baking and as a flavoring agent in Indian food. Almonds can be used in many forms, such as sliced (flaked, slivered), almond butter, almond milk and almond oil. These can be used in both sweet and savory dishes. The almond that we consume is a seed from the fruit of a tree that belongs to the peach family. The almond tree also bears beautiful pink and white flowers. Consumption of soaked almonds is a very common practice. This is because the brown coating of almonds contains certain enzyme inhibitors that make the dry fruit difficult to digest. Soaking them over night and preferably removing the brown cover helps digest it faster. Types Although almonds are of four types titlely Nonpareil, California, Mission and Carmel, India imports a huge amount of the California almonds. Nutritional Value 1. They are rich in monounsaturated fatty acids that help reduce the risk of heart diseases and lowers LDL cholesterol. 2. They help in weight loss due to their rich nutrient density. 3. The presence of riboflavin and L-carnitine make almonds a good source for improved memory and healthy functioning of the brain. 4. Almonds are a rich source of Vitamin E, a soluble lipid antioxidant that maintains the integrity of the cell membranes. Did you know? Ancient Romans showered almonds on the newlyweds as a fertility charm. Almonds were one of the earliest cultivated foods, mentioned in the Old Testament of the Bible.",
     "imageUrl" : "almonds.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Walnuts",
     "description" : "Hindi title: à¤…à¤–à¤°à¥‹à¤Ÿ Walnut or akhrot is an edible, hard shelled dry fruit used in main dishes and sweets and desserts as well a hard-shelled dried fruit that are used in main dishes as well as desserts and salads. It is a great source of nutrients like proteins. Types Three of the main types of walnuts consumed are the English (or Persian) walnut, Juglans regia; the black walnut, Juglans nigra; and the white (or butternut) walnut, Juglans cinerea. Usage You can add it to yoghurts, desserts or healthy vegetables. It can also be added as a stuffing in Indian breads, or poultry dishes. Walnuts are often used in desserts to make chocolate brownies and a variety of cakes. Walnut chocolates are very popular as well. They can be mixed very well in salads. Walnuts are used to make granola and are a major ingredient in a variety high-nutrition granola bars. Nutritional Value 1. It helps in decreasing LDL or bad cholesterol in the body. 2. It is rich in omega-3 fatty acids that have anti-inflammatory properties and help lower the risk of blood pressure, coronary artery disease, strokes and breast, colon and prostate cancers. 3. They are rich source of many phyto-chemical substances that have anti-oxidant properties and help against cancer, aging, inflammation, and neurological diseases. 4. They are an excellent source of vitamin E, which is a powerful lipid soluble antioxidant, required for maintaining the integrity of cell membrane of mucus membranes and skin by protecting it from harmful oxygen-free radicals. 5. They also very are rich source of minerals like manganese, copper, potassium, calcium, iron, magnesium, zinc, and selenium. How to choose and store If purchasing shelled walnuts, look out for the ones which seem heavy for their size. Choose walnuts that have firm shells which are not cracked or stained. Avoid walnuts which look rubbery or shriveled. Ensure that they do not smell rancid. For longest possible storage, walnuts must be refrigerated in an air-tight container and there should be minimal humidity. They are highly perishable and must be kept in a cool, dry and dark place. Did you know? Because walnuts resemble the brain, they were believed in medieval times to be able to cure headaches. Â ",
     "imageUrl" : "walnuts.png",
-    "category" : "Nuts and Oilseeds",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Nuts and Oilseeds"
   }, {
     "title" : "Almond Milk",
     "description" : "Almond milk is a beverage made with ground almonds. It is often used as a substitute for cow's milk for those who are lactose intolerant or follow a vegan diet. It doesn't contain any animal products. It can also be prepared at home by grinding almonds with water in a blender. Almond milk is slightly pale pinkish or yellowish in color. It has a creamy texture and a nutty taste. Usage Almond milk can be used as a refreshing drink. It can also be added in soups, for baking, in puddings and ice cream. Almond milk comes in various flavors like chocolate, vanilla, etc. Nutritional Value 1. This is very low in saturated fat , cholesterol, calories. 2. It is also a very good source of Vitamin A, Vitamin D, Vitamin E and Calcium. 3. Almond milk has less protein than cow's milk and other animal milk substances. 4. With the power of Vitamin E, it also fights from free radicals and organic molecules that are responsible for aging.",
     "imageUrl" : "almond_milk.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Red Wine Vinegar",
     "description" : "Vinegar is a liquid that consists of acetic acid and water. There are many types of vinegars and red wine vinegar is one of them. Red Wine Vinegar is made from red wine and commonly used in the Mediterranean countries. Red wine is left to ferment till it becomes sour. The longer the vinger is aged, there better it tastes. There are several different qualities of red wine vinegar. Usage It is generally used in food preparation, in pickling processes, vinaigrettes, and other dressings. It may be used in sauces such as mustard, ketchup, and mayonnaise. It is often used as a condiment. Marinades often contain vinegar. The longer it is left to mature, the better it gets. Once opened, it lasts for about six months. Nutritional Value 1. Red wine vinegar contains no fat, but it does contain a trace of vitamin C. 2. It also contains zero carbs and just less than three calories, making it a good addition to any diet. 3. It imparts a richer and sweeter taste than apple cider vinegar.",
     "imageUrl" : "red_wine_vinegar.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Red Wine",
     "description" : "Red wine is produced from the dark-coloured grape varieties. The anthocyan pigments that the skin of the grape contains imparts the red colour. It ranges from light to dark depending on how long it has been aged for. Cabernet Sauvignon, Pinot Noir, Shiraz, Bordeaux are some of the common types of wine. Usage There are three main uses of red wine in the kitchen - as a flavouring, as a cooking liquid, and as a marinade ingredient. The main purpose of wine in cooking is to intensify the flavour of food. While the food is cooking most alcohol in the wine evaporates and only the flavour remains. To enhance the flavour of dish the wine should simmer with the food or sauce. Nutritional Value 1. Red Wine is low in vitamins. 2. Flavonoids and non-flavonoids are two types of antioxidants found in red wine. These antioxidants may help prevent heart disease by raising good cholesterol and lowering the risk of artery damage. 3. A non-flavonoid, resveratrol, comes from the skin of grapes and it is believed that it helps to reduce blood clots that cause heart attacks and strokes.",
     "imageUrl" : "red_wine.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Margarine",
     "description" : "Hindi title: Majarin or Banavati Makkhan Margarine is an imitation of butter. Back in 1869, it was originally created as a substitute for butter from beef tallow and skimmed milk. Now it is made mainly from the refined oils and fats. It is created by using hydrogen to harden vegetable oils. It contains 80% of minimum fat, same as butter. Margarine is harder than butter yet more spreadable. It may be available in the form of sticks, cubes, blocks, tubs or even sprays. It looks exactly like butter. Usage It is used in cooking, just like regular butter is. It is used in cookies, pie crusts and other desserts. It is not recommended to use margarine for baking. Nutritional Value It is made through an artificial process. The process of hydrogenation (used to make the margarine hard and spreadable) causes the margarine to produce trans-fatty acids in the body. These acids are known to cause a problems of cholestorol, hardening of the arteries, and even cancer. Although it is a good source of vitamin A and k. The high temperatures at which it is created destroys the vitamin E and other nutrients. The hard, stick margarine are known to contain maximum fat than the spreadable one.",
     "imageUrl" : "margarine.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Soy Milk",
     "description" : "Soy milk is a very nutritious and made from soaking, grinding and then boiling soy beans with water. It is naturally high in fatty acids, proteins, fiber, vitamins and minerals. These nutrients are known to provide energy and maintain bodily functions. It contains as the same proportion of protein as cow's milk. Soy milk can be prepared at home with traditional kitchen tools or with a soy milk machine. It is commonly available in vanilla and chocolate flavours as well as its original unflavoured form. It is slightly sweet, also beany and gritty in taste. Usage It is used as an alternative to cow's milk. It is also used in making soy yogurt, soy cream, and soy based cheese. Tofu is also produced from soy milk by further steps of curdling and then draining. It is a milk substitue for people who are lactose intolerant and cannot consume cow's milk. Also a great option for people who are vegan i.e do not consume any dairy products. Nutritional Value 1. Soy milk is an excellent source of protein and vitamin B but it is not a rich source of calcium. This is why most soy milk products are fortified with calcium. 3. Soy milk is also very helpful in constipation and diarrhea. It is light and easier to digest. 4. Most soy milk products are sweetened which can be a cause of extra calories. You can even opt for the plain, unsweetened versions. 5. Soy milk fat is unsaturated with zero cholesterol. This helps in improving the blood lipid profile and maintain healthy heart functions. 6. It is lower in sugar and fat than regular cow's milk. Therefore it is great for your weight loss regime. It is full of fiber and imparts the feeling of being full for a longer time. 7. Phytosterols in soy milk are know to lower the risk of developing prostate cancer in men.",
     "imageUrl" : "soy_milk.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "White Wine",
     "description" : "White wine is produced by the fermentation of black or white grape pulp. White wine can be yellowish green, straw yellow or golden yellow in color. Types There are many types of white wine. Some of them are - Dry white wine, Sparkling white wine, Fortified wine, Sweet white wine. Nutritional Value 1. White wine improves heart functions and also prevents artery congestion. 2. It is rich in antioxidants which make it beneficial for the human circulatory system and it also helps in digestion process. 3. Wine helps in rejuvenating new cells in the skin. If used as face pack regularly it will provide you with youthful and glowing skin. Usage Wine can be used as toner for a healthy glowing skin. Wine can be sprayed in vegetables and fruits to get rid of the bacteria present in them. Wine can be used as an excellent disinfectant for cleaning the kitchen and the window glass. White wine can be used to remove the stains of red wine in carpets and clothes. Wine is used to marinate meat, this not only makes the meat more flavorful it also kills the cancer causing compounds present in the meat. White wine removes grease stains. Wine can be used to make base of homemade jelly. It is often added to pasta, risotto or any sauces. Did you know? White wines are sometimes made from black skinned grapes. The black skin is separated from the grape juice long before it goes for fermentation. Great news for all those health conscious people, wine is completely free of fat and cholesterol. Wine tasters can tell you how the wine tastes, from what kind of grape it was made and where was made by just smelling it. Â ",
     "imageUrl" : "white_wine.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Yeast",
     "description" : "A microscopic living fungus that is an essential ingredient in bread making and brewing. Some kinds of yeast are of great importance to humans. The yeast cell is oval in shape with a thin membrane. Under suitable moisture and food source, it reproduces asexually. Types Bakerâ€™s yeast is a universal title given to the strains of yeast that are used as leavening agent in baking bread. There are various forms of bakerâ€™s yeast differing in moisture content. Brewerâ€™s yeast is a type of inactive yeast. It is formed during the making of beer. It ferments at a very low temperature. It is available in powdered form and is also blended with grounded meat. Nutritional yeast is grown on beet sugar and molasses, and is gluten free. Uses It is essentially used to make leavened better, beer, wine, cheese and whiskey. Yeast transforms sugar into alcohol and carbon dioxide. Yeast is added to malted grains and fermented to produce alcohol. The type of yeast decides flavor of the beer produced. Yeast is now also used in genetic engineering to produce certain hormones and enzymes, used for medical practices. Beverages like root beer are also created using yeast. Nutritional yeast serves as a popular dietary supplement. Nutritional Value 1. Yeast is not suitable for raw consumption. But once pasteurized, it is a host of several nutritional benefits. 2. Brewerâ€™s yeast is a rich source of B vitamins, iron and protein. 3. Nutritional yeast contains essential 18 amino acids. 4. Yeast, any type is high in dietary fiber. Did you know? There are more than 1,500 species of yeast out of which very few are used for human consumption. It is believed that early Romans discovered the use of dried yeast years before the discovery of yeast. Â ",
     "imageUrl" : "yeast.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "White Pepper",
     "description" : "White pepper is produced by removing the outer layer from black pepper which is obtained from pepper plant. The pepper plant is native to India and Indonesia. Once the black peppercorns are almost ripe and sun-dried, the outer layer is removed leaving only the inner seed which is white in color. White peppercorns are less pungent, smaller in size, have a smoother skin and a light tan color with a mild flavor. The taste of white pepper is hotter than black pepper. White pepper turns stale faster than black pepper. Usage White pepper is mostly used in light-colored dishes like white sauces and mashed potatoes for aesthetic reason. It is also common in Chinese cooking, and is also used in aromatic Viettitlese soups and pork dishes, as well as in many Swedish preparations. It can be sprinkled over eggs and a variety of cheeses for additional flavoring. It combines very well with salads, cold cuts, sandwiches, balsamic tomatoes and is mostly used as a flavoring agent. Nutritional Value 1. Its consumption is good in case of malaria, cholera and irritation from pains. 2. Consumption of white pepper improves digestion and helps in maintain a healthy bowel movement. 3. It is an excellent source of manganese, a very good source of iron and vitamin K, and a good source of dietary fiber. Note: Excessive consumption of pepper should be avoided. How to store White pepper is available whole, cracked and ground. In case of whole peppercorns, they should be stored in a cool dark place whereas ground pepper is best stored in the refrigerator. Â ",
     "imageUrl" : "white_pepper.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Rice Vinegar",
     "description" : "It is made by fermenting rice. It is essentially used in China and Japan. While vinegars from both China and Japan are much milder and sweeter than most Western vinegars, Chinese rice vinegar is still much stronger than Japanese versions. Chinese vinegars range from clear to various shades of red and brown. Rice vinegar is rich in flavor and amino acids. Types Black Rice Vinegar: Made from black glutinous rice, is very popular in Southern China. White Rice Vinegar: It is high in Acetic acid and ranges from clear to pale yellow in color. Red Rice Vinegar: It is darker than white rice vinegar. It has a distinctive red color and is made from red yeast rice. It has a distinct flavor. Japanese Rice Vinegar: It is very mild and has about 5% of acetic acid. Usage Rice vinegars may have originated in China and Japan but have now become popular in Asian, Hispanic, European and eve American cuisines. Due to its mild and sweet flavor, it is an ideal ingredient for sweet and tangy dishes, salad dressing and for pickling. It can readily be used in a variety of stir-fries, soups and stews. It can be included in marinades and a variety of dipping and barbeque sauces. Nutritional Value 1. It is high in amino acids and a number of organic acids. 2. It helps prevent the formation of fatty peroxides in the body which reduces the formation of harmful cholesterol in the body. 3. It increases the body's ability to absorb vitamins and minerals from food.",
     "imageUrl" : "rice_vinegar.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Sea Salt",
     "description" : "As the title suggests, sea salt is obtained from the sea after the water evaporates. The salt is initially in a crystallized form, which can be ground as well. It has a distinctive taste of the sea and its crystalline flakes are popularly used in a variety of savoury dishes. In case you use sea salt instead of normal table salt, then must use a lesser quantity. Sea salt is available as crystalline flakes, chunky crystals, and also in granulated form. It is considered to be the premier salt for cooking food. It is also known as solar salt and bay salt. As it is obtained from the sea, the production of sea salt dates back to pre-historic times. It generally costs more than ordinary table salt. Uses In Korea, salt is roasted at extremely high temperatures in a bamboo container which enables the salt to absorb minerals from the bamboo and the salt. Iodine which is highly essential for human health is found only in sea salt. Sea salt baths are known for relieving muscle tension or for simply relaxing and enjoying a rejuvenating experience. Sea salt baths are famous for their relaxing effect and provide a variety of minerals for the skin. Sea salt is also used in many ancient Asian healing arts as a cleansing tool as it has the ability to absorb heaviness and negativity from the body and the environment. It can be added to the water which is used for sweeping the house. Nutritional Value There is little or no extra health benefit obtained from consuming sea salt as opposed to normal table salt, as they are both primarily sodium chloride. But the presence of titanium, cobalt and lead in synthetic salt is much higher than found in sea salt. Sea salt is definitely preferable as it is a natural source of salt. Â ",
     "imageUrl" : "sea_salt.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Hoisin Sauce",
     "description" : "It is a Chinese sauce pronounced as 'HOY-sin' sauce. Hoisin means seafood though it does not contain any. It is dark in colour with a thick consistency. Its color varied from reddish-brown to dark brown. It is made from a combination of vinegar, garlic, fermented soy, sugar, soybeans, sesame seeds, chilli and sweetener. It is an authentic Asian sauce used in Chinese dishes with a strong salty and slightly sweet flavour. It has three predominant flavors - salty, spicy and sweet. It is pungent. Usage It is very commonly used in authentic Cantonese style dishes, Viettitlese cuisine and Thai preparations. It may be used to add colour to noodle dishes, grilled dishes and stir-fried dishes. It may be added with vinegar and oil to prepare light vinaigrette. It is alternatively used as a barbeque sauce as well as a dipping sauce due to its strong flavour and thick consistency. As a dipping sauce it popularly used with egg rolls, spring rolls and other vegetarian appetizers and preparations. It is used to add flavour to dishes. It pairs well with prawns and shrimps too. It is also known as Peking sauce as it is used in a dish called Peking Duck, a famous duck dish from Beijing. It is often confused with plum sauce and duck sauce, as they all have a similar consistency and color. Hoisin sauce gives a great glaze to meats and fish. It can be used as a BBQ sauce or can be added to the marinade. It has a very overpowering flavour so it is advised to use little at a time. You could also dilute the sauce with some water or oil. Bottled hoisin sauce is available in leading supermarkets and should be stored in a refrigerator. Check the expiry date before buying and do not purchase or consume if you notice any bubble formation especially near the opening of the bottle. An unopened bottle can be stored in kitchen cabinets but once opened it should be refrigerated. Nutritional Value Though it contains a number of fat-free condiments, Hoisin sauce contains high amounts of sugar. It has a high calorie count and can majorly increase the sodium content of your meal.",
     "imageUrl" : "hoisin_sauce.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Malt Vinegar",
     "description" : "Vinegar is a liquid mainly consisting of acetic acid and water. Vinegar is of many kinds, malt vinegar being one of them. Malt is the term used for germinated dried grains of barley. Once the barley has been malted (which means allowed to sprout) the resulting maltose is brewed into ale which is further fermented until it achieves a light brown color which is called malt vinegar. In layman's terms barley is first malted into alcohol which is further fermented to make vinegar. It has a strong and rich flavor barley taste. It is somewhat nutty and toasty. It is a dark colored liquid. The main difference between white vinegar and malt vinegar is that white vinegar is purified vinegar. It is made with only acid and water. Malt vinegar, on the other hand, is grain-based vinegar made from malting barley. Malt vinegar is milder and sweeter in taste than white vinegar. The invention of malt beer trace back to Britain several years ago. Back then it was made by fermenting beer into vinegar. It was then known as 'alegar'. 'Ale' is a type of 'beer' and 'gar' from vinegar. There are various types of malt vinegar available - dark, light and distilled being the most common ones. The dark one gets its color from added barley or caramel. The light one is pale brown in color. The distilled malt vinegar is colorless with a sharp taste. Usage Also known as Alegar, it is a traditional seasoning for fish and chips in the UK. It is also used in simple salad dressing mixed with olive oil and fresh herbs. It is a popular pickling tool especially for walnut pickles. Most English recipes along with traditional English fish and chips use malt vinegar. It is available all year round. In addition to being used as a condiment, this vinegar is also commonly used in chutneys. If you can't get your hand on malt vinegar you could probably substitute it with wine vinegar, cider vinegar, sherry vinegar etc. Note: Malt vinegar contains gluten and therefore is not suited for people with gluten allergies. Â ",
     "imageUrl" : "malt_vinegar.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Chocolate Chips",
     "description" : "Chocolate chips are small bits of chocolate. They are available in different sizes, large to miniature. Circular, conical, square, rectangular, chocolate chips can be manufactured in any shape and size. They contain a smaller amount of cocoa butter than cooking chocolate. While purchasing make sure they are nice, glossy and smooth. They shouldn't be blemished, grainy or with a greasy texture. Types Chocolate chips were originally made in a single flavour, but there are many new varieties which have been added. There is dark chocolate, bitter-sweet chocolate, peanut butter, mint, butterscotch, milk chocolate and white chocolate chips as well. Usage Most commonly used in cookies. The chocolate chip cookie is an American favourite and very popular across the world. Chocolate chips have found a presence in a variety of items such as waffles, cakes, ice-creams, crepes, puddings, muffins, pies, hot chocolates, milk shakes, pancakes, granola bars and of course cookies. Chocolate chips are most commonly used in cookies, cakes, muffins etc. Why are chocolate chips prefered? Here's the reason - One may wonder why they do not melt while baking in the oven. The truth is that they do melt but tend to retain their shape. If you try to break apart a chocolate chip just out of the oven you will notice that it's melted. Since they retain their shape on melting they are preferred in desserts than chocolate pieces that would completely melt on baking. Interesting to Know - The first chocolate chip was invented in 1930 by Ruth Wakefield by cutting open a chocolate bar and adding it to a rich butter cookie dough to make chocolate chip cookies. This recipe was soon discovered by Nestle and it bought the rights of the recipe and released the first chocolate bits in 1939 with Ruth Wakefield's title at the back of the cover.",
     "imageUrl" : "chocolate_chips.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Quinoa",
     "description" : "Often considered a grain, quinoa is actually a seed. It is pronounced as Keen-wah. It was a staple food for those who were living on the altitudes of Andes Mountains in South America. Though the title is not very popular during the recent times, nutritionists claim it to be â€œsuper grainâ€� for it impeccable nutritional value. It is not a cereal grass but is cooked in a similar way to rice or barley. The edible seeds are bean-shaped tiny pods carry a mild bitterly flavor. Usage Quinoa is prepared in a same way like rice. However, the outer coating of quinoa contains a toxin called saponin. Therefore the seeds need to be rinsed thoroughly cleansing the bitter coating. For it fluffy texture, quinoa makes a good alternative for white rice or couscous. One can even add quinoa as a topping in salads, or prepare quinoa porridge. Quinoa pudding is a good substitute for brown rice. Quinoa seeds can be grounded to flour that is considered for gluten free baking. Nutritional Value Unlike rice or any other grain, quinoa is a rich source of all eight essential amino acids. It is also credited by the United Nations as a super crop. Its protein balance is equal to milk, and it has higher protein content than rice, millets and other cereals. Being gluten free, quinoa is the best suggested diet for those who want to lose weight. Riboflavin content is high in quinoa that helps in reducing and preventing migraine headaches by bettering the oxygen supply to the cells. The seeds are also a rich source of Magnesium, which helps in promotes cardiovascular health. The high dietary fiber content in quinoa helps lessen the occurrence of gallstones. Note: Though quinoa is now called as a super healthy food, it is not advisable for daily consumption. It contains oxalates, compromising the safety of quinoa. Did you know? In South America, rinsed saponin from quinoa seeds is used as a detergent. The Inca considered quinoa seed to be very scared. They referred it to as the â€œmother seed.â€�",
     "imageUrl" : "quinoa.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Rice Flour",
     "description" : "A type of flour that is made from finely milled rice. It is either made from white rice or brown rice. It is a good substitute for wheat flour and for those who are gluten intolerant. It is also used as a thickener in recipes that are to be kept in the fridge. Rice flour made from short grains has a very fine texture whereas the flour made from long grain is used to prepare soft, light bread and other baking goods. Usage Rice flour is used in much variety of dishes from noodles to desserts. It is also used as a breading for fried dishes. It is also used as a binding and thickening agent. It is also used while roasting to give a crunchy texture. In Japanese, rice flour is available two forms - glutinous or sweet rice is used for cooking dishes and non-glutinous mostly used to making confectionaries. Rice noodles, Iranian kheer and shondesh are few items that use rice flour. In some parts of India, the flour is mixed with wheat, millet, other cereal flours, and dried fruits are added to make a kind of baby food. In Bangladeshi cuisine it is a very common ingredient and is used to make rotis. Nutritional Value Rice flour is low in fat and cholesterol. Being gluten free, it is preferred over wheat flour. For its low fiber content, rice flour is easily digestible. It is also a good source of several minerals and vitamins. Â ",
     "imageUrl" : "rice_flour.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Polenta",
     "description" : "It is cornmeal that is made from ground maize. Polenta is an Italian word which means crushed grains. Polenta is very famous in the Italian cuisine and is eaten as a hot-side dish. It is either eaten directly or is consumed baked, grilled or fried. It has a rich yellow colour, and has a slight sweet taste. Polenta can be in ground coarse form or fine powder. Usage Polenta takes a long time to cook. It is cooked by simmering in any water-based liquid. Most commonly used cereal is maize though buckwheat, white wheat and other varieties are also used to prepare polenta. Polenta is also used a base for many vegetarian dishes and toppings. Cooked polenta is made into different shapes like balls or sticks, and then fried in oil or grilled until they turn golden brown. Ideally it should be cooked in a copper pot, which adds a different flavour to the recipe. Uncooked polenta can be used as a substitute for wheat. Very often cooked polenta is allowed to freeze, which will harden into a dough-like structure. Then, cooks cut the hardened structure into fine squares and are baked. Polenta is similar to traditional American dish grits. Though both are made from corn, white corn is usually used to prepare grits. It is also chemically treated. There is a subtle difference in the flavors, but both are cooked in the same way.",
     "imageUrl" : "polenta.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Oyster Sauce",
     "description" : "Oyster sauce is a thick brown sauce extracted from boiled oysters and seasonings. The basic ingredients employed in the making of oyster sauce along with oyster and seasonings are sugar, salt and water stiffened with cornstarch. It is a very common ingredient in Chinese, Thai and Viettitlese cuisine. The oyster extracts give the sauce a sweet and salty flavor. Though made from mollusc, it doesn't smell fishy at all. Usage This savory sauce is added to flavor meat and vegetables. It is used in noodles stir-fries, vegetables. Vegetarian oyster sauce is prepared from mushrooms. Sometimes, other ingredients like soy sauce and MSG can be added to the sauce to enhance the flavor and taste. Apart from oyster sauce, these molluscs can be eaten roasted, stewed, sauteed, fried, baked and marinated. Oyster sauce is a main ingredient in Chinese traditional dish - Beef and Broccoli. It is also used as a base for soups and salads. Note: After opening, oyster sauce must be secured safely for longer shelf life. Since it is used in minimal quantities, it needs to be stored not resulting in spoilage. Oyster sauce should be refrigerated in an airtight container. Nutritional Value 1. Osyter sauce is very low in calories making it a suitable supplement over other sauces. 2. However, compared to soya sauce and others, oyster sauce is relatively low in protein and vitamin content. Did you know? Oysters produce pearls naturally. A group of oysters is called a bed.",
     "imageUrl" : "oyster_sauce.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }, {
     "title" : "Guchchi",
     "description" : "Also known as sponge mushroom, guchchi belongs to the Morella fungus family. It has a rigid conical body cone with a sponge cap. It is usually grown on logs of decayed wood and leaves, stumps, or humous soil. At a low height it is usually black in color. As it grows, guchchi turns brown to brackish or white color. Considered as a delicacy, it is in great demand in many parts all over the world. During the season of snow followed by hail and thunderstorms is an ideal time for guchchi to grow. Unlike other varieties, guchchi is cooked in a way that makes it so delicious retaining its nutrient content. The guchchi is strung into small garlands and hung over the hearth for a week. They are dried up because of the smoke and heat. The height at which the guchchi are strung determines the taste. If they are too low, they get too smoky and if too high, they are likely to rot. Black morel mushrooms are a delicacy and not easily available but in case you get your hands on them turn it into an aromatic pulao. Do not add too many masalas and enjoy the flavors of the guchchi. Nutritional Value Guchhiâ€™s are rich in minerals, have a high iron content and are a great source of Vitamin D. It is low fat, and high in antioxidants. It contains fibre, which absorbs bile acids in the body and prevents the formation of cholestrol. It is known to improve liver function as well. The nutrients contained in sponge mushrooms help maintain a steady blood-glucose level throughout the day, this in turn helps in reducing binge eating and unnecessary snacking. Precaution: Morel mushrooms should never be ingested raw, as it can cause poisoning. Once cooked, the mushrooms lose their toxicity. Did you know? India is the leading producer of Guchchi. Guchchi is usually found at a height above 5000 ft. The amount of guchchi collected is reduced to half upon drying.",
     "imageUrl" : "guchchi.png",
-    "category" : "Other Ingredients",
-    "isInPantry" : false,
-    "isOnList" : false
+    "category" : "Other Ingredients"
   }
 ]

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-        mViewPager.setOffscreenPageLimit(1);
+        mViewPager.setOffscreenPageLimit(3);
 
         TabLayout tabLayout = findViewById(R.id.tabs);
 
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        Globals.addIngredient(new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString(), inPantry.isChecked(), onList.isChecked()));
+                        Globals.addIngredient(new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString()), inPantry.isChecked(), onList.isChecked());
                         dialog.dismiss();
                     }
                 });

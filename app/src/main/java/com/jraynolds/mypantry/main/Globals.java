@@ -2,19 +2,18 @@ package com.jraynolds.mypantry.main;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
-import android.widget.ExpandableListAdapter;
 
 import com.jraynolds.mypantry.CustomExpandableListAdapter;
-import com.jraynolds.mypantry.adapters.Adapter_Expandable;
 import com.jraynolds.mypantry.objects.Ingredient;
 import com.jraynolds.mypantry.objects.Recipe;
-import com.jraynolds.mypantry.tabs.Tab_Ingredients;
 import com.jraynolds.mypantry.utilities.JSONreader;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Jasper on 1/24/2018.
@@ -24,9 +23,9 @@ public class Globals extends Application {
 
     private static Context context;
 
-    private static ArrayList<Ingredient> ingredients;
     private static ArrayList<Ingredient> defaultIngredients;
     private static ArrayList<Ingredient> localIngredients;
+
     private static ArrayList<Recipe> globalRecipes;
 
     public static HashMap<String, CustomExpandableListAdapter> tabAdapters;
@@ -35,12 +34,14 @@ public class Globals extends Application {
     public void onCreate() {
         super.onCreate();
         context = this;
-        ingredients = loadIngredients();
+        loadIngredients();
+
         globalRecipes = loadRecipes();
+
         tabAdapters = new HashMap<>();
     }
 
-    private ArrayList<Ingredient> loadIngredients() {
+    private void loadIngredients() {
         JSONreader reader = new JSONreader(this);
         //grab from locals
         localIngredients = new ArrayList<>();
@@ -52,30 +53,13 @@ public class Globals extends Application {
         }
 
         //grab from app
+        defaultIngredients = new ArrayList<>();
         try {
             String ingredientsString = reader.inputToString(this.getAssets().open("ingredients_default" + ".json"));
             defaultIngredients = reader.stringToIngredients(ingredientsString);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        //only add copies
-        ingredients = new ArrayList<>();
-        ingredients.addAll(localIngredients);
-        for(int i=0; i<defaultIngredients.size(); i++) {
-            Ingredient defaultIngredient = defaultIngredients.get(i);
-            boolean alreadyContained = false;
-            for(int j=0; i<localIngredients.size(); i++) {
-                Ingredient comparingIngredient = localIngredients.get(j);
-                if(defaultIngredient.title.toLowerCase().equals(comparingIngredient.title.toLowerCase())) {
-                    alreadyContained = true;
-                    break;
-                }
-            }
-            if(!alreadyContained) ingredients.add(defaultIngredient);
-        }
-
-        return ingredients;
     }
 
     private ArrayList<Recipe> loadRecipes() {
@@ -84,14 +68,9 @@ public class Globals extends Application {
         return recipes;
     }
 
-    public static void addIngredient(Ingredient i) {
-        Log.d("ingredient", i.title);
-        Log.d("ingredient", i.description);
-        Log.d("ingredient", Boolean.toString(i.isInPantry));
-        Log.d("ingredient", Boolean.toString(i.isOnList));
+    public static void addIngredient(Ingredient i, Boolean isInPantry, Boolean isOnList) {
         //push to globalIngredients;
         localIngredients.add(i);
-        ingredients.add(i);
         //update
         updateLists(null);
         //push to individual Json file
@@ -104,27 +83,54 @@ public class Globals extends Application {
         //push to individual Json file
     }
 
-    public static ArrayList<Ingredient> getIngredients(String searchStr, boolean isExact, String category, String location) {
+    public static ArrayList<Ingredient> getIngredients(String title, boolean isExact, String category, String location) {
 
-        ArrayList<Ingredient> subIngredients = new ArrayList<>();
+        HashMap<String, Ingredient> uniqueIngredients = new HashMap<>();
 
-        for(int i = 0; i<ingredients.size(); i++) {
-            Ingredient ing = ingredients.get(i);
-            if(location.equals("all") || (location.equals("pantry") && ing.isInPantry) || (location.equals("shopping") && ing.isOnList)) {
-                if(category == null || category.toLowerCase().equals(ing.category.toLowerCase())) {
-                    if (searchStr != null) {
-                        if (isExact && !ing.title.toLowerCase().equals(searchStr.toLowerCase())) {
-                            continue;
-                        } else if (!isExact && !ing.title.toLowerCase().contains(searchStr.toLowerCase())) {
-                            continue;
-                        }
-                    }
-                    subIngredients.add(ing);
-                }
+        for(Ingredient i : defaultIngredients) {
+            //check locations
+            if(location != null) {
+                //continue if not in location
+                if(location.equals("pantry")) if(!i.isInPantry(context)) continue;
+                if(location.equals("shopping")) if(!i.isOnList(context)) continue;
             }
+            //check category, continue if not equal
+            if(category != null) if(!category.toLowerCase().equals(i.category.toLowerCase())) continue;
+            //check title
+            if (title != null) {
+                if (isExact && !i.title.toLowerCase().equals(title.toLowerCase())) continue;
+                else if (!isExact && !i.title.toLowerCase().contains(title.toLowerCase())) continue;
+            }
+            //if we got this far...
+            uniqueIngredients.put(i.title, i);
         }
 
-        return subIngredients;
+        for(Ingredient i : localIngredients) {
+            //check locations
+            if(location != null) {
+                //continue if not in location
+                if(location.equals("pantry")) if(!i.isInPantry(context)) continue;
+                if(location.equals("shopping")) if(!i.isOnList(context)) continue;
+            }
+            //check category, continue if not equal
+            if(category != null) if(!category.toLowerCase().equals(i.category.toLowerCase())) continue;
+            //check title
+            if (title != null) {
+                if (isExact && !i.title.toLowerCase().equals(title.toLowerCase())) continue;
+                else if (!isExact && !i.title.toLowerCase().contains(title.toLowerCase())) continue;
+            }
+            //if we got this far...
+            uniqueIngredients.put(i.title, i);
+        }
+
+        ArrayList<Ingredient> ingredients = new ArrayList<>();
+        ingredients.addAll(uniqueIngredients.values());
+        Log.d("ingredients", location + " = " + ingredients.toString());
+        for(Ingredient i : ingredients) {
+            Log.d("ingredients", Boolean.toString(i.isInPantry(context)) + ", " + Boolean.toString(i.isOnList(context)));
+        }
+
+        return ingredients;
     }
 
     public static void addTab(String s, CustomExpandableListAdapter adapter) {
@@ -154,33 +160,23 @@ public class Globals extends Application {
         }
         Log.d("modifying (local)", Integer.toString(localIndex));
 
-        int index = -1;
-        for(int i=0; i<ingredients.size(); i++) {
-            if(ingredients.get(i).title.toLowerCase().equals(ingredient.title.toLowerCase())) {
-                index = i;
-                break;
-            }
-        }
-        Log.d("modifying (all)", Integer.toString(index));
-
         if(localIndex != -1) localIngredients.remove(localIndex);
         Log.d("modifying", ingredient.description);
-        ingredients.remove(index);
-        addIngredient(ingredient);
+        addIngredient(ingredient, null, null);
     }
 
     public static void removeIngredientByTitle(String title) {
-        int ingredientsIndex = -1;
-        for(int i = 0; i<ingredients.size() && ingredientsIndex < 0; i++) if(ingredients.get(i).title.toLowerCase().equals(title.toLowerCase())) ingredientsIndex = i;
-
-        int localsIndex = -1;
-        for(int i = 0; i<localIngredients.size() && localsIndex < 0; i++) if(localIngredients.get(i).title.toLowerCase().equals(title.toLowerCase())) localsIndex = i;
-
-        Log.d("removing globals", Integer.toString(ingredientsIndex));
-        Log.d("removing locals", Integer.toString(localsIndex));
-
-        if(localsIndex != -1) localIngredients.remove(localsIndex);
-        ingredients.remove(ingredientsIndex);
-        updateLists(null);
+//        int ingredientsIndex = -1;
+//        for(int i = 0; i<ingredients.size() && ingredientsIndex < 0; i++) if(ingredients.get(i).title.toLowerCase().equals(title.toLowerCase())) ingredientsIndex = i;
+//
+//        int localsIndex = -1;
+//        for(int i = 0; i<localIngredients.size() && localsIndex < 0; i++) if(localIngredients.get(i).title.toLowerCase().equals(title.toLowerCase())) localsIndex = i;
+//
+//        Log.d("removing globals", Integer.toString(ingredientsIndex));
+//        Log.d("removing locals", Integer.toString(localsIndex));
+//
+//        if(localsIndex != -1) localIngredients.remove(localsIndex);
+//        ingredients.remove(ingredientsIndex);
+//        updateLists(null);
     }
 }

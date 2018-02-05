@@ -27,6 +27,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by Jasper on 2/3/2018.
@@ -36,9 +37,9 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private List<String> categoryTitles;
-    private LinkedHashMap<String, List<Ingredient>> categories;
+    private TreeMap<String, List<Ingredient>> categories;
 
-    public CustomExpandableListAdapter(Context context, List<String> categoryTitles, LinkedHashMap<String, List<Ingredient>> categories) {
+    public CustomExpandableListAdapter(Context context, List<String> categoryTitles, TreeMap<String, List<Ingredient>> categories) {
         this.context = context;
         this.categoryTitles = categoryTitles;
         this.categories = categories;
@@ -147,6 +148,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int position, boolean isExpanded, View view, ViewGroup parent) {
         if (view == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            assert layoutInflater != null;
             view = layoutInflater.inflate(R.layout.list_category, null);
         }
 
@@ -164,6 +166,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     public View getChildView(int position, int expandedPosition, boolean isLastChild, View view, ViewGroup parent) {
         if (view == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            assert layoutInflater != null;
             view = layoutInflater.inflate(R.layout.list_ingredient, parent, false);
         }
 
@@ -178,9 +181,9 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         TextView descriptionView = view.findViewById(R.id.ingredient_description);
         ImageView imageView = view.findViewById(R.id.ingredient_image);
 
-        checkPantry.setChecked(ingredient.isInPantry);
+        checkPantry.setChecked(ingredient.isInPantry(context));
         checkPantry.setOnClickListener(new checkboxPantryClick(ingredient));
-        checkList.setChecked(ingredient.isOnList);
+        checkList.setChecked(ingredient.isOnList(context));
         checkList.setOnClickListener(new checkboxListClick(ingredient));
         titleView.setText(ingredient.title);
         descriptionView.setText(ingredient.description);
@@ -213,16 +216,10 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         @Override
         public void onClick(View view) {
-            Log.d("clicking", "Clicked: " + "Pantry");
-            i.isInPantry = !i.isInPantry;
             CustomExpandableListAdapter adapter = Globals.tabAdapters.get("pantry");
-            if(adapter != null) {
-                Log.d("clicking", adapter.toString());
-            } else {
-                Log.d("clicking", null);
-            }
 
-            if(i.isInPantry) {
+            boolean nowInPantry = i.toggleIsInPantry(context);
+            if(nowInPantry) {
                 adapter.addIngredient(i);
             } else {
                 adapter.removeIngredient(i);
@@ -239,16 +236,10 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         @Override
         public void onClick(View view) {
-            Log.d("clicking", "Clicked: " + "Shopping");
-            i.isOnList = !i.isOnList;
             CustomExpandableListAdapter adapter = Globals.tabAdapters.get("shopping");
-            if(adapter != null) {
-                Log.d("clicking", adapter.toString());
-            } else {
-                Log.d("clicking", null);
-            }
 
-            if(i.isOnList) {
+            boolean nowOnList = i.toggleIsOnList(context);
+            if(nowOnList) {
                 adapter.addIngredient(i);
             } else {
                 adapter.removeIngredient(i);
