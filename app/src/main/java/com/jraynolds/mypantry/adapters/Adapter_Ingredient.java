@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.jraynolds.mypantry.CustomExpandableListAdapter;
 import com.jraynolds.mypantry.dialogs.IngredientView;
 import com.jraynolds.mypantry.R;
 import com.jraynolds.mypantry.main.Globals;
@@ -67,7 +68,7 @@ public class Adapter_Ingredient extends ChildViewHolder {
                 Resources res = context.getResources();
                 InputStream is = am.open("images/" + i.imageUrl);
                 Bitmap b = BitmapFactory.decodeStream(is);
-                Log.d("image", i.title);
+//                Log.d("image", i.title);
                 imageView.setImageBitmap(b);
                 is.close();
             } catch (IOException e) {
@@ -93,6 +94,7 @@ public class Adapter_Ingredient extends ChildViewHolder {
         @Override
         public void onClick(View view) {
             i.isInPantry = !i.isInPantry;
+            Log.d("checkbox", "pantry");
 //            Log.d("aaaa", Globals.ingredientTabs.get("pantry").toString());
 //            Log.d("aaaa", Integer.toString(Globals.ingredientTabs.get("pantry").categories.size()));
 //            if(i.isInPantry) {
@@ -116,11 +118,18 @@ public class Adapter_Ingredient extends ChildViewHolder {
         @Override
         public void onClick(View view) {
             i.isOnList = !i.isOnList;
-//            if(i.isOnList) {
-//                Globals.ingredientTabs.get("shopping").addIngredient(i);
-//            } else {
-//                Globals.ingredientTabs.get("shopping").removeIngredient(i);
-//            }
+            Log.d("checkbox", "list");
+            CustomExpandableListAdapter shopping = Globals.tabAdapters.get("shopping");
+            if(shopping != null) {
+                Log.d("checkbox", shopping.toString());
+            } else {
+                Log.d("checkbox", null);
+            }
+            if(i.isOnList) {
+                shopping.addIngredient(i);
+            } else {
+                shopping.removeIngredient(i);
+            }
         }
     }
 

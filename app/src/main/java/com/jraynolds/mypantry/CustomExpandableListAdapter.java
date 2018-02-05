@@ -2,11 +2,9 @@ package com.jraynolds.mypantry;
 
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
-import android.media.Image;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,8 +23,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Jasper on 2/3/2018.
@@ -35,13 +35,13 @@ import java.util.List;
 public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
-    private List<String> expandableListTitle;
-    private LinkedHashMap<String, List<Ingredient>> expandableListDetail;
+    private List<String> categoryTitles;
+    private LinkedHashMap<String, List<Ingredient>> categories;
 
-    public CustomExpandableListAdapter(Context context, List<String> expandableListTitle, LinkedHashMap<String, List<Ingredient>> expandableListDetail) {
+    public CustomExpandableListAdapter(Context context, List<String> categoryTitles, LinkedHashMap<String, List<Ingredient>> categories) {
         this.context = context;
-        this.expandableListTitle = expandableListTitle;
-        this.expandableListDetail = expandableListDetail;
+        this.categoryTitles = categoryTitles;
+        this.categories = categories;
     }
 
     public void sortIngredients(List<Ingredient> list) {
@@ -54,62 +54,78 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     public void addIngredient(Ingredient i) {
+        Log.d("adding", "adding now: " + i.title);
+        Log.d("itemset", Integer.toString(categories.size()));
+
+        Log.d("itemset", categoryTitles.toString());
+        Log.d("itemset", categories.toString());
+
         String category = i.category;
-        List<Ingredient> list = this.expandableListDetail.get(category);
+        List<Ingredient> list = this.categories.get(category);
         if(list != null) {
             list.add(i);
             sortIngredients(list);
         } else {
             list = new ArrayList<>();
             list.add(i);
+            categoryTitles.add(category);
         }
-        expandableListDetail.put(category, list);
+        categories.put(category, list);
 
-        for(int j=0; j<expandableListDetail.size(); j++) {
-            for(int k=0; k<expandableListDetail.get(j).size(); k++) {
-                Log.d("Adding", "Category " + expandableListDetail.get(j) + ", Ingredient " + expandableListDetail.get(j).get(k).title);
-            }
+        Log.d("itemset", Integer.toString(categories.size()));
+
+        Iterator it = Globals.tabAdapters.entrySet().iterator();
+        while(it.hasNext()) {
+            Map.Entry pair = (Map.Entry) it.next();
+            CustomExpandableListAdapter adapter = (CustomExpandableListAdapter) pair.getValue();
+            adapter.notifyDataSetChanged();
         }
-
-        this.notifyDataSetChanged();
     }
 
     public void removeIngredient(Ingredient i) {
+        Log.d("removing", "adding now: " + i.title);
+        Log.d("itemset", Integer.toString(categories.size()));
         String category = i.category;
-        List<Ingredient> list = this.expandableListDetail.get(category);
+        List<Ingredient> list = this.categories.get(category);
         list.remove(i);
-        expandableListDetail.put(category, list);
+        categories.put(category, list);
         if(list.isEmpty()) {
-            this.expandableListDetail.remove(category);
+            this.categories.remove(category);
+            this.categoryTitles.remove(category);
         }
 
-        for(int j=0; j<expandableListDetail.size(); j++) {
-            for(int k=0; k<expandableListDetail.get(j).size(); k++) {
-                Log.d("Removing", "Category " + expandableListDetail.get(j) + ", Ingredient " + expandableListDetail.get(j).get(k).title);
-            }
-        }
+        Log.d("itemset", categoryTitles.toString());
+        Log.d("itemset", categories.toString());
 
-        this.notifyDataSetChanged();
+        Log.d("itemset", Integer.toString(categories.size()));
+
+        Iterator it = Globals.tabAdapters.entrySet().iterator();
+        while(it.hasNext()) {
+            Map.Entry pair = (Map.Entry) it.next();
+            CustomExpandableListAdapter adapter = (CustomExpandableListAdapter) pair.getValue();
+            adapter.notifyDataSetChanged();
+        }
     }
 
     @Override
     public int getGroupCount() {
-        return this.expandableListTitle.size();
+        return this.categoryTitles.size();
     }
 
     @Override
     public int getChildrenCount(int position) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(position)).size();
+        Log.d("counting", String.valueOf(this.categories.get(this.categoryTitles.get(position)).size()));
+        return this.categories.get(this.categoryTitles.get(position)).size();
     }
 
     @Override
     public String getGroup(int position) {
-        return this.expandableListTitle.get(position);
+        return this.categoryTitles.get(position);
     }
 
     @Override
     public Ingredient getChild(int position, int expandedPosition) {
-        return this.expandableListDetail.get(this.expandableListTitle.get(position)).get(expandedPosition);
+        return this.categories.get(this.categoryTitles.get(position)).get(expandedPosition);
     }
 
     @Override
@@ -128,28 +144,34 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getGroupView(int position, boolean b, View view, ViewGroup viewGroup) {
-        String listTitle = (String) getGroup(position);
+    public View getGroupView(int position, boolean isExpanded, View view, ViewGroup parent) {
         if (view == null) {
-            LayoutInflater layoutInflater = (LayoutInflater) this.context.
-                    getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = layoutInflater.inflate(R.layout.list_category, null);
         }
-        TextView listTitleTextView = view.findViewById(R.id.layout_categoryTitle);
-        listTitleTextView.setTypeface(null, Typeface.BOLD);
-        listTitleTextView.setText(listTitle);
+
+        initializeGroupComponents(view, getGroup(position));
         return view;
     }
 
+    private void initializeGroupComponents(View view, String title) {
+        TextView listTitleTextView = view.findViewById(R.id.layout_categoryTitle);
+        listTitleTextView.setTypeface(null, Typeface.BOLD);
+        listTitleTextView.setText(title);
+    }
+
     @Override
-    public View getChildView(int position, int expandedPosition, boolean bool, View view, ViewGroup viewGroup) {
-        final Ingredient ingredient = (Ingredient) getChild(position, expandedPosition);
-        final String ingString = ingredient.title;
+    public View getChildView(int position, int expandedPosition, boolean isLastChild, View view, ViewGroup parent) {
         if (view == null) {
-            LayoutInflater layoutInflater = (LayoutInflater) this.context
-                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = layoutInflater.inflate(R.layout.list_ingredient, null);
+            LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = layoutInflater.inflate(R.layout.list_ingredient, parent, false);
         }
+
+        initializeChildComponents(view, getChild(position, expandedPosition));
+        return view;
+    }
+
+    private void initializeChildComponents(View view, Ingredient ingredient) {
         CheckBox checkPantry = view.findViewById(R.id.ingredient_isInPantry);
         CheckBox checkList = view.findViewById(R.id.ingredient_isOnList);
         TextView titleView = view.findViewById(R.id.ingredient_title);
@@ -167,14 +189,13 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
             try {
                 InputStream is = am.open("images/" + ingredient.imageUrl);
                 Bitmap b = BitmapFactory.decodeStream(is);
-                Log.d("image", ingredient.title);
+//                Log.d("image", ingredient.title);
                 imageView.setImageBitmap(b);
                 is.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        return view;
     }
 
     @Override
@@ -192,8 +213,15 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         @Override
         public void onClick(View view) {
+            Log.d("clicking", "Clicked: " + "Pantry");
             i.isInPantry = !i.isInPantry;
-            CustomExpandableListAdapter adapter = (CustomExpandableListAdapter) Globals.tabAdapters.get("pantry");
+            CustomExpandableListAdapter adapter = Globals.tabAdapters.get("pantry");
+            if(adapter != null) {
+                Log.d("clicking", adapter.toString());
+            } else {
+                Log.d("clicking", null);
+            }
+
             if(i.isInPantry) {
                 adapter.addIngredient(i);
             } else {
@@ -211,7 +239,20 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         @Override
         public void onClick(View view) {
+            Log.d("clicking", "Clicked: " + "Shopping");
             i.isOnList = !i.isOnList;
+            CustomExpandableListAdapter adapter = Globals.tabAdapters.get("shopping");
+            if(adapter != null) {
+                Log.d("clicking", adapter.toString());
+            } else {
+                Log.d("clicking", null);
+            }
+
+            if(i.isOnList) {
+                adapter.addIngredient(i);
+            } else {
+                adapter.removeIngredient(i);
+            }
         }
     }
 }

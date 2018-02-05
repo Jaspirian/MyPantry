@@ -29,7 +29,7 @@ public class Globals extends Application {
     private static ArrayList<Ingredient> localIngredients;
     private static ArrayList<Recipe> globalRecipes;
 
-    public static HashMap<String, ExpandableListAdapter> tabAdapters;
+    public static HashMap<String, CustomExpandableListAdapter> tabAdapters;
 
 
     public void onCreate() {
@@ -127,7 +127,7 @@ public class Globals extends Application {
         return subIngredients;
     }
 
-    public static void addTab(String s, ExpandableListAdapter adapter) {
+    public static void addTab(String s, CustomExpandableListAdapter adapter) {
         tabAdapters.put(s, adapter);
     }
 

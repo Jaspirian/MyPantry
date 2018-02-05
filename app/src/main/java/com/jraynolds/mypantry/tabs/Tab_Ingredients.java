@@ -55,11 +55,11 @@ public class Tab_Ingredients extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_all, container, false);
 
         ExpandableListView expandableListView = rootView.findViewById(R.id.all_ingredients_listView);
-        final LinkedHashMap<String, List<Ingredient>> expandableListDetail = ExpandableListDataPump.getData(searchStr);
-        final List<String> expandableListTitle = new ArrayList<>(expandableListDetail.keySet());
-        ExpandableListAdapter expandableListAdapter = new CustomExpandableListAdapter(this.getContext(), expandableListTitle, expandableListDetail);
-        Globals.addTab(searchStr, expandableListAdapter);
-        expandableListView.setAdapter(expandableListAdapter);
+        final LinkedHashMap<String, List<Ingredient>> categories = ExpandableListDataPump.getData(searchStr);
+        final List<String> categoryTitles = new ArrayList<>(categories.keySet());
+        CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this.getContext(), categoryTitles, categories);
+        Globals.addTab(searchStr, adapter);
+        expandableListView.setAdapter(adapter);
 
         return rootView;
     }

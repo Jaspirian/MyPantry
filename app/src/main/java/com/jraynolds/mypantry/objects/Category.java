@@ -23,12 +23,11 @@ public class Category extends ExpandableGroup<Ingredient> {
         this.ingredients = ingredients;
     }
 
-    public void add(Ingredient i) {
-        ingredients.add(i);
-        //sort
+    public void addIngredient(Ingredient i) {
+
     }
 
-    public void remove(int position) {
+    public void removeIngredient(int position) {
         ingredients.remove(position);
     }
 }
