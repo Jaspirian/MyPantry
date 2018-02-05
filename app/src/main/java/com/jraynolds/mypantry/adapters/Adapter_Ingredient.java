@@ -94,17 +94,6 @@ public class Adapter_Ingredient extends ChildViewHolder {
         @Override
         public void onClick(View view) {
             i.isInPantry = !i.isInPantry;
-            Log.d("checkbox", "pantry");
-//            Log.d("aaaa", Globals.ingredientTabs.get("pantry").toString());
-//            Log.d("aaaa", Integer.toString(Globals.ingredientTabs.get("pantry").categories.size()));
-//            if(i.isInPantry) {
-//                Log.d("aaaa", "adding");
-//                Globals.ingredientTabs.get("pantry").addIngredient(i);
-//            } else {
-//                Log.d("aaaa", "subtracting");
-//                Globals.ingredientTabs.get("pantry").removeIngredient(i);
-//            }
-//            Log.d("aaaa", Integer.toString(Globals.ingredientTabs.get("pantry").categories.size()));
         }
     }
 
@@ -118,18 +107,6 @@ public class Adapter_Ingredient extends ChildViewHolder {
         @Override
         public void onClick(View view) {
             i.isOnList = !i.isOnList;
-            Log.d("checkbox", "list");
-            CustomExpandableListAdapter shopping = Globals.tabAdapters.get("shopping");
-            if(shopping != null) {
-                Log.d("checkbox", shopping.toString());
-            } else {
-                Log.d("checkbox", null);
-            }
-            if(i.isOnList) {
-                shopping.addIngredient(i);
-            } else {
-                shopping.removeIngredient(i);
-            }
         }
     }
 

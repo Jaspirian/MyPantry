@@ -14,20 +14,13 @@ import java.util.List;
 
 public class Category extends ExpandableGroup<Ingredient> {
 
-    private String title;
-    private List<Ingredient> ingredients;
+//    private String title;
+//    private List<Ingredient> ingredients;
 
     public Category(String title, List<Ingredient> ingredients) {
         super(title, ingredients);
-        this.title = title;
-        this.ingredients = ingredients;
+//        this.title = title;
+//        this.ingredients = ingredients;
     }
 
-    public void addIngredient(Ingredient i) {
-
-    }
-
-    public void removeIngredient(int position) {
-        ingredients.remove(position);
-    }
 }
