@@ -39,6 +39,8 @@ public class Tab_Ingredients extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_all, container, false);
 
         ExpandableListView expandableListView = rootView.findViewById(R.id.layout_listview);
+        ViewGroup footer = (ViewGroup) inflater.inflate(R.layout.list_footer, expandableListView, false);
+        expandableListView.addFooterView(footer);
         final TreeMap<String, List<Ingredient>> categories = ExpandableListDataPump.getData(searchStr);
         final List<String> categoryTitles = new ArrayList<>(categories.keySet());
         Log.d("shopping", searchStr + " = " + categoryTitles.toString());

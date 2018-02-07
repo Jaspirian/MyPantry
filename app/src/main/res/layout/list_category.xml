@@ -3,15 +3,15 @@
     android:id="@+id/layout_categoryContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="2dp"
     android:orientation="vertical">
-    <!--android:layout_margin="2dp"-->
 
     <TextView
         android:id="@+id/layout_categoryTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
         android:text="Category" />
-        <!--android:padding="10dp"-->
 
 </LinearLayout>
