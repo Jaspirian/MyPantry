@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.jraynolds.mypantry.dialogs.IngredientView">
+    tools:context="com.jraynolds.mypantry.main.IngredientView">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -75,6 +75,7 @@
                         android:ems="10"
                         android:inputType="textMultiLine"
                         android:text="Description"
+                        android:textSize="14sp"
                         android:textStyle="italic" />
                 </LinearLayout>
 

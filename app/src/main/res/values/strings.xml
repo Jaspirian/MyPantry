@@ -6,4 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="uniqueTitleWarning">Please pick a unique title.</string>
     <string name="emptyIngredients">Not enough ingredients? Try adding some using the button on the right!</string>
+    <string name="defaultIngredientsFile">ingredients_default</string>
+    <string name="userIngredientsFile">ingredients_added</string>
+    <string name="s">ingredients_added</string>
 </resources>

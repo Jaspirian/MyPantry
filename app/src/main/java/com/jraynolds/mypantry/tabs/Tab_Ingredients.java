@@ -42,9 +42,7 @@ public class Tab_Ingredients extends Fragment {
         ViewGroup footer = (ViewGroup) inflater.inflate(R.layout.list_footer, expandableListView, false);
         expandableListView.addFooterView(footer);
         final TreeMap<String, List<Ingredient>> categories = ExpandableListDataPump.getData(searchStr);
-        final List<String> categoryTitles = new ArrayList<>(categories.keySet());
-        Log.d("shopping", searchStr + " = " + categoryTitles.toString());
-        CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this.getContext(), categoryTitles, categories);
+        CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this.getContext(), categories);
         Globals.addTab(searchStr, adapter);
         expandableListView.setAdapter(adapter);
 

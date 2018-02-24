@@ -108,7 +108,10 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        Globals.addIngredient(new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString()), inPantry.isChecked(), onList.isChecked());
+                        Ingredient i = new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString());
+                        Globals.addIngredient(i);
+                        i.setIsInList("pantry", inPantry.isChecked(), getApplicationContext());
+                        i.setIsInList("pantry", onList.isChecked(), getApplicationContext());
                         dialog.dismiss();
                     }
                 });

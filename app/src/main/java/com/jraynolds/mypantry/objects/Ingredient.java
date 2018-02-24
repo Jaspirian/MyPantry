@@ -6,6 +6,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.util.Log;
+
+import com.jraynolds.mypantry.CustomExpandableListAdapter;
+import com.jraynolds.mypantry.main.Globals;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +19,7 @@ import java.io.Serializable;
  * Created by Jasper on 1/20/2018.
  */
 
-public class Ingredient {
+public class Ingredient implements Parcelable, Serializable {
 
     public String title;
     public String description;
@@ -29,45 +33,68 @@ public class Ingredient {
         this.category = category;
     }
 
-    public boolean isInPantry(Context context) {
-        SharedPreferences pantryPrefs = context.getSharedPreferences("pantryPrefs", 0);
-        return pantryPrefs.getBoolean(this.title, false);
+    protected Ingredient(Parcel in) {
+        title = in.readString();
+        description = in.readString();
+        imageUrl = in.readString();
+        category = in.readString();
     }
 
-    public void setIsInPantry(boolean isInPantry, Context context) {
-        SharedPreferences pantryPrefs = context.getSharedPreferences("pantryPrefs", 0);
-        SharedPreferences.Editor editor = pantryPrefs.edit();
-        editor.putBoolean(this.title, isInPantry);
+    public static final Creator<Ingredient> CREATOR = new Creator<Ingredient>() {
+        @Override
+        public Ingredient createFromParcel(Parcel in) {
+            return new Ingredient(in);
+        }
+
+        @Override
+        public Ingredient[] newArray(int size) {
+            return new Ingredient[size];
+        }
+    };
+
+    public boolean isInList(String searchStr, Context context) {
+        SharedPreferences prefs = context.getSharedPreferences(searchStr + "Prefs", 0);
+        return prefs.getBoolean(this.title, false);
+    }
+
+    public void setIsInList(String searchStr, boolean isInList, Context context) {
+        SharedPreferences prefs = context.getSharedPreferences(searchStr + "Prefs", 0);
+        //if we're describing a different state,
+        if(prefs.getBoolean(this.title, false) != isInList) {
+            //change it
+            putToPreferences(prefs.edit(), isInList);
+
+            //then toggle the adapter
+            CustomExpandableListAdapter adapter = Globals.tabAdapters.get(searchStr);
+            adapter.toggleIngredient(this, isInList);
+        }
+    }
+
+    public void toggleIsInList(String searchStr, Context context) {
+        //toggle it
+        SharedPreferences prefs = context.getSharedPreferences(searchStr + "Prefs", 0);
+        boolean isInList = !this.isInList(searchStr, context);
+        putToPreferences(prefs.edit(), isInList);
+        //then toggle the adapter
+        CustomExpandableListAdapter adapter = Globals.tabAdapters.get(searchStr);
+        adapter.toggleIngredient(this, isInList);
+    }
+
+    public void putToPreferences(SharedPreferences.Editor editor, boolean bool) {
+        editor.putBoolean(this.title, bool);
         editor.apply();
     }
 
-    public boolean toggleIsInPantry(Context context) {
-        SharedPreferences pantryPrefs = context.getSharedPreferences("pantryPrefs", 0);
-        SharedPreferences.Editor editor = pantryPrefs.edit();
-        boolean isInPantry = this.isInPantry(context);
-        editor.putBoolean(this.title, !isInPantry);
-        editor.apply();
-        return !isInPantry;
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
-    public boolean isOnList(Context context) {
-        SharedPreferences shoppingPrefs = context.getSharedPreferences("shoppingPrefs", 0);
-        return shoppingPrefs.getBoolean(this.title, false);
-    }
-
-    public void setIsOnList(boolean isOnList, Context context) {
-        SharedPreferences shoppingPrefs = context.getSharedPreferences("shoppingPrefs", 0);
-        SharedPreferences.Editor editor = shoppingPrefs.edit();
-        editor.putBoolean(this.title, isOnList);
-        editor.apply();
-    }
-
-    public boolean toggleIsOnList(Context context) {
-        SharedPreferences shoppingPrefs = context.getSharedPreferences("shoppingPrefs", 0);
-        SharedPreferences.Editor editor = shoppingPrefs.edit();
-        boolean isOnList = this.isOnList(context);
-        editor.putBoolean(this.title, !isOnList);
-        editor.apply();
-        return !isOnList;
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(title);
+        parcel.writeString(description);
+        parcel.writeString(imageUrl);
+        parcel.writeString(category);
     }
 }
