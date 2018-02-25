@@ -62,20 +62,17 @@ public class Globals extends Application {
 
     private void loadIngredients() throws IOException {
         JSONreader reader = new JSONreader(this);
-        Log.d("what", "we're trying!");
 
-        //grab from defaults
-        Log.d("what", "we're trying!");
         String globalString = reader.inputToString(this.getAssets().open(getString(R.string.defaultIngredientsFile) + ".json"));
         globalIngredients = reader.stringToMap(globalString);
         ingredients = reader.stringToMap(globalString);
-        Log.d("ingsize1", String.valueOf(ingredients.size()));
 
         //grab from user-generated
         String localString = reader.inputToString(new FileInputStream(new File(context.getFilesDir() + getString(R.string.userIngredientsFile) + ".json")));
         ArrayList<Ingredient> locals = reader.stringToArray(localString);
         localIngredients = reader.stringToMap(localString);
         for(Ingredient i : locals) ingredients.put(i.title, i);
+        Log.d("locals", String.valueOf(localIngredients.size()));
     }
 
 //    private ArrayList<Recipe> loadRecipes() {
@@ -106,8 +103,6 @@ public class Globals extends Application {
 
         HashMap<String, Ingredient> matches = new HashMap<>();
 
-        Log.d("ingsize",String.valueOf(ingredients.size()));
-
         for(Ingredient i : ingredients.values()) {
             //check locations
             if(location != null) {
@@ -126,9 +121,6 @@ public class Globals extends Application {
             matches.put(i.title, i);
         }
 
-        Log.d("size", location);
-        Log.d("size", String.valueOf(matches.size()));
-
         return new ArrayList<>(matches.values());
     }
 
@@ -142,4 +134,27 @@ public class Globals extends Application {
         }
     }
 
+    public static void wipeUserMemory() {
+        // remove all from shared
+        for(Map.Entry<String, Ingredient> entry : localIngredients.entrySet()) {
+            entry.getValue().delete(context);
+            ingredients.remove(entry.getKey());
+        }
+        // empty
+        localIngredients.clear();
+
+        //set all to not in lists
+        for(Ingredient i : ingredients.values()) {
+            i.setIsInList("pantry", false, context);
+            i.setIsInList("shopping", false, context);
+        }
+
+        //push to individual Json file
+        JSONreader reader = new JSONreader(context);
+        reader.saveToJSON(new ArrayList<>(localIngredients.values()), context.getFilesDir() + "ingredients_added" + ".json");
+
+        for(String title : localIngredients.keySet()) Log.d("locals", title);
+
+        updateLists();
+    }
 }

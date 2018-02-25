@@ -9,4 +9,7 @@
     <string name="defaultIngredientsFile">ingredients_default</string>
     <string name="userIngredientsFile">ingredients_added</string>
     <string name="s">ingredients_added</string>
+    <string name="settings_userwipe_title">Wipe user content</string>
+    <string name="settings_userwipe_summary">This will delete ALL user data. \nIf you\'re certain, slide the slider to the right.</string>
+    <string name="settings_userwipe_button">WIPE ALL DATA</string>
 </resources>

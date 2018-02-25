@@ -53,8 +53,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     public void toggleIngredient(Ingredient i, boolean adding) {
-        Log.d("removing?", String.valueOf(this.categories.size()));
-        Log.d("removing?", Boolean.toString(adding));
         String category = i.category;
         List<Ingredient> list = this.categories.get(category);
 
@@ -84,39 +82,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
         Globals.updateLists();
     }
-
-//    public void addIngredient(Ingredient i) {
-//        String category = i.category;
-//        List<Ingredient> list = this.categories.get(category);
-//
-//        // create a new category if necessary
-//        if(list != null) {
-//            list.add(i);
-//            sortIngredients(list);
-//        } else {
-//            list = new ArrayList<>();
-//            list.add(i);
-//        }
-//        categories.put(category, list);
-//
-//        Globals.updateLists();
-//    }
-//
-//    public void removeIngredient(Ingredient i) {
-//        String category = i.category;
-//        List<Ingredient> list = this.categories.get(category);
-//
-//        //remove it
-//        list.remove(i);
-//        categories.put(category, list);
-//
-//        //remove the category if it's empty
-//        if(list.isEmpty()) {
-//            this.categories.remove(category);
-//        }
-//
-//        Globals.updateLists();
-//    }
 
     @Override
     public int getGroupCount() {

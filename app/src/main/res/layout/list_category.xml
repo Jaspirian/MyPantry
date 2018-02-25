@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_light"
         android:padding="10dp"
-        android:text="Category" />
+        android:text="Category"/>
 
 </LinearLayout>

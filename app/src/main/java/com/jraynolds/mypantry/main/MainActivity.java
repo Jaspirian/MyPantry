@@ -1,6 +1,7 @@
 package com.jraynolds.mypantry.main;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -11,22 +12,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.jraynolds.mypantry.R;
+import com.jraynolds.mypantry.dialogs.AddIngredient;
+import com.jraynolds.mypantry.settings.SettingsActivity;
 import com.jraynolds.mypantry.tabs.Tab_Ingredients;
-import com.jraynolds.mypantry.objects.Ingredient;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // initialize the different tabs
         ingredientsTabs = new Tab_Ingredients[3];
         String[] searches = new String[]{"all", "pantry", "shopping"};
         for(int i=0; i<3; i++) {
@@ -77,71 +71,12 @@ public class MainActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
+        // Set up the floating "add" button
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Dialog dialog = new Dialog(MainActivity.this);
-                dialog.setContentView(R.layout.dialog_addingredient);
-                dialog.setTitle("Add Ingredient");
-
-                final EditText title = dialog.findViewById(R.id.text_title);
-                final TextView isAvailable = dialog.findViewById(R.id.text_titleAvailable);
-
-                final EditText description = dialog.findViewById(R.id.text_description);
-                final EditText category = dialog.findViewById(R.id.text_category);
-                //image
-                final CheckBox inPantry = dialog.findViewById(R.id.check_inPantry);
-                final CheckBox onList = dialog.findViewById(R.id.check_onList);
-
-                Button cancel = dialog.findViewById(R.id.button_cancel);
-                cancel.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.dismiss();
-                    }
-                });
-
-                final Button add = dialog.findViewById(R.id.button_add);
-                add.setEnabled(false);
-                add.setOnClickListener(new View.OnClickListener() {
-
-                    @Override
-                    public void onClick(View view) {
-                        Ingredient i = new Ingredient(title.getText().toString(), description.getText().toString(), null, category.getText().toString());
-                        Globals.addIngredient(i);
-                        i.setIsInList("pantry", inPantry.isChecked(), getApplicationContext());
-                        i.setIsInList("pantry", onList.isChecked(), getApplicationContext());
-                        dialog.dismiss();
-                    }
-                });
-
-                title.addTextChangedListener(new TextWatcher() {
-                    @Override
-                    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                    }
-
-                    @Override
-                    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                        ArrayList<Ingredient> matches = Globals.getIngredients(title.getText().toString(), true, null,"all");
-                        Log.d("titling", matches.toString());
-                        if(!matches.isEmpty()) {
-                            Log.d("titling", "already exists!");
-                            isAvailable.setText("Already used!");
-                            add.setEnabled(false);
-                        } else {
-                            isAvailable.setText("");
-                            add.setEnabled(true);
-                        }
-                    }
-
-                    @Override
-                    public void afterTextChanged(Editable editable) {
-
-                    }
-                });
-
+                final Dialog dialog = new AddIngredient(MainActivity.this);
                 dialog.show();
             }
         });
@@ -170,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+//            return true;
+            startActivity(new Intent(this, SettingsActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

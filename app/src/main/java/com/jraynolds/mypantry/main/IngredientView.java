@@ -1,12 +1,9 @@
 package com.jraynolds.mypantry.main;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -15,7 +12,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.jraynolds.mypantry.R;
-import com.jraynolds.mypantry.main.Globals;
 import com.jraynolds.mypantry.objects.Ingredient;
 
 import java.io.IOException;

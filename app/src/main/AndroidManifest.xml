@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".main.IngredientView" />
+        <activity android:name=".settings.SettingsActivity" />
     </application>
 
 </manifest>

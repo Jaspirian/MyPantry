@@ -80,9 +80,22 @@ public class Ingredient implements Parcelable, Serializable {
         adapter.toggleIngredient(this, isInList);
     }
 
-    public void putToPreferences(SharedPreferences.Editor editor, boolean bool) {
+    public void delete(Context context) {
+        setIsInList("pantry",false, context);
+        setIsInList("shopping",false, context);
+        removeFromPreferences("pantry", context);
+        removeFromPreferences("shopping", context);
+    }
+
+    private void putToPreferences(SharedPreferences.Editor editor, boolean bool) {
         editor.putBoolean(this.title, bool);
         editor.apply();
+    }
+
+    private void removeFromPreferences(String searchStr, Context context) {
+        SharedPreferences prefs = context.getSharedPreferences(searchStr + "Prefs", 0);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.remove(this.title);
     }
 
     @Override
