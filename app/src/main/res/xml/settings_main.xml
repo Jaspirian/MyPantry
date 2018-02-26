@@ -3,6 +3,7 @@
     <!--android:layout_width="match_parent" android:layout_height="match_parent">-->
     <PreferenceCategory
         android:title="User data">
+        <com.jraynolds.mypantry.settings.ListWipePreference />
         <com.jraynolds.mypantry.settings.DataWipePreference />
     </PreferenceCategory>
 </PreferenceScreen>

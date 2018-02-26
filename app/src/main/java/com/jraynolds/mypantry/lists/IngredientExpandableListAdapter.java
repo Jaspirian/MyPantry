@@ -1,4 +1,4 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.lists;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.jraynolds.mypantry.R;
 import com.jraynolds.mypantry.main.Globals;
 import com.jraynolds.mypantry.main.IngredientView;
 import com.jraynolds.mypantry.objects.Ingredient;
@@ -33,12 +34,12 @@ import java.util.TreeMap;
  * Created by Jasper on 2/3/2018.
  */
 
-public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
+public class IngredientExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private TreeMap<String, List<Ingredient>> categories;
 
-    public CustomExpandableListAdapter(Context context, TreeMap<String, List<Ingredient>> categories) {
+    public IngredientExpandableListAdapter(Context context, TreeMap<String, List<Ingredient>> categories) {
         this.context = context;
         this.categories = categories;
     }

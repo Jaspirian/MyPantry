@@ -8,8 +8,14 @@
     <string name="emptyIngredients">Not enough ingredients? Try adding some using the button on the right!</string>
     <string name="defaultIngredientsFile">ingredients_default</string>
     <string name="userIngredientsFile">ingredients_added</string>
-    <string name="s">ingredients_added</string>
     <string name="settings_userwipe_title">Wipe user content</string>
-    <string name="settings_userwipe_summary">This will delete ALL user data. \nIf you\'re certain, slide the slider to the right.</string>
+    <string name="settings_userwipe_summary">This will delete ALL user data.\nIf you\'re certain, slide the slider to the right.</string>
     <string name="settings_userwipe_button">WIPE ALL DATA</string>
+    <string name="settings_userwipe_toast">All user data wiped.</string>
+    <string name="settings_listwipe_title">Clear lists</string>
+    <string name="settings_listwipe_summary">This will empty your pantry and shopping list.\nIf you\'re certain, slide the slider to the right.</string>
+    <string name="settings_listwipe_button">EMPTY ALL LISTS</string>
+    <string name="settings_listwipe_toast">Pantry and shopping list cleared.</string>
+    <string name="itemview_usermade_deleteprompt">Really delete this ingredient?</string>
+    <string name="itemview_default_deleteprompt">Really hide this ingredient?\nTo show it again, clear user data from the settings menu.</string>
 </resources>

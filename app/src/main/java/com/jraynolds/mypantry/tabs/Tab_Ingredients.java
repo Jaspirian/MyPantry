@@ -8,13 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
-import com.jraynolds.mypantry.CustomExpandableListAdapter;
-import com.jraynolds.mypantry.ExpandableListDataPump;
+import com.jraynolds.mypantry.lists.IngredientExpandableListAdapter;
+import com.jraynolds.mypantry.lists.IngredientExpandableListDataPump;
 import com.jraynolds.mypantry.R;
 import com.jraynolds.mypantry.main.Globals;
 import com.jraynolds.mypantry.objects.Ingredient;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -41,8 +40,8 @@ public class Tab_Ingredients extends Fragment {
         ExpandableListView expandableListView = rootView.findViewById(R.id.layout_listview);
         ViewGroup footer = (ViewGroup) inflater.inflate(R.layout.list_footer, expandableListView, false);
         expandableListView.addFooterView(footer);
-        final TreeMap<String, List<Ingredient>> categories = ExpandableListDataPump.getData(searchStr);
-        CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this.getContext(), categories);
+        final TreeMap<String, List<Ingredient>> categories = IngredientExpandableListDataPump.getData(searchStr);
+        IngredientExpandableListAdapter adapter = new IngredientExpandableListAdapter(this.getContext(), categories);
         Globals.addTab(searchStr, adapter);
         expandableListView.setAdapter(adapter);
 

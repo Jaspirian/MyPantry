@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.util.Log;
 
-import com.jraynolds.mypantry.CustomExpandableListAdapter;
+import com.jraynolds.mypantry.lists.IngredientExpandableListAdapter;
 import com.jraynolds.mypantry.R;
 import com.jraynolds.mypantry.objects.Ingredient;
 import com.jraynolds.mypantry.objects.Recipe;
@@ -13,13 +13,10 @@ import com.jraynolds.mypantry.utilities.JSONreader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
+import java.util.Iterator;
 import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
 
 /**
  * Created by Jasper on 1/24/2018.
@@ -33,10 +30,7 @@ public class Globals extends Application {
     private static HashMap<String, Ingredient> localIngredients;
     private static HashMap<String, Ingredient> ingredients;
 
-    private static ArrayList<Recipe> recipes;
-
-    public static HashMap<String, CustomExpandableListAdapter> tabAdapters;
-
+    public static HashMap<String, IngredientExpandableListAdapter> tabAdapters;
 
     public void onCreate() {
         super.onCreate();
@@ -65,24 +59,24 @@ public class Globals extends Application {
 
         String globalString = reader.inputToString(this.getAssets().open(getString(R.string.defaultIngredientsFile) + ".json"));
         globalIngredients = reader.stringToMap(globalString);
-        ingredients = reader.stringToMap(globalString);
+        //prune blocked
+        Iterator<Ingredient> iter = globalIngredients.values().iterator();
+        while(iter.hasNext()) if(iter.next().isInList("block", context)) iter.remove();
+        ingredients = new HashMap<>(globalIngredients);
 
         //grab from user-generated
         String localString = reader.inputToString(new FileInputStream(new File(context.getFilesDir() + getString(R.string.userIngredientsFile) + ".json")));
         ArrayList<Ingredient> locals = reader.stringToArray(localString);
         localIngredients = reader.stringToMap(localString);
-        for(Ingredient i : locals) ingredients.put(i.title, i);
-        Log.d("locals", String.valueOf(localIngredients.size()));
+        for(Ingredient i : locals) {
+            i.isUserCreated = true;
+            ingredients.put(i.title, i);
+        }
     }
-
-//    private ArrayList<Recipe> loadRecipes() {
-//        ArrayList<Recipe> recipes = new ArrayList<>();
-//
-//        return recipes;
-//    }
 
     public static void addIngredient(Ingredient i) {
         //push to locals, globals
+        i.isUserCreated = true;
         localIngredients.put(i.title, i);
         ingredients.put(i.title, i);
 
@@ -94,16 +88,30 @@ public class Globals extends Application {
         reader.saveToJSON(new ArrayList<>(localIngredients.values()), context.getFilesDir() + "ingredients_added" + ".json");
     }
 
-//    public static void addRecipe(String title, String description, String image, ArrayList<String> steps) {
-//        //push to globalRecipes
-//        //push to individual Json file
-//    }
+    public static void deleteIngredient(Ingredient i) {
+        //remove from globals
+        ingredients.remove(i);
+
+        if(localIngredients.containsKey(i)) {
+            localIngredients.remove(i.title);
+            i.delete(context);
+            //remove block
+            i.setIsInList("block", false, context);
+        } else {
+            i.delete(context);
+            //add block
+            i.setIsInList("block", true, context);
+        }
+
+        updateLists();
+    }
 
     public static ArrayList<Ingredient> getIngredients(String title, boolean isExact, String category, String location) {
 
         HashMap<String, Ingredient> matches = new HashMap<>();
 
         for(Ingredient i : ingredients.values()) {
+            if(i.isInList("block", context)) continue;
             //check locations
             if(location != null) {
                 //continue if not in location
@@ -124,12 +132,20 @@ public class Globals extends Application {
         return new ArrayList<>(matches.values());
     }
 
-    public static void addTab(String s, CustomExpandableListAdapter adapter) {
+    public static ArrayList<String> getIngredientCategories() {
+        ArrayList<String> categories = new ArrayList<>();
+
+        for(Ingredient i : ingredients.values()) if(!categories.contains(i.category)) categories.add(i.category);
+
+        return categories;
+    }
+
+    public static void addTab(String s, IngredientExpandableListAdapter adapter) {
         tabAdapters.put(s, adapter);
     }
 
     public static void updateLists() {
-        for(Map.Entry<String, CustomExpandableListAdapter> entry : tabAdapters.entrySet()) {
+        for(Map.Entry<String, IngredientExpandableListAdapter> entry : tabAdapters.entrySet()) {
             entry.getValue().notifyDataSetChanged();
         }
     }
@@ -154,6 +170,16 @@ public class Globals extends Application {
         reader.saveToJSON(new ArrayList<>(localIngredients.values()), context.getFilesDir() + "ingredients_added" + ".json");
 
         for(String title : localIngredients.keySet()) Log.d("locals", title);
+
+        updateLists();
+    }
+
+    public static void wipeListMemory() {
+        //set all to not in lists
+        for(Ingredient i : ingredients.values()) {
+            i.setIsInList("pantry", false, context);
+            i.setIsInList("shopping", false, context);
+        }
 
         updateLists();
     }

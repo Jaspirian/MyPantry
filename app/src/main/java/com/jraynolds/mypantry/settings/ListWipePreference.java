@@ -15,27 +15,27 @@ import com.jraynolds.mypantry.R;
 import com.jraynolds.mypantry.main.Globals;
 
 /**
- * Created by Jasper on 2/24/2018.
+ * Created by Jasper on 2/25/2018.
  */
 
-public class DataWipePreference extends Preference {
+public class ListWipePreference extends Preference {
 
-    public DataWipePreference(Context context) {
+    public ListWipePreference(Context context) {
         super(context, null);
         setLayoutResource(R.layout.danger_button);
     }
 
-    public DataWipePreference(Context context, AttributeSet attrs) {
+    public ListWipePreference(Context context, AttributeSet attrs) {
         super(context, attrs, 0);
         setLayoutResource(R.layout.danger_button);
     }
 
-    public DataWipePreference(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ListWipePreference(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr, defStyleAttr);
         setLayoutResource(R.layout.danger_button);
     }
 
-    public DataWipePreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public ListWipePreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         setLayoutResource(R.layout.danger_button);
     }
@@ -50,15 +50,15 @@ public class DataWipePreference extends Preference {
         final Switch enable = (Switch) holder.findViewById(R.id.enable);
         final Button button = (Button) holder.findViewById(R.id.button);
 
-        title.setText(getContext().getString(R.string.settings_userwipe_title));
-        summary.setText(getContext().getString(R.string.settings_userwipe_summary));
-        button.setText(getContext().getString(R.string.settings_userwipe_button));
+        title.setText(getContext().getString(R.string.settings_listwipe_title));
+        summary.setText(getContext().getString(R.string.settings_listwipe_summary));
+        button.setText(getContext().getString(R.string.settings_listwipe_button));
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Globals.wipeUserMemory();
-                Toast.makeText(getContext(), getContext().getString(R.string.settings_userwipe_toast), Toast.LENGTH_LONG).show();
+                Globals.wipeListMemory();
+                Toast.makeText(getContext(), getContext().getString(R.string.settings_listwipe_toast), Toast.LENGTH_LONG).show();
                 enable.setChecked(false);
             }
         });

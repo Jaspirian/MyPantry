@@ -1,4 +1,4 @@
-package com.jraynolds.mypantry;
+package com.jraynolds.mypantry.lists;
 
 import android.util.Log;
 
@@ -17,7 +17,7 @@ import java.util.TreeMap;
  * Created by Jasper on 2/3/2018.
  */
 
-public class ExpandableListDataPump {
+public class IngredientExpandableListDataPump {
 
     public static TreeMap<String, List<Ingredient>> getData(String location) {
         List<Ingredient> ingredients = Globals.getIngredients(null, false, null, location);

@@ -2,17 +2,12 @@ package com.jraynolds.mypantry.objects;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Log;
 
-import com.jraynolds.mypantry.CustomExpandableListAdapter;
+import com.jraynolds.mypantry.lists.IngredientExpandableListAdapter;
 import com.jraynolds.mypantry.main.Globals;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.Serializable;
 
 /**
@@ -26,11 +21,15 @@ public class Ingredient implements Parcelable, Serializable {
     public String imageUrl;
     public String category;
 
+    public boolean isUserCreated;
+
     public Ingredient(String title, String description, String imageUrl, String category) {
         this.title = title;
         this.description = description;
         this.imageUrl = imageUrl;
         this.category = category;
+
+        this.isUserCreated = false;
     }
 
     protected Ingredient(Parcel in) {
@@ -38,6 +37,8 @@ public class Ingredient implements Parcelable, Serializable {
         description = in.readString();
         imageUrl = in.readString();
         category = in.readString();
+
+        isUserCreated = false;
     }
 
     public static final Creator<Ingredient> CREATOR = new Creator<Ingredient>() {
@@ -65,7 +66,7 @@ public class Ingredient implements Parcelable, Serializable {
             putToPreferences(prefs.edit(), isInList);
 
             //then toggle the adapter
-            CustomExpandableListAdapter adapter = Globals.tabAdapters.get(searchStr);
+            IngredientExpandableListAdapter adapter = Globals.tabAdapters.get(searchStr);
             adapter.toggleIngredient(this, isInList);
         }
     }
@@ -76,7 +77,7 @@ public class Ingredient implements Parcelable, Serializable {
         boolean isInList = !this.isInList(searchStr, context);
         putToPreferences(prefs.edit(), isInList);
         //then toggle the adapter
-        CustomExpandableListAdapter adapter = Globals.tabAdapters.get(searchStr);
+        IngredientExpandableListAdapter adapter = Globals.tabAdapters.get(searchStr);
         adapter.toggleIngredient(this, isInList);
     }
 
